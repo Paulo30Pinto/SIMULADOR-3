@@ -1,0 +1,814 @@
+//variaveis globais
+var contar_botao_compressor = 0;
+var contar_botao_circuitos = 0;
+var altera_estados = false;
+const este = this;
+//this.estado_simulador_txt.text = contar_botao_compressor; 
+
+// Classe principal do Simulador
+function conectPontaVermelha(posY) {
+    //alert(posY);
+    if (!this.validarCondicoes("Ponta vermelha")) return;
+    this.app.ponta_vermelha_inicial_mc.visible = false;
+    this.app.ponta_vermelha_final_mc.visible = true;
+    this.app.ponta_vermelha_final_mc.y = posY;
+    this.pontaVermelha.conectada = true;
+    this.pontaVermelha.posicao = "J1G";
+    this.estado = "Ponta vermelha ligada";
+    this.atualizarInterface();
+    this.verificarMedicao();
+}
+
+function conectarPontaPreta(posY) {
+    if (!this.validarCondicoes("Ponta preta")) return;
+    this.app.ponta_preta_inicial_mc.visible = false;
+    this.app.ponta_preta_final_mc.visible = true;
+    this.app.ponta_preta_final_mc.y = posY;
+    this.pontaPreta.conectada = true;
+    this.pontaPreta.posicao = "J1G0";
+    this.estado = "Ponta preta ligada";
+    this.atualizarInterface();
+    this.verificarMedicao();
+}
+
+class Simulador {
+    constructor(app) {
+        this.app = app;
+        this.tensaoAlimentacao = 0;
+        this.ligado = false;
+        this.estado = "Simulador Desligado";
+
+        // Inicializar componentes
+        this.multimetro = new Multimetro(app, this);
+        this.controleRemoto = new ControleRemoto(app, this);
+        this.audio = new Audio();
+
+        // Inicializar pontas de prova
+        this.pontaVermelha = { conectada: false, posicao: null };
+        this.pontaPreta = { conectada: false, posicao: null };
+
+        this.initEventListeners();
+    }
+
+    initEventListeners() {
+        // Botões de ligar/desligar
+        this.app.botao_off_btn.addEventListener("click", this.togglePower.bind(this));
+        this.app.botao_on_btn.addEventListener("click", this.togglePower.bind(this));
+        this.app.menu_ligar_btn.addEventListener("click", this.ligarSimulador.bind(this));
+        this.app.menu_desligar_btn.addEventListener("click", this.desligarSimulador.bind(this));
+
+        // Pontos de conexão J1G e J1G0
+        this.app.J1G_btn.addEventListener("click", conectPontaVermelha.bind(this, 288));
+        this.app.J1G0_btn.addEventListener("click", this.conectarPontaPreta.bind(this, 440));
+        this.app.VdcJ2.addEventListener("click", conectPontaVermelha.bind(this, 332));
+        this.app.gndJ2.addEventListener("click", this.conectarPontaPreta.bind(this, 485));
+        this.app.Vref5J2.addEventListener("click", conectPontaVermelha.bind(this, 495));
+
+        //BTN MENU LATERAL
+        this.app.vex_btn.addEventListener("click", this.esconderBtnMenuLateral.bind(this, 2));
+        this.app.ventilador_radial_btn.addEventListener("click", this.esconderBtnMenuLateral.bind(this, 3));
+        this.app.sensor_btn.addEventListener("click", this.esconderBtnMenuLateral.bind(this, 4));
+        this.app.ventilador_axial_btn.addEventListener("click", this.esconderBtnMenuLateral.bind(this, 5));
+        this.app.transductor_btn.addEventListener("click", this.esconderBtnMenuLateral.bind(this, 6));
+        this.app.pressostato_btn.addEventListener("click", this.esconderBtnMenuLateral.bind(this, 7));
+        this.app.pda_btn.addEventListener("click", this.esconderBtnMenuLateral.bind(this, 8));
+        this.app.placa_electronica_btn.addEventListener("click", this.esconderBtnMenuLateral.bind(this, 9));
+
+        //BTN SUBMENU LATERAL
+        this.app.vex_electrica_btn.addEventListener("click", this.subMenuFuncao.bind(this, 'vex_eletrica'));
+        this.app.vex_mecanica_btn.addEventListener("click", this.subMenuFuncao.bind(this, 'vex_mecanica'));
+        this.app.compressor_mecanica_btn.addEventListener("click", this.subMenuFuncao.bind(this, 'compressor_mecanica'));
+        this.app.compressor_electrica_btn.addEventListener("click", this.subMenuFuncao.bind(this, 'compressor_electrica'));
+        this.app.ventilador_radial_mecanica_btn.addEventListener("click", this.subMenuFuncao.bind(this, 'ventilador_radial_mecanica'));
+        this.app.ventilador_radial_electricidade_btn.addEventListener("click", this.subMenuFuncao.bind(this, 'ventilador_radial_electricidade'));
+        this.app.sensor_mecanica_btn.addEventListener("click", this.subMenuFuncao.bind(this, 'sensor_mecanica'));
+        this.app.sensor_electrica_btn.addEventListener("click", this.subMenuFuncao.bind(this, 'sensor_electrica'));
+        this.app.ventilador_axial_mecanica_btn.addEventListener("click", this.subMenuFuncao.bind(this, 'ventilador_axial_mecanica'));
+        this.app.ventilador_axial_electrica_btn.addEventListener("click", this.subMenuFuncao.bind(this, 'ventilador_axial_electrica'));
+        this.app.transductor_mecanica_btn.addEventListener("click", this.subMenuFuncao.bind(this, 'transductor_mecanica'));
+        this.app.transductor_electrica_btn.addEventListener("click", this.subMenuFuncao.bind(this, 'transductor_electrica'));
+        this.app.pressostato_mecanica_btn.addEventListener("click", this.subMenuFuncao.bind(this, 'pressostato_mecanica'));
+        this.app.pressostato_electrica_btn.addEventListener("click", this.subMenuFuncao.bind(this, 'pressostato_electrica'));
+        this.app.pda_mecanica_btn.addEventListener("click", this.subMenuFuncao.bind(this, 'pda_mecanica'));
+        this.app.pda_electrica_btn.addEventListener("click", this.subMenuFuncao.bind(this, 'pda_electrica'));
+        this.app.placa_electronica_mecanica_btn.addEventListener("click", this.subMenuFuncao.bind(this, 'placa_electronica_mecanica'));
+        this.app.placa_electronica_electrica_btn.addEventListener("click", this.subMenuFuncao.bind(this, 'placa_electronica_electrica'));
+
+
+    }
+
+
+
+
+    /**MENU LATERAL TESTE**/
+    esconderBtnMenuLateral(nClick) {
+        // this.ligado = !this.ligado;
+        this.altera_estados = !this.altera_estados;
+        console.log(this.altera_estados);
+
+        if (this.altera_estados) {
+            //alert("Ligado!");
+            if (nClick == 2) {
+                //alert("Ola")
+                this.app.vex_electrica_btn.visible = true;
+                this.app.vex_mecanica_btn.visible = true;
+                this.app.compressor_mecanica_btn.visible = false;
+                this.app.compressor_electrica_btn.visible = false;
+                this.app.ventilador_radial_mecanica_btn.visible = false;
+                this.app.ventilador_radial_electricidade_btn.visible = false;
+                this.app.sensor_mecanica_btn.visible = false;
+                this.app.sensor_electrica_btn.visible = false;
+                this.app.ventilador_axial_mecanica_btn.visible = false;
+                this.app.ventilador_axial_electrica_btn.visible = false;
+                this.app.transductor_mecanica_btn.visible = false;
+                this.app.transductor_electrica_btn.visible = false;
+                this.app.pressostato_mecanica_btn.visible = false;
+                this.app.pressostato_electrica_btn.visible = false;
+                this.app.pda_mecanica_btn.visible = false;
+                this.app.pda_electrica_btn.visible = false;
+                this.app.placa_electronica_mecanica_btn.visible = false;
+                this.app.placa_electronica_electrica_btn.visible = false;
+                this.app.estado_simulador_txt.text = "Vavula de Expansão";
+
+
+            }
+            if (nClick == 3) {
+                //alert("Ola")
+                this.app.vex_electrica_btn.visible = false;
+                this.app.vex_mecanica_btn.visible = false;
+                this.app.compressor_mecanica_btn.visible = false;
+                this.app.compressor_electrica_btn.visible = false;
+                this.app.ventilador_radial_mecanica_btn.visible = true;
+                this.app.ventilador_radial_electricidade_btn.visible = true;
+                this.app.sensor_mecanica_btn.visible = false;
+                this.app.sensor_electrica_btn.visible = false;
+                this.app.ventilador_axial_mecanica_btn.visible = false;
+                this.app.ventilador_axial_electrica_btn.visible = false;
+                this.app.transductor_mecanica_btn.visible = false;
+                this.app.transductor_electrica_btn.visible = false;
+                this.app.pressostato_mecanica_btn.visible = false;
+                this.app.pressostato_electrica_btn.visible = false;
+                this.app.pda_mecanica_btn.visible = false;
+                this.app.pda_electrica_btn.visible = false;
+                this.app.placa_electronica_mecanica_btn.visible = false;
+                this.app.placa_electronica_electrica_btn.visible = false;
+                this.app.estado_simulador_txt.text = "Ventilador Radial";
+
+            }
+
+            if (nClick == 4) {
+                //alert("Ola")
+                this.app.vex_electrica_btn.visible = false;
+                this.app.vex_mecanica_btn.visible = false;
+                this.app.compressor_mecanica_btn.visible = false;
+                this.app.compressor_electrica_btn.visible = false;
+                this.app.ventilador_radial_mecanica_btn.visible = false;
+                this.app.ventilador_radial_electricidade_btn.visible = false;
+                this.app.sensor_mecanica_btn.visible = true;
+                this.app.sensor_electrica_btn.visible = true;
+                this.app.ventilador_axial_mecanica_btn.visible = false;
+                this.app.ventilador_axial_electrica_btn.visible = false;
+                this.app.transductor_mecanica_btn.visible = false;
+                this.app.transductor_electrica_btn.visible = false;
+                this.app.pressostato_mecanica_btn.visible = false;
+                this.app.pressostato_electrica_btn.visible = false;
+                this.app.pda_mecanica_btn.visible = false;
+                this.app.pda_electrica_btn.visible = false;
+                this.app.placa_electronica_mecanica_btn.visible = false;
+                this.app.placa_electronica_electrica_btn.visible = false;
+                this.app.estado_simulador_txt.text = "Sensor";
+
+            }
+            if (nClick == 5) {
+                //alert("Ola")
+                this.app.vex_electrica_btn.visible = false;
+                this.app.vex_mecanica_btn.visible = false;
+                this.app.compressor_mecanica_btn.visible = false;
+                this.app.compressor_electrica_btn.visible = false;
+                this.app.ventilador_radial_mecanica_btn.visible = false;
+                this.app.ventilador_radial_electricidade_btn.visible = false;
+                this.app.sensor_mecanica_btn.visible = false;
+                this.app.sensor_electrica_btn.visible = false;
+                this.app.ventilador_axial_mecanica_btn.visible = true;
+                this.app.ventilador_axial_electrica_btn.visible = true;
+                this.app.transductor_mecanica_btn.visible = false;
+                this.app.transductor_electrica_btn.visible = false;
+                this.app.pressostato_mecanica_btn.visible = false;
+                this.app.pressostato_electrica_btn.visible = false;
+                this.app.pda_mecanica_btn.visible = false;
+                this.app.pda_electrica_btn.visible = false;
+                this.app.placa_electronica_mecanica_btn.visible = false;
+                this.app.placa_electronica_electrica_btn.visible = false;
+                this.app.estado_simulador_txt.text = "Ventilador Axial";
+
+            }
+
+            if (nClick == 6) {
+                //alert("Ola")
+                this.app.vex_electrica_btn.visible = false;
+                this.app.vex_mecanica_btn.visible = false;
+                this.app.compressor_mecanica_btn.visible = false;
+                this.app.compressor_electrica_btn.visible = false;
+                this.app.ventilador_radial_mecanica_btn.visible = false;
+                this.app.ventilador_radial_electricidade_btn.visible = false;
+                this.app.sensor_mecanica_btn.visible = false;
+                this.app.sensor_electrica_btn.visible = false;
+                this.app.ventilador_axial_mecanica_btn.visible = false;
+                this.app.ventilador_axial_electrica_btn.visible = false;
+                this.app.transductor_mecanica_btn.visible = true;
+                this.app.transductor_electrica_btn.visible = true;
+                this.app.pressostato_mecanica_btn.visible = false;
+                this.app.pressostato_electrica_btn.visible = false;
+                this.app.pda_mecanica_btn.visible = false;
+                this.app.pda_electrica_btn.visible = false;
+                this.app.placa_electronica_mecanica_btn.visible = false;
+                this.app.placa_electronica_electrica_btn.visible = false;
+                this.app.estado_simulador_txt.text = "Transductor";
+
+            }
+
+            if (nClick == 7) {
+                //alert("Ola")
+                this.app.vex_electrica_btn.visible = false;
+                this.app.vex_mecanica_btn.visible = false;
+                this.app.compressor_mecanica_btn.visible = false;
+                this.app.compressor_electrica_btn.visible = false;
+                this.app.ventilador_radial_mecanica_btn.visible = false;
+                this.app.ventilador_radial_electricidade_btn.visible = false;
+                this.app.sensor_mecanica_btn.visible = false;
+                this.app.sensor_electrica_btn.visible = false;
+                this.app.ventilador_axial_mecanica_btn.visible = false;
+                this.app.ventilador_axial_electrica_btn.visible = false;
+                this.app.transductor_mecanica_btn.visible = false;
+                this.app.transductor_electrica_btn.visible = false;
+                this.app.pressostato_mecanica_btn.visible = true;
+                this.app.pressostato_electrica_btn.visible = true;
+                this.app.pda_mecanica_btn.visible = false;
+                this.app.pda_electrica_btn.visible = false;
+                this.app.placa_electronica_mecanica_btn.visible = false;
+                this.app.placa_electronica_electrica_btn.visible = false;
+                this.app.estado_simulador_txt.text = "Pressostato";
+
+            }
+
+            if (nClick == 8) {
+                //alert("Ola")
+                this.app.vex_electrica_btn.visible = false;
+                this.app.vex_mecanica_btn.visible = false;
+                this.app.compressor_mecanica_btn.visible = false;
+                this.app.compressor_electrica_btn.visible = false;
+                this.app.ventilador_radial_mecanica_btn.visible = false;
+                this.app.ventilador_radial_electricidade_btn.visible = false;
+                this.app.sensor_mecanica_btn.visible = false;
+                this.app.sensor_electrica_btn.visible = false;
+                this.app.ventilador_axial_mecanica_btn.visible = false;
+                this.app.ventilador_axial_electrica_btn.visible = false;
+                this.app.transductor_mecanica_btn.visible = false;
+                this.app.transductor_electrica_btn.visible = false;
+                this.app.pressostato_mecanica_btn.visible = false;
+                this.app.pressostato_electrica_btn.visible = false;
+                this.app.pda_mecanica_btn.visible = true;
+                this.app.pda_electrica_btn.visible = true;
+                this.app.placa_electronica_mecanica_btn.visible = false;
+                this.app.placa_electronica_electrica_btn.visible = false;
+                this.app.estado_simulador_txt.text = "Manometro";
+
+            }
+
+            if (nClick == 9) {
+                //alert("Ola")
+                this.app.vex_electrica_btn.visible = false;
+                this.app.vex_mecanica_btn.visible = false;
+                this.app.compressor_mecanica_btn.visible = false;
+                this.app.compressor_electrica_btn.visible = false;
+                this.app.ventilador_radial_mecanica_btn.visible = false;
+                this.app.ventilador_radial_electricidade_btn.visible = false;
+                this.app.sensor_mecanica_btn.visible = false;
+                this.app.sensor_electrica_btn.visible = false;
+                this.app.ventilador_axial_mecanica_btn.visible = false;
+                this.app.ventilador_axial_electrica_btn.visible = false;
+                this.app.transductor_mecanica_btn.visible = false;
+                this.app.transductor_electrica_btn.visible = false;
+                this.app.pressostato_mecanica_btn.visible = false;
+                this.app.pressostato_electrica_btn.visible = false;
+                this.app.pda_mecanica_btn.visible = false;
+                this.app.pda_electrica_btn.visible = false;
+                this.app.placa_electronica_mecanica_btn.visible = true;
+                this.app.placa_electronica_electrica_btn.visible = true;
+                this.app.estado_simulador_txt.text = "Placa";
+
+            }
+
+
+            this.altera_estadoso = true;
+        } else {
+            //alert("Desligado!");
+            this.app.vex_electrica_btn.visible = false;
+            this.app.vex_mecanica_btn.visible = false;
+            this.app.compressor_mecanica_btn.visible = false;
+            this.app.compressor_electrica_btn.visible = false;
+            this.app.ventilador_radial_mecanica_btn.visible = false;
+            this.app.ventilador_radial_electricidade_btn.visible = false;
+            this.app.sensor_mecanica_btn.visible = false;
+            this.app.sensor_electrica_btn.visible = false;
+            this.app.ventilador_axial_mecanica_btn.visible = false;
+            this.app.ventilador_axial_electrica_btn.visible = false;
+            this.app.transductor_mecanica_btn.visible = false;
+            this.app.transductor_electrica_btn.visible = false;
+            this.app.pressostato_mecanica_btn.visible = false;
+            this.app.pressostato_electrica_btn.visible = false;
+            this.app.pda_mecanica_btn.visible = false;
+            this.app.pda_electrica_btn.visible = false;
+            this.app.placa_electronica_mecanica_btn.visible = false;
+            this.app.placa_electronica_electrica_btn.visible = false;
+
+            this.altera_estadoso = false;
+
+        }
+
+    }
+
+    subMenuFuncao(accao) {
+
+        switch (accao) {
+            case 'vex_eletrica':
+                this.app.vex_electrica_btn.visible = false;
+                this.app.vex_mecanica_btn.visible = false;
+                this.app.estado_simulador_txt.text = "Vavula de Expansão Eletrica";
+                this.altera_estadoso = false;
+                break;
+            case 'vex_mecanica':
+                this.app.vex_electrica_btn.visible = false;
+                this.app.vex_mecanica_btn.visible = false;
+                this.app.estado_simulador_txt.text = "Vavula de Expansão Mecanica";
+                this.altera_estadoso = true;
+                break;
+            case 'compressor_mecanica':
+                this.app.compressor_mecanica_btn.visible = false;
+                this.app.compressor_electrica_btn.visible = false;
+                this.app.estado_simulador_txt.text = "Compressor Eletrica";
+                this.altera_estadoso = false;
+                break;
+            case 'compressor_electrica':
+                this.app.compressor_mecanica_btn.visible = false;
+                this.app.compressor_electrica_btn.visible = false;
+                this.app.estado_simulador_txt.text = "Compressor Mecanica";
+                this.altera_estadoso = true;
+                break;
+            case 'ventilador_radial_mecanica':
+                this.app.ventilador_radial_mecanica_btn.visible = false;
+                this.app.ventilador_radial_electricidade_btn.visible = false;
+                this.app.estado_simulador_txt.text = "Ventilador Radial Eletrica";
+                this.altera_estadoso = false;
+                break;
+            case 'ventilador_radial_electricidade':
+                this.app.ventilador_radial_mecanica_btn.visible = false;
+                this.app.ventilador_radial_electricidade_btn.visible = false;
+                this.app.estado_simulador_txt.text = "Ventilador Radial Mecanica";
+                this.altera_estadoso = true;
+                break;
+            case 'sensor_mecanica':
+                this.app.sensor_mecanica_btn.visible = false;
+                this.app.sensor_electrica_btn.visible = false;
+                this.app.estado_simulador_txt.text = "Sensor Eletrica";
+                this.altera_estadoso = false;
+                break;
+            case 'sensor_electrica':
+                this.app.sensor_mecanica_btn.visible = false;
+                this.app.sensor_electrica_btn.visible = false;
+                this.app.estado_simulador_txt.text = "Sensor Mecanica";
+                this.altera_estadoso = true;
+                break;
+            case 'ventilador_axial_mecanica':
+                this.app.ventilador_axial_mecanica_btn.visible = false;
+                this.app.ventilador_axial_electrica_btn.visible = false;
+                this.app.estado_simulador_txt.text = "Ventilador Axial Eletrica";
+                this.altera_estadoso = false;
+                break;
+            case 'ventilador_axial_electrica':
+                this.app.ventilador_axial_mecanica_btn.visible = false;
+                this.app.ventilador_axial_electrica_btn.visible = false;
+                this.app.estado_simulador_txt.text = "Ventilador Axial Mecanica";
+                this.altera_estadoso = true;
+                break;
+            case 'transductor_mecanica':
+                this.app.transductor_mecanica_btn.visible = false;
+                this.app.transductor_electrica_btn.visible = false;
+                this.app.estado_simulador_txt.text = "Transductor Eletrica";
+                this.altera_estadoso = false;
+                break;
+            case 'transductor_electrica':
+                this.app.transductor_mecanica_btn.visible = false;
+                this.app.transductor_electrica_btn.visible = false;
+                this.app.estado_simulador_txt.text = "Transductor Mecanica";
+                this.altera_estadoso = true;
+                break;
+            case 'pressostato_mecanica':
+                this.app.pressostato_mecanica_btn.visible = false;
+                this.app.pressostato_electrica_btn.visible = false;
+                this.app.estado_simulador_txt.text = "Pressostato Eletrica";
+                this.altera_estadoso = false;
+                break;
+            case 'pressostato_electrica':
+                this.app.pressostato_mecanica_btn.visible = false;
+                this.app.pressostato_electrica_btn.visible = false;
+                this.app.estado_simulador_txt.text = "Pressostato Mecanica";
+                this.altera_estadoso = true;
+                break;
+            case 'pda_mecanica':
+                this.app.pda_mecanica_btn.visible = false;
+                this.app.pda_electrica_btn.visible = false;
+                this.app.estado_simulador_txt.text = "PDA Eletrica";
+                this.altera_estadoso = false;
+                break;
+            case 'pda_electrica':
+                this.app.pda_mecanica_btn.visible = false;
+                this.app.pda_electrica_btn.visible = false;
+                this.app.estado_simulador_txt.text = "PDA Mecanica";
+                this.altera_estadoso = true;
+                break;
+            case 'placa_electronica_mecanica':
+                this.app.placa_electronica_mecanica_btn.visible = false;
+                this.app.placa_electronica_electrica_btn.visible = false;
+                this.app.estado_simulador_txt.text = "Placa Electronica Eletrica";
+                this.altera_estadoso = false;
+                break;
+            case 'placa_electronica_electrica':
+                this.app.placa_electronica_mecanica_btn.visible = false;
+                this.app.placa_electronica_electrica_btn.visible = false;
+                this.app.estado_simulador_txt.text = "Placa Electronica Mecanica";
+                this.altera_estadoso = true;
+                break;
+            default:
+                this.app.vex_electrica_btn.visible = false;
+                this.app.vex_mecanica_btn.visible = false;
+                this.app.compressor_mecanica_btn.visible = false;
+                this.app.compressor_electrica_btn.visible = false;
+                this.app.ventilador_radial_mecanica_btn.visible = false;
+                this.app.ventilador_radial_electricidade_btn.visible = false;
+                this.app.sensor_mecanica_btn.visible = false;
+                this.app.sensor_electrica_btn.visible = false;
+                this.app.ventilador_axial_mecanica_btn.visible = false;
+                this.app.ventilador_axial_electrica_btn.visible = false;
+                this.app.transductor_mecanica_btn.visible = false;
+                this.app.transductor_electrica_btn.visible = false;
+                this.app.pressostato_mecanica_btn.visible = false;
+                this.app.pressostato_electrica_btn.visible = false;
+                this.app.pda_mecanica_btn.visible = false;
+                this.app.pda_electrica_btn.visible = false;
+                this.app.placa_electronica_mecanica_btn.visible = false;
+                this.app.placa_electronica_electrica_btn.visible = false;
+                break;
+
+        }
+
+    }
+
+
+
+    //FUNÇÂO PARA LIGAR O SIMULADOR
+    ligarSimulador() {
+        this.ligado = this.ligado;
+
+        this.app.botao_off_btn.visible = false;
+        this.app.botao_on_btn.visible = true;
+        this.estado = "Simulador Ligado";
+        this.tensaoAlimentacao = 220;
+
+        this.audio.tocarSom("SomBotao");
+        this.atualizarInterface();
+
+    }
+
+    //FUNCÇÃO PARA DESLIGAR O SIMULADOR
+    desligarSimulador() {
+        this.ligado != this.ligado;
+
+        this.app.botao_on_btn.visible = false;
+        this.app.botao_off_btn.visible = true;
+        this.estado = "Simulador Desligado";
+        this.tensaoAlimentacao = 0;
+
+        this.audio.tocarSom("SomBotao");
+        this.atualizarInterface();
+
+    }
+
+    //LIGAR E DESLIGAR O SIMULADOR EM UMA UNICA FUNÇÃO
+    togglePower() {
+        this.ligado = !this.ligado;
+
+        if (this.ligado) {
+            this.app.botao_off_btn.visible = false;
+            this.app.botao_on_btn.visible = true;
+            this.estado = "Simulador Ligado";
+            this.tensaoAlimentacao = 220;
+        } else {
+            this.app.botao_on_btn.visible = false;
+            this.app.botao_off_btn.visible = true;
+            this.estado = "Simulador Desligado";
+            this.tensaoAlimentacao = 0;
+        }
+
+        this.audio.tocarSom("SomBotao");
+        this.atualizarInterface();
+    }
+
+    atualizarInterface() {
+        this.app.estado_simulador_txt.text = this.estado;
+    }
+
+    conectarPontaVermelha() {
+        if (!this.validarCondicoes("Ponta vermelha")) return;
+
+        this.app.ponta_vermelha_inicial_mc.visible = false;
+        this.app.ponta_vermelha_final_mc.visible = true;
+        this.pontaVermelha.conectada = true;
+        this.pontaVermelha.posicao = "J1G";
+        this.estado = "Ponta vermelha ligada";
+        this.atualizarInterface();
+        this.verificarMedicao();
+    }
+
+    conectarPontaPreta(posY) {
+        if (!this.validarCondicoes("Ponta preta")) return;
+
+        this.app.ponta_preta_inicial_mc.visible = false;
+        this.app.ponta_preta_final_mc.visible = true;
+        this.app.ponta_preta_final_mc.y = posY;
+        this.pontaPreta.conectada = true;
+        this.pontaPreta.posicao = "J1G0";
+        this.estado = "Ponta preta ligada";
+        this.atualizarInterface();
+        this.verificarMedicao();
+    }
+
+    validarCondicoes(ponta) {
+        if (!this.ligado) {
+            this.estado = "Ligar Tensão de Alimentação";
+            if (ponta === "Ponta vermelha") {
+                this.app.ponta_vermelha_inicial_mc.visible = true;
+                this.app.ponta_vermelha_final_mc.visible = false;
+            } else {
+                this.app.ponta_preta_inicial_mc.visible = true;
+                this.app.ponta_preta_final_mc.visible = false;
+            }
+            this.atualizarInterface();
+            return false;
+        }
+
+        if (this.multimetro.posicaoRoda !== 1) {
+            this.estado = "Colocar multimetro em tensao AC";
+            if (ponta === "Ponta vermelha") {
+                this.app.ponta_vermelha_inicial_mc.visible = true;
+                this.app.ponta_vermelha_final_mc.visible = false;
+            } else {
+                this.app.ponta_preta_inicial_mc.visible = true;
+                this.app.ponta_preta_final_mc.visible = false;
+            }
+            this.atualizarInterface();
+            return false;
+        }
+
+        return true;
+    }
+
+    verificarMedicao() {
+        if (this.pontaVermelha.conectada && this.pontaPreta.conectada) {
+            if (this.pontaVermelha.posicao === "J1G" && this.pontaPreta.posicao === "J1G0") {
+                this.app.display_inferior_txt.text = this.tensaoAlimentacao.toString();
+            }
+            // Resetar as pontas após a medição
+            this.pontaVermelha.conectada = false;
+            this.pontaPreta.conectada = false;
+        }
+    }
+}
+
+// Classe para o Multímetro
+class Multimetro {
+    constructor(app, simulador) {
+        this.app = app;
+        this.simulador = simulador;
+        this.posicaoRoda = 0;
+        this.menuAberto = false;
+
+        // Mapeamento de posições e displays
+        this.posicoes = [
+            { nome: "Desligado", rotacao: 0, displayText: "--------", statusText: "" },
+            { nome: "Volts AC", rotacao: 25, displayText: "Volts AC", statusText: "Multímetro ligado para Volts AC" },
+            { nome: "Volts DC", rotacao: 50, displayText: "Volts DC", statusText: "Multímetro ligado para Volts DC" },
+            { nome: "Volts mV", rotacao: 75, displayText: "Volts mV", statusText: "Multímetro ligado para Volts mV" },
+            { nome: "Ohms", rotacao: 100, displayText: "Ohms", statusText: "Multímetro ligado para Ohms" },
+            { nome: "Microfarads", rotacao: 125, displayText: "Microfarads", statusText: "Multímetro ligado para Microfarads" },
+            { nome: "Anpers", rotacao: 150, displayText: "Anpers", statusText: "Multímetro ligado para Anpers" }
+        ];
+
+        this.initEventListeners();
+    }
+
+    initEventListeners() {
+        // Menu multímetro
+        this.app.menu_multimetro_btn.addEventListener("click", this.toggleMenu.bind(this));
+
+        // Roda multímetro
+        this.app.roda_multimetro_btn.addEventListener("click", this.girarRoda.bind(this));
+
+        // Opções do menu
+        this.app.menu_tensao_ac_btn.addEventListener("click", () => this.selecionarFuncao(1));
+        this.app.menu_tensao_dc_btn.addEventListener("click", () => this.selecionarFuncao(2));
+        this.app.menu_tensao_ac_milivolts_btn.addEventListener("click", () => this.selecionarFuncao(3));
+        this.app.menu_resistencia_btn.addEventListener("click", () => this.selecionarFuncao(4));
+        this.app.menu_capacidade_btn.addEventListener("click", () => this.selecionarFuncao(5));
+        this.app.menu_corrente_btn.addEventListener("click", () => this.selecionarFuncao(6));
+    }
+
+    toggleMenu() {
+        this.menuAberto = !this.menuAberto;
+
+        this.app.menu_tensao_ac_btn.visible = this.menuAberto;
+        this.app.menu_tensao_dc_btn.visible = this.menuAberto;
+        this.app.menu_tensao_ac_milivolts_btn.visible = this.menuAberto;
+        this.app.menu_resistencia_btn.visible = this.menuAberto;
+        this.app.menu_capacidade_btn.visible = this.menuAberto;
+        this.app.menu_corrente_btn.visible = this.menuAberto;
+
+        this.app.menu_ligar_btn.visible = false;
+        this.app.menu_desligar_btn.visible = false;
+
+        if (this.menuAberto) {
+            this.app.capa_display_mc.visible = false;
+        } else {
+            this.resetarMultimetro();
+        }
+    }
+
+    resetarMultimetro() {
+        this.posicaoRoda = 0;
+        this.app.roda_multimetro_btn.rotation = 0;
+        this.app.capa_display_mc.visible = true;
+        this.app.display_texto_superior_txt.text = "--------";
+    }
+
+    girarRoda() {
+        this.posicaoRoda = (this.posicaoRoda + 1) % this.posicoes.length;
+        this.atualizarPosicaoRoda();
+    }
+
+    selecionarFuncao(posicao) {
+        this.posicaoRoda = posicao;
+        this.atualizarPosicaoRoda();
+        this.simulador.audio.tocarSom("SomBotao");
+    }
+
+    atualizarPosicaoRoda() {
+        const posicao = this.posicoes[this.posicaoRoda];
+        this.app.roda_multimetro_btn.rotation = posicao.rotacao;
+        this.app.display_texto_superior_txt.text = posicao.displayText;
+        this.app.capa_display_mc.visible = this.posicaoRoda === 0;
+
+        if (posicao.statusText) {
+            this.simulador.estado = posicao.statusText;
+            this.simulador.atualizarInterface();
+        }
+
+        this.simulador.audio.tocarSom("SomBotao");
+    }
+}
+
+// Classe para o Controle Remoto
+class ControleRemoto {
+    constructor(app, simulador) {
+        this.app = app;
+        this.simulador = simulador;
+        this.menuAberto = false;
+
+        this.initEventListeners();
+    }
+
+    initEventListeners() {
+        // Menu controle remoto
+        this.app.menu_controle_remoto_btn.addEventListener("click", this.toggleMenu.bind(this));
+
+        // Botões de controle
+        this.app.menu_ligar_btn.addEventListener("click", this.fecharMenu.bind(this));
+        this.app.menu_desligar_btn.addEventListener("click", this.fecharMenu.bind(this));
+    }
+
+    toggleMenu() {
+        this.menuAberto = !this.menuAberto;
+        this.app.menu_ligar_btn.visible = this.menuAberto;
+        this.app.menu_desligar_btn.visible = this.menuAberto;
+
+        this.app.menu_tensao_ac_btn.visible = false;
+        this.app.menu_tensao_dc_btn.visible = false;
+        this.app.menu_tensao_ac_milivolts_btn.visible = false;
+        this.app.menu_resistencia_btn.visible = false;
+        this.app.menu_capacidade_btn.visible = false;
+        this.app.menu_corrente_btn.visible = false;
+
+    }
+
+    fecharMenu() {
+        this.menuAberto = false;
+        this.app.menu_ligar_btn.visible = false;
+        this.app.menu_desligar_btn.visible = false;
+
+    }
+}
+
+// Classe para lidar com sons
+class Audio {
+    tocarSom(nomeSom, volume = 0.5) {
+        const som = createjs.Sound.createInstance(nomeSom);
+        som.volume = volume;
+        som.play();
+    }
+}
+
+// Inicialização do aplicativo
+const iniciarSimulador = function () {
+    // 'this' refere-se ao objeto global, que contém os elementos da interface
+    const simulador = new Simulador(this);
+};
+
+// Chamar a função de inicialização
+iniciarSimulador.call(this);
+
+
+this.compressor_btn.addEventListener("click", fl_MouseClickHandler_18.bind(this));
+
+function fl_MouseClickHandler_18() {
+
+    contar_botao_compressor++;
+
+    if (contar_botao_compressor == 1) {
+        this.compressor_mecanica_btn.visible = true;
+        this.compressor_electrica_btn.visible = true;
+        this.estado_simulador_txt.text = "Compressor";
+
+    }
+
+    if (contar_botao_compressor == 2) {
+        this.compressor_mecanica_btn.visible = false;
+        this.compressor_electrica_btn.visible = false;
+        contar_botao_compressor = 0;
+        this.estado_simulador_txt.text = "Compressor";
+
+    }
+
+
+}
+
+
+
+this.compressor_mecanica_btn.addEventListener("click", fl_MouseClickHandler_19.bind(this));
+
+function fl_MouseClickHandler_19() {
+
+    this.compressor_mecanica_btn.visible = false;
+    this.compressor_electrica_btn.visible = false;
+    contar_botao_compressor = 0;
+    this.estado_simulador_txt.text = "Mecânica do Compressor";
+
+}
+
+
+
+this.compressor_electrica_btn.addEventListener("click", fl_MouseClickHandler_20.bind(this));
+
+function fl_MouseClickHandler_20() {
+
+    this.compressor_mecanica_btn.visible = false;
+    this.compressor_electrica_btn.visible = false;
+    contar_botao_compressor = 0;
+    this.estado_simulador_txt.text = "Electricidade do Compressor";
+
+}
+
+// menu circuitos
+
+this.menu_circuitos_btn.addEventListener("click", fl_MouseClickHandler_21.bind(this));
+
+function fl_MouseClickHandler_21()
+{
+	contar_botao_circuitos ++;
+	
+	 if (contar_botao_circuitos == 1) 
+		 {
+        this.frigorifico_btn.visible = true;
+        this.controle_btn.visible = true;
+	    this. potencia_btn.visible = true;
+        this.estado_simulador_txt.text = "Circuitos";
+		}
+	
+	 if (contar_botao_circuitos == 2) 
+		 {
+        this.frigorifico_btn.visible = false;
+        this.controle_btn.visible = false;
+	    this. potencia_btn.visible = false;
+        this.estado_simulador_txt.text = "Circuitos";
+		contar_botao_circuitos = 0;
+		}
+	
+}
