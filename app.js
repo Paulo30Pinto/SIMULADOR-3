@@ -3,9 +3,9 @@
 var p; // shortcut to reference prototypes
 var lib={};var ss={};var img={};
 lib.ssMetadata = [
-		{name:"app_atlas_1", frames: [[0,0,1113,951],[0,953,1358,698]]},
+		{name:"app_atlas_1", frames: [[1675,0,246,444],[1424,0,249,445],[463,802,440,777],[1657,1286,367,200],[1657,1488,225,225],[1969,1204,26,26],[905,472,512,512],[802,472,98,98],[0,1595,457,381],[1997,1204,26,26],[905,986,512,512],[1827,446,204,460],[1923,0,103,103],[1419,472,406,500],[463,1581,690,452],[1969,908,38,294],[2009,908,37,294],[1657,1715,167,297],[802,0,620,470],[1155,1500,500,500],[1419,974,236,453],[1657,974,310,310],[0,0,800,800],[0,802,461,791]]},
 		{name:"app_atlas_2", frames: [[0,0,950,927],[0,929,1342,617],[952,0,800,800]]},
-		{name:"app_atlas_3", frames: [[1675,0,246,444],[1424,0,249,445],[463,802,440,777],[1657,1286,367,200],[1657,1488,225,225],[1969,1204,26,26],[905,472,512,512],[802,472,98,98],[0,1595,457,381],[1997,1204,26,26],[905,986,512,512],[1827,446,204,460],[1923,0,103,103],[1419,472,406,500],[463,1581,690,452],[1969,908,38,294],[2009,908,37,294],[1657,1715,167,297],[802,0,620,470],[1155,1500,500,500],[1419,974,236,453],[1657,974,310,310],[0,0,800,800],[0,802,461,791]]}
+		{name:"app_atlas_3", frames: [[0,0,1113,951],[0,953,1358,698]]}
 ];
 
 
@@ -135,14 +135,14 @@ lib.ssMetadata = [
 
 
 (lib.botãooff = function() {
-	this.initialize(ss["app_atlas_3"]);
+	this.initialize(ss["app_atlas_1"]);
 	this.gotoAndStop(0);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib.botãoon = function() {
-	this.initialize(ss["app_atlas_3"]);
+	this.initialize(ss["app_atlas_1"]);
 	this.gotoAndStop(1);
 }).prototype = p = new cjs.Sprite();
 
@@ -156,14 +156,14 @@ lib.ssMetadata = [
 
 
 (lib.compressor = function() {
-	this.initialize(ss["app_atlas_3"]);
+	this.initialize(ss["app_atlas_1"]);
 	this.gotoAndStop(2);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib.Controlador2 = function() {
-	this.initialize(ss["app_atlas_3"]);
+	this.initialize(ss["app_atlas_1"]);
 	this.gotoAndStop(3);
 }).prototype = p = new cjs.Sprite();
 
@@ -176,49 +176,49 @@ p.nominalBounds = new cjs.Rectangle(0,0,2115,1218);
 
 
 (lib.ECFAN = function() {
-	this.initialize(ss["app_atlas_3"]);
+	this.initialize(ss["app_atlas_1"]);
 	this.gotoAndStop(4);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib.ElectricidadeCompressor = function() {
-	this.initialize(ss["app_atlas_1"]);
+	this.initialize(ss["app_atlas_3"]);
 	this.gotoAndStop(0);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib.flash2 = function() {
-	this.initialize(ss["app_atlas_3"]);
+	this.initialize(ss["app_atlas_1"]);
 	this.gotoAndStop(5);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib.flash = function() {
-	this.initialize(ss["app_atlas_3"]);
+	this.initialize(ss["app_atlas_1"]);
 	this.gotoAndStop(6);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib.fundoapp = function() {
-	this.initialize(ss["app_atlas_1"]);
+	this.initialize(ss["app_atlas_3"]);
 	this.gotoAndStop(1);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib.fundodeaçoinoxidáveldaplacadometal2 = function() {
-	this.initialize(ss["app_atlas_3"]);
+	this.initialize(ss["app_atlas_1"]);
 	this.gotoAndStop(7);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib.logomini = function() {
-	this.initialize(ss["app_atlas_3"]);
+	this.initialize(ss["app_atlas_1"]);
 	this.gotoAndStop(8);
 }).prototype = p = new cjs.Sprite();
 
@@ -232,84 +232,84 @@ p.nominalBounds = new cjs.Rectangle(0,0,2115,1218);
 
 
 (lib.mechanic2 = function() {
-	this.initialize(ss["app_atlas_3"]);
+	this.initialize(ss["app_atlas_1"]);
 	this.gotoAndStop(9);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib.mechanic = function() {
-	this.initialize(ss["app_atlas_3"]);
+	this.initialize(ss["app_atlas_1"]);
 	this.gotoAndStop(10);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib.multimetro3 = function() {
-	this.initialize(ss["app_atlas_3"]);
+	this.initialize(ss["app_atlas_1"]);
 	this.gotoAndStop(11);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib.parafuso = function() {
-	this.initialize(ss["app_atlas_3"]);
+	this.initialize(ss["app_atlas_1"]);
 	this.gotoAndStop(12);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib.PDA = function() {
-	this.initialize(ss["app_atlas_3"]);
+	this.initialize(ss["app_atlas_1"]);
 	this.gotoAndStop(13);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib.PLACACONTROL = function() {
-	this.initialize(ss["app_atlas_3"]);
+	this.initialize(ss["app_atlas_1"]);
 	this.gotoAndStop(14);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib.pontapreta = function() {
-	this.initialize(ss["app_atlas_3"]);
+	this.initialize(ss["app_atlas_1"]);
 	this.gotoAndStop(15);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib.pontavermelha = function() {
-	this.initialize(ss["app_atlas_3"]);
+	this.initialize(ss["app_atlas_1"]);
 	this.gotoAndStop(16);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib.PRESSOSTATO = function() {
-	this.initialize(ss["app_atlas_3"]);
+	this.initialize(ss["app_atlas_1"]);
 	this.gotoAndStop(17);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib.SENSORTEMPERATURA = function() {
-	this.initialize(ss["app_atlas_3"]);
+	this.initialize(ss["app_atlas_1"]);
 	this.gotoAndStop(18);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib.timge1591860133869 = function() {
-	this.initialize(ss["app_atlas_3"]);
+	this.initialize(ss["app_atlas_1"]);
 	this.gotoAndStop(19);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib.TP = function() {
-	this.initialize(ss["app_atlas_3"]);
+	this.initialize(ss["app_atlas_1"]);
 	this.gotoAndStop(20);
 }).prototype = p = new cjs.Sprite();
 
@@ -323,21 +323,21 @@ p.nominalBounds = new cjs.Rectangle(0,0,2115,1218);
 
 
 (lib.VEE = function() {
-	this.initialize(ss["app_atlas_3"]);
+	this.initialize(ss["app_atlas_1"]);
 	this.gotoAndStop(21);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib.VENTILADORAXIALCONREGILLAEBMPAPST = function() {
-	this.initialize(ss["app_atlas_3"]);
+	this.initialize(ss["app_atlas_1"]);
 	this.gotoAndStop(22);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib.vex7 = function() {
-	this.initialize(ss["app_atlas_3"]);
+	this.initialize(ss["app_atlas_1"]);
 	this.gotoAndStop(23);
 }).prototype = p = new cjs.Sprite();
 // helper functions:
@@ -359,7 +359,7 @@ function getMCSymbolPrototype(symbol, nominalBounds, frameBounds) {
 	}
 
 
-(lib.Vref5J2 = function(mode,startPosition,loop,reversed) {
+(lib.Vref5J2_btn = function(mode,startPosition,loop,reversed) {
 if (loop == null) { loop = true; }
 if (reversed == null) { reversed = false; }
 	var props = new Object();
@@ -711,7 +711,7 @@ if (reversed == null) { reversed = false; }
 p.nominalBounds = new cjs.Rectangle(-49,-49,98,98);
 
 
-(lib.VdcJ3 = function(mode,startPosition,loop,reversed) {
+(lib.VdcJ3_btn = function(mode,startPosition,loop,reversed) {
 if (loop == null) { loop = true; }
 if (reversed == null) { reversed = false; }
 	var props = new Object();
@@ -735,7 +735,7 @@ if (reversed == null) { reversed = false; }
 p.nominalBounds = new cjs.Rectangle(0,0,13,13);
 
 
-(lib.VdcJ2 = function(mode,startPosition,loop,reversed) {
+(lib.VdcJ2_btn = function(mode,startPosition,loop,reversed) {
 if (loop == null) { loop = true; }
 if (reversed == null) { reversed = false; }
 	var props = new Object();
@@ -1190,7 +1190,7 @@ if (reversed == null) { reversed = false; }
 
 	// multimetro
 	this.shape = new cjs.Shape();
-	var sprImg_shape = cjs.SpriteSheetUtils.extractFrame(ss["app_atlas_3"],11);
+	var sprImg_shape = cjs.SpriteSheetUtils.extractFrame(ss["app_atlas_1"],11);
 	sprImg_shape.onload = function(){
 		this.shape.graphics.bf(sprImg_shape, null, new cjs.Matrix2D(1.454,0,0,1.454,-148.3,-334.4)).s().p("EgXKA0RMAAAhogMAuVAAAMAAABoggAoEjFQjjDiAAFBQAAFCDjDiQDjDjFAAAQFCAADijjQDjjiAAlCQAAlBjjjiQjijjlCAAQlAAAjjDjg")
 	}.bind(this);
@@ -1359,7 +1359,7 @@ if (reversed == null) { reversed = false; }
 
 	// Layer_1
 	this.shape = new cjs.Shape();
-	var sprImg_shape = cjs.SpriteSheetUtils.extractFrame(ss["app_atlas_3"],11);
+	var sprImg_shape = cjs.SpriteSheetUtils.extractFrame(ss["app_atlas_1"],11);
 	sprImg_shape.onload = function(){
 		this.shape.graphics.bf(sprImg_shape, null, new cjs.Matrix2D(1.454,0,0,1.454,-151.4,-369.7)).s().p("AojIkQjjjjAAlBQAAlADjjjQDjjjFAAAQFBAADjDjQDjDjAAFAQAAFBjjDjQjjDjlBAAQlAAAjjjjg")
 	}.bind(this);
@@ -1386,7 +1386,7 @@ if (reversed == null) { reversed = false; }
 
 	// base
 	this.shape = new cjs.Shape();
-	var sprImg_shape = cjs.SpriteSheetUtils.extractFrame(ss["app_atlas_3"],3);
+	var sprImg_shape = cjs.SpriteSheetUtils.extractFrame(ss["app_atlas_1"],3);
 	sprImg_shape.onload = function(){
 		this.shape.graphics.bf(sprImg_shape, null, new cjs.Matrix2D(1,0,0,1,-64.3,-98.9)).s().p("AiWCvIAAldIEtAAIAAFdg")
 	}.bind(this);
@@ -3165,6 +3165,1134 @@ if (reversed == null) { reversed = false; }
 }).prototype = getMCSymbolPrototype(lib.logo_dois_mc, new cjs.Rectangle(-23.1,-19.3,46.3,38.6), null);
 
 
+(lib.J18GND_btn = function(mode,startPosition,loop,reversed) {
+if (loop == null) { loop = true; }
+if (reversed == null) { reversed = false; }
+	var props = new Object();
+	props.mode = mode;
+	props.startPosition = startPosition;
+	props.labels = {};
+	props.loop = loop;
+	props.reversed = reversed;
+	cjs.MovieClip.apply(this,[props]);
+
+	// Layer_1
+	this.shape = new cjs.Shape();
+	this.shape.graphics.f("rgba(0,0,0,0.02)").s().p("AgtAuQgTgTAAgbQAAgaATgTQAUgTAZAAQAbAAATATQATATAAAaQAAAbgTATQgTATgbAAQgZAAgUgTg");
+	this.shape.setTransform(6.5,6.5);
+
+	this.timeline.addTween(cjs.Tween.get(this.shape).wait(1));
+
+	this._renderFirstFrame();
+
+}).prototype = p = new cjs.MovieClip();
+p.nominalBounds = new cjs.Rectangle(0,0,13,13);
+
+
+(lib.J18B12_btn = function(mode,startPosition,loop,reversed) {
+if (loop == null) { loop = true; }
+if (reversed == null) { reversed = false; }
+	var props = new Object();
+	props.mode = mode;
+	props.startPosition = startPosition;
+	props.labels = {};
+	props.loop = loop;
+	props.reversed = reversed;
+	cjs.MovieClip.apply(this,[props]);
+
+	// Layer_1
+	this.shape = new cjs.Shape();
+	this.shape.graphics.f("rgba(0,0,0,0.02)").s().p("AgtAuQgTgTAAgbQAAgaATgTQAUgTAZAAQAbAAATATQATATAAAaQAAAbgTATQgTATgbAAQgZAAgUgTg");
+	this.shape.setTransform(6.5,6.5);
+
+	this.timeline.addTween(cjs.Tween.get(this.shape).wait(1));
+
+	this._renderFirstFrame();
+
+}).prototype = p = new cjs.MovieClip();
+p.nominalBounds = new cjs.Rectangle(0,0,13,13);
+
+
+(lib.J18B11_btn = function(mode,startPosition,loop,reversed) {
+if (loop == null) { loop = true; }
+if (reversed == null) { reversed = false; }
+	var props = new Object();
+	props.mode = mode;
+	props.startPosition = startPosition;
+	props.labels = {};
+	props.loop = loop;
+	props.reversed = reversed;
+	cjs.MovieClip.apply(this,[props]);
+
+	// Layer_1
+	this.shape = new cjs.Shape();
+	this.shape.graphics.f("rgba(0,0,0,0.02)").s().p("AgtAuQgTgTAAgbQAAgaATgTQAUgTAZAAQAbAAATATQATATAAAaQAAAbgTATQgTATgbAAQgZAAgUgTg");
+	this.shape.setTransform(6.5,6.5);
+
+	this.timeline.addTween(cjs.Tween.get(this.shape).wait(1));
+
+	this._renderFirstFrame();
+
+}).prototype = p = new cjs.MovieClip();
+p.nominalBounds = new cjs.Rectangle(0,0,13,13);
+
+
+(lib.J18B10_btn = function(mode,startPosition,loop,reversed) {
+if (loop == null) { loop = true; }
+if (reversed == null) { reversed = false; }
+	var props = new Object();
+	props.mode = mode;
+	props.startPosition = startPosition;
+	props.labels = {};
+	props.loop = loop;
+	props.reversed = reversed;
+	cjs.MovieClip.apply(this,[props]);
+
+	// Layer_1
+	this.shape = new cjs.Shape();
+	this.shape.graphics.f("rgba(0,0,0,0.02)").s().p("AgtAuQgTgTAAgbQAAgaATgTQAUgTAZAAQAbAAATATQATATAAAaQAAAbgTATQgTATgbAAQgZAAgUgTg");
+	this.shape.setTransform(6.5,6.5);
+
+	this.timeline.addTween(cjs.Tween.get(this.shape).wait(1));
+
+	this._renderFirstFrame();
+
+}).prototype = p = new cjs.MovieClip();
+p.nominalBounds = new cjs.Rectangle(0,0,13,13);
+
+
+(lib.J18B9_btn = function(mode,startPosition,loop,reversed) {
+if (loop == null) { loop = true; }
+if (reversed == null) { reversed = false; }
+	var props = new Object();
+	props.mode = mode;
+	props.startPosition = startPosition;
+	props.labels = {};
+	props.loop = loop;
+	props.reversed = reversed;
+	cjs.MovieClip.apply(this,[props]);
+
+	// Layer_1
+	this.shape = new cjs.Shape();
+	this.shape.graphics.f("rgba(0,0,0,0.02)").s().p("AgtAuQgTgTAAgbQAAgaATgTQAUgTAZAAQAbAAATATQATATAAAaQAAAbgTATQgTATgbAAQgZAAgUgTg");
+	this.shape.setTransform(6.5,6.5);
+
+	this.timeline.addTween(cjs.Tween.get(this.shape).wait(1));
+
+	this._renderFirstFrame();
+
+}).prototype = p = new cjs.MovieClip();
+p.nominalBounds = new cjs.Rectangle(0,0,13,13);
+
+
+(lib.J18B8_btn = function(mode,startPosition,loop,reversed) {
+if (loop == null) { loop = true; }
+if (reversed == null) { reversed = false; }
+	var props = new Object();
+	props.mode = mode;
+	props.startPosition = startPosition;
+	props.labels = {};
+	props.loop = loop;
+	props.reversed = reversed;
+	cjs.MovieClip.apply(this,[props]);
+
+	// Layer_1
+	this.shape = new cjs.Shape();
+	this.shape.graphics.f("rgba(0,0,0,0.02)").s().p("AgtAuQgTgTAAgbQAAgaATgTQAUgTAZAAQAbAAATATQATATAAAaQAAAbgTATQgTATgbAAQgZAAgUgTg");
+	this.shape.setTransform(6.5,6.5);
+
+	this.timeline.addTween(cjs.Tween.get(this.shape).wait(1));
+
+	this._renderFirstFrame();
+
+}).prototype = p = new cjs.MovieClip();
+p.nominalBounds = new cjs.Rectangle(0,0,13,13);
+
+
+(lib.J16IDC2_btn = function(mode,startPosition,loop,reversed) {
+if (loop == null) { loop = true; }
+if (reversed == null) { reversed = false; }
+	var props = new Object();
+	props.mode = mode;
+	props.startPosition = startPosition;
+	props.labels = {};
+	props.loop = loop;
+	props.reversed = reversed;
+	cjs.MovieClip.apply(this,[props]);
+
+	// Layer_1
+	this.shape = new cjs.Shape();
+	this.shape.graphics.f("rgba(0,0,0,0.02)").s().p("AgtAuQgTgTAAgbQAAgaATgTQAUgTAZAAQAbAAATATQATATAAAaQAAAbgTATQgTATgbAAQgZAAgUgTg");
+	this.shape.setTransform(6.5,6.5);
+
+	this.timeline.addTween(cjs.Tween.get(this.shape).wait(1));
+
+	this._renderFirstFrame();
+
+}).prototype = p = new cjs.MovieClip();
+p.nominalBounds = new cjs.Rectangle(0,0,13,13);
+
+
+(lib.J16ID10_btn = function(mode,startPosition,loop,reversed) {
+if (loop == null) { loop = true; }
+if (reversed == null) { reversed = false; }
+	var props = new Object();
+	props.mode = mode;
+	props.startPosition = startPosition;
+	props.labels = {};
+	props.loop = loop;
+	props.reversed = reversed;
+	cjs.MovieClip.apply(this,[props]);
+
+	// Layer_1
+	this.shape = new cjs.Shape();
+	this.shape.graphics.f("rgba(0,0,0,0.02)").s().p("AgtAuQgTgTAAgbQAAgaATgTQAUgTAZAAQAbAAATATQATATAAAaQAAAbgTATQgTATgbAAQgZAAgUgTg");
+	this.shape.setTransform(6.5,6.5);
+
+	this.timeline.addTween(cjs.Tween.get(this.shape).wait(1));
+
+	this._renderFirstFrame();
+
+}).prototype = p = new cjs.MovieClip();
+p.nominalBounds = new cjs.Rectangle(0,0,13,13);
+
+
+(lib.J16ID9_btn = function(mode,startPosition,loop,reversed) {
+if (loop == null) { loop = true; }
+if (reversed == null) { reversed = false; }
+	var props = new Object();
+	props.mode = mode;
+	props.startPosition = startPosition;
+	props.labels = {};
+	props.loop = loop;
+	props.reversed = reversed;
+	cjs.MovieClip.apply(this,[props]);
+
+	// Layer_1
+	this.shape = new cjs.Shape();
+	this.shape.graphics.f("rgba(0,0,0,0.02)").s().p("AgtAuQgTgTAAgbQAAgaATgTQAUgTAZAAQAbAAATATQATATAAAaQAAAbgTATQgTATgbAAQgZAAgUgTg");
+	this.shape.setTransform(6.5,6.5);
+
+	this.timeline.addTween(cjs.Tween.get(this.shape).wait(1));
+
+	this._renderFirstFrame();
+
+}).prototype = p = new cjs.MovieClip();
+p.nominalBounds = new cjs.Rectangle(0,0,13,13);
+
+
+(lib.J16ID8_btn = function(mode,startPosition,loop,reversed) {
+if (loop == null) { loop = true; }
+if (reversed == null) { reversed = false; }
+	var props = new Object();
+	props.mode = mode;
+	props.startPosition = startPosition;
+	props.labels = {};
+	props.loop = loop;
+	props.reversed = reversed;
+	cjs.MovieClip.apply(this,[props]);
+
+	// Layer_1
+	this.shape = new cjs.Shape();
+	this.shape.graphics.f("rgba(0,0,0,0.02)").s().p("AgtAuQgTgTAAgbQAAgaATgTQAUgTAZAAQAbAAATATQATATAAAaQAAAbgTATQgTATgbAAQgZAAgUgTg");
+	this.shape.setTransform(6.5,6.5);
+
+	this.timeline.addTween(cjs.Tween.get(this.shape).wait(1));
+
+	this._renderFirstFrame();
+
+}).prototype = p = new cjs.MovieClip();
+p.nominalBounds = new cjs.Rectangle(0,0,13,13);
+
+
+(lib.J15NO12_btn = function(mode,startPosition,loop,reversed) {
+if (loop == null) { loop = true; }
+if (reversed == null) { reversed = false; }
+	var props = new Object();
+	props.mode = mode;
+	props.startPosition = startPosition;
+	props.labels = {};
+	props.loop = loop;
+	props.reversed = reversed;
+	cjs.MovieClip.apply(this,[props]);
+
+	// Layer_1
+	this.shape = new cjs.Shape();
+	this.shape.graphics.f("rgba(0,0,0,0.02)").s().p("AgtAuQgTgTAAgbQAAgaATgTQAUgTAZAAQAbAAATATQATATAAAaQAAAbgTATQgTATgbAAQgZAAgUgTg");
+	this.shape.setTransform(6.5,6.5);
+
+	this.timeline.addTween(cjs.Tween.get(this.shape).wait(1));
+
+	this._renderFirstFrame();
+
+}).prototype = p = new cjs.MovieClip();
+p.nominalBounds = new cjs.Rectangle(0,0,13,13);
+
+
+(lib.J15NO11_btn = function(mode,startPosition,loop,reversed) {
+if (loop == null) { loop = true; }
+if (reversed == null) { reversed = false; }
+	var props = new Object();
+	props.mode = mode;
+	props.startPosition = startPosition;
+	props.labels = {};
+	props.loop = loop;
+	props.reversed = reversed;
+	cjs.MovieClip.apply(this,[props]);
+
+	// Layer_1
+	this.shape = new cjs.Shape();
+	this.shape.graphics.f("rgba(0,0,0,0.02)").s().p("AgtAuQgTgTAAgbQAAgaATgTQAUgTAZAAQAbAAATATQATATAAAaQAAAbgTATQgTATgbAAQgZAAgUgTg");
+	this.shape.setTransform(6.5,6.5);
+
+	this.timeline.addTween(cjs.Tween.get(this.shape).wait(1));
+
+	this._renderFirstFrame();
+
+}).prototype = p = new cjs.MovieClip();
+p.nominalBounds = new cjs.Rectangle(0,0,13,13);
+
+
+(lib.J15NO10_btn = function(mode,startPosition,loop,reversed) {
+if (loop == null) { loop = true; }
+if (reversed == null) { reversed = false; }
+	var props = new Object();
+	props.mode = mode;
+	props.startPosition = startPosition;
+	props.labels = {};
+	props.loop = loop;
+	props.reversed = reversed;
+	cjs.MovieClip.apply(this,[props]);
+
+	// Layer_1
+	this.shape = new cjs.Shape();
+	this.shape.graphics.f("rgba(0,0,0,0.02)").s().p("AgtAuQgTgTAAgbQAAgaATgTQAUgTAZAAQAbAAATATQATATAAAaQAAAbgTATQgTATgbAAQgZAAgUgTg");
+	this.shape.setTransform(6.5,6.5);
+
+	this.timeline.addTween(cjs.Tween.get(this.shape).wait(1));
+
+	this._renderFirstFrame();
+
+}).prototype = p = new cjs.MovieClip();
+p.nominalBounds = new cjs.Rectangle(0,0,13,13);
+
+
+(lib.J15NO9_btn = function(mode,startPosition,loop,reversed) {
+if (loop == null) { loop = true; }
+if (reversed == null) { reversed = false; }
+	var props = new Object();
+	props.mode = mode;
+	props.startPosition = startPosition;
+	props.labels = {};
+	props.loop = loop;
+	props.reversed = reversed;
+	cjs.MovieClip.apply(this,[props]);
+
+	// Layer_1
+	this.shape = new cjs.Shape();
+	this.shape.graphics.f("rgba(0,0,0,0.02)").s().p("AgtAuQgTgTAAgbQAAgaATgTQAUgTAZAAQAbAAATATQATATAAAaQAAAbgTATQgTATgbAAQgZAAgUgTg");
+	this.shape.setTransform(6.5,6.5);
+
+	this.timeline.addTween(cjs.Tween.get(this.shape).wait(1));
+
+	this._renderFirstFrame();
+
+}).prototype = p = new cjs.MovieClip();
+p.nominalBounds = new cjs.Rectangle(0,0,13,13);
+
+
+(lib.J15NO8_btn = function(mode,startPosition,loop,reversed) {
+if (loop == null) { loop = true; }
+if (reversed == null) { reversed = false; }
+	var props = new Object();
+	props.mode = mode;
+	props.startPosition = startPosition;
+	props.labels = {};
+	props.loop = loop;
+	props.reversed = reversed;
+	cjs.MovieClip.apply(this,[props]);
+
+	// Layer_1
+	this.shape = new cjs.Shape();
+	this.shape.graphics.f("rgba(0,0,0,0.02)").s().p("AgtAuQgTgTAAgbQAAgaATgTQAUgTAZAAQAbAAATATQATATAAAaQAAAbgTATQgTATgbAAQgZAAgUgTg");
+	this.shape.setTransform(6.5,6.5);
+
+	this.timeline.addTween(cjs.Tween.get(this.shape).wait(1));
+
+	this._renderFirstFrame();
+
+}).prototype = p = new cjs.MovieClip();
+p.nominalBounds = new cjs.Rectangle(0,0,13,13);
+
+
+(lib.J15C4_btn = function(mode,startPosition,loop,reversed) {
+if (loop == null) { loop = true; }
+if (reversed == null) { reversed = false; }
+	var props = new Object();
+	props.mode = mode;
+	props.startPosition = startPosition;
+	props.labels = {};
+	props.loop = loop;
+	props.reversed = reversed;
+	cjs.MovieClip.apply(this,[props]);
+
+	// Layer_1
+	this.shape = new cjs.Shape();
+	this.shape.graphics.f("rgba(0,0,0,0.02)").s().p("AgtAuQgTgTAAgbQAAgaATgTQAUgTAZAAQAbAAATATQATATAAAaQAAAbgTATQgTATgbAAQgZAAgUgTg");
+	this.shape.setTransform(6.5,6.5);
+
+	this.timeline.addTween(cjs.Tween.get(this.shape).wait(1));
+
+	this._renderFirstFrame();
+
+}).prototype = p = new cjs.MovieClip();
+p.nominalBounds = new cjs.Rectangle(0,0,13,13);
+
+
+(lib.J14NO7_btn = function(mode,startPosition,loop,reversed) {
+if (loop == null) { loop = true; }
+if (reversed == null) { reversed = false; }
+	var props = new Object();
+	props.mode = mode;
+	props.startPosition = startPosition;
+	props.labels = {};
+	props.loop = loop;
+	props.reversed = reversed;
+	cjs.MovieClip.apply(this,[props]);
+
+	// Layer_1
+	this.shape = new cjs.Shape();
+	this.shape.graphics.f("rgba(0,0,0,0.02)").s().p("AgtAuQgTgTAAgbQAAgaATgTQAUgTAZAAQAbAAATATQATATAAAaQAAAbgTATQgTATgbAAQgZAAgUgTg");
+	this.shape.setTransform(6.5,6.5);
+
+	this.timeline.addTween(cjs.Tween.get(this.shape).wait(1));
+
+	this._renderFirstFrame();
+
+}).prototype = p = new cjs.MovieClip();
+p.nominalBounds = new cjs.Rectangle(0,0,13,13);
+
+
+(lib.J14NC7_btn = function(mode,startPosition,loop,reversed) {
+if (loop == null) { loop = true; }
+if (reversed == null) { reversed = false; }
+	var props = new Object();
+	props.mode = mode;
+	props.startPosition = startPosition;
+	props.labels = {};
+	props.loop = loop;
+	props.reversed = reversed;
+	cjs.MovieClip.apply(this,[props]);
+
+	// Layer_1
+	this.shape = new cjs.Shape();
+	this.shape.graphics.f("rgba(0,0,0,0.02)").s().p("AgtAuQgTgTAAgbQAAgaATgTQAUgTAZAAQAbAAATATQATATAAAaQAAAbgTATQgTATgbAAQgZAAgUgTg");
+	this.shape.setTransform(6.5,6.5);
+
+	this.timeline.addTween(cjs.Tween.get(this.shape).wait(1));
+
+	this._renderFirstFrame();
+
+}).prototype = p = new cjs.MovieClip();
+p.nominalBounds = new cjs.Rectangle(0,0,13,13);
+
+
+(lib.J14C3_btn = function(mode,startPosition,loop,reversed) {
+if (loop == null) { loop = true; }
+if (reversed == null) { reversed = false; }
+	var props = new Object();
+	props.mode = mode;
+	props.startPosition = startPosition;
+	props.labels = {};
+	props.loop = loop;
+	props.reversed = reversed;
+	cjs.MovieClip.apply(this,[props]);
+
+	// Layer_1
+	this.shape = new cjs.Shape();
+	this.shape.graphics.f("rgba(0,0,0,0.02)").s().p("AgtAuQgTgTAAgbQAAgaATgTQAUgTAZAAQAbAAATATQATATAAAaQAAAbgTATQgTATgbAAQgZAAgUgTg");
+	this.shape.setTransform(6.5,6.5);
+
+	this.timeline.addTween(cjs.Tween.get(this.shape).wait(1));
+
+	this._renderFirstFrame();
+
+}).prototype = p = new cjs.MovieClip();
+p.nominalBounds = new cjs.Rectangle(0,0,13,13);
+
+
+(lib.J13NO6_btn = function(mode,startPosition,loop,reversed) {
+if (loop == null) { loop = true; }
+if (reversed == null) { reversed = false; }
+	var props = new Object();
+	props.mode = mode;
+	props.startPosition = startPosition;
+	props.labels = {};
+	props.loop = loop;
+	props.reversed = reversed;
+	cjs.MovieClip.apply(this,[props]);
+
+	// Layer_1
+	this.shape = new cjs.Shape();
+	this.shape.graphics.f("rgba(0,0,0,0.02)").s().p("AgtAuQgTgTAAgbQAAgaATgTQAUgTAZAAQAbAAATATQATATAAAaQAAAbgTATQgTATgbAAQgZAAgUgTg");
+	this.shape.setTransform(6.5,6.5);
+
+	this.timeline.addTween(cjs.Tween.get(this.shape).wait(1));
+
+	this._renderFirstFrame();
+
+}).prototype = p = new cjs.MovieClip();
+p.nominalBounds = new cjs.Rectangle(0,0,13,13);
+
+
+(lib.J13NO5_btn = function(mode,startPosition,loop,reversed) {
+if (loop == null) { loop = true; }
+if (reversed == null) { reversed = false; }
+	var props = new Object();
+	props.mode = mode;
+	props.startPosition = startPosition;
+	props.labels = {};
+	props.loop = loop;
+	props.reversed = reversed;
+	cjs.MovieClip.apply(this,[props]);
+
+	// Layer_1
+	this.shape = new cjs.Shape();
+	this.shape.graphics.f("rgba(0,0,0,0.02)").s().p("AgtAuQgTgTAAgbQAAgaATgTQAUgTAZAAQAbAAATATQATATAAAaQAAAbgTATQgTATgbAAQgZAAgUgTg");
+	this.shape.setTransform(6.5,6.5);
+
+	this.timeline.addTween(cjs.Tween.get(this.shape).wait(1));
+
+	this._renderFirstFrame();
+
+}).prototype = p = new cjs.MovieClip();
+p.nominalBounds = new cjs.Rectangle(0,0,13,13);
+
+
+(lib.J13NO4_btn = function(mode,startPosition,loop,reversed) {
+if (loop == null) { loop = true; }
+if (reversed == null) { reversed = false; }
+	var props = new Object();
+	props.mode = mode;
+	props.startPosition = startPosition;
+	props.labels = {};
+	props.loop = loop;
+	props.reversed = reversed;
+	cjs.MovieClip.apply(this,[props]);
+
+	// Layer_1
+	this.shape = new cjs.Shape();
+	this.shape.graphics.f("rgba(0,0,0,0.02)").s().p("AgtAuQgTgTAAgbQAAgaATgTQAUgTAZAAQAbAAATATQATATAAAaQAAAbgTATQgTATgbAAQgZAAgUgTg");
+	this.shape.setTransform(6.5,6.5);
+
+	this.timeline.addTween(cjs.Tween.get(this.shape).wait(1));
+
+	this._renderFirstFrame();
+
+}).prototype = p = new cjs.MovieClip();
+p.nominalBounds = new cjs.Rectangle(0,0,13,13);
+
+
+(lib.J13C2_btn = function(mode,startPosition,loop,reversed) {
+if (loop == null) { loop = true; }
+if (reversed == null) { reversed = false; }
+	var props = new Object();
+	props.mode = mode;
+	props.startPosition = startPosition;
+	props.labels = {};
+	props.loop = loop;
+	props.reversed = reversed;
+	cjs.MovieClip.apply(this,[props]);
+
+	// Layer_1
+	this.shape = new cjs.Shape();
+	this.shape.graphics.f("rgba(0,0,0,0.02)").s().p("AgtAuQgTgTAAgbQAAgaATgTQAUgTAZAAQAbAAATATQATATAAAaQAAAbgTATQgTATgbAAQgZAAgUgTg");
+	this.shape.setTransform(6.5,6.5);
+
+	this.timeline.addTween(cjs.Tween.get(this.shape).wait(1));
+
+	this._renderFirstFrame();
+
+}).prototype = p = new cjs.MovieClip();
+p.nominalBounds = new cjs.Rectangle(0,0,13,13);
+
+
+(lib.J12NO3_btn = function(mode,startPosition,loop,reversed) {
+if (loop == null) { loop = true; }
+if (reversed == null) { reversed = false; }
+	var props = new Object();
+	props.mode = mode;
+	props.startPosition = startPosition;
+	props.labels = {};
+	props.loop = loop;
+	props.reversed = reversed;
+	cjs.MovieClip.apply(this,[props]);
+
+	// Layer_1
+	this.shape = new cjs.Shape();
+	this.shape.graphics.f("rgba(0,0,0,0.02)").s().p("AgtAuQgTgTAAgbQAAgaATgTQAUgTAZAAQAbAAATATQATATAAAaQAAAbgTATQgTATgbAAQgZAAgUgTg");
+	this.shape.setTransform(6.5,6.5);
+
+	this.timeline.addTween(cjs.Tween.get(this.shape).wait(1));
+
+	this._renderFirstFrame();
+
+}).prototype = p = new cjs.MovieClip();
+p.nominalBounds = new cjs.Rectangle(0,0,13,13);
+
+
+(lib.J12NO2_btn = function(mode,startPosition,loop,reversed) {
+if (loop == null) { loop = true; }
+if (reversed == null) { reversed = false; }
+	var props = new Object();
+	props.mode = mode;
+	props.startPosition = startPosition;
+	props.labels = {};
+	props.loop = loop;
+	props.reversed = reversed;
+	cjs.MovieClip.apply(this,[props]);
+
+	// Layer_1
+	this.shape = new cjs.Shape();
+	this.shape.graphics.f("rgba(0,0,0,0.02)").s().p("AgtAuQgTgTAAgbQAAgaATgTQAUgTAZAAQAbAAATATQATATAAAaQAAAbgTATQgTATgbAAQgZAAgUgTg");
+	this.shape.setTransform(6.5,6.5);
+
+	this.timeline.addTween(cjs.Tween.get(this.shape).wait(1));
+
+	this._renderFirstFrame();
+
+}).prototype = p = new cjs.MovieClip();
+p.nominalBounds = new cjs.Rectangle(0,0,13,13);
+
+
+(lib.J12NO1_btn = function(mode,startPosition,loop,reversed) {
+if (loop == null) { loop = true; }
+if (reversed == null) { reversed = false; }
+	var props = new Object();
+	props.mode = mode;
+	props.startPosition = startPosition;
+	props.labels = {};
+	props.loop = loop;
+	props.reversed = reversed;
+	cjs.MovieClip.apply(this,[props]);
+
+	// Layer_1
+	this.shape = new cjs.Shape();
+	this.shape.graphics.f("rgba(0,0,0,0.02)").s().p("AgtAuQgTgTAAgbQAAgaATgTQAUgTAZAAQAbAAATATQATATAAAaQAAAbgTATQgTATgbAAQgZAAgUgTg");
+	this.shape.setTransform(6.5,6.5);
+
+	this.timeline.addTween(cjs.Tween.get(this.shape).wait(1));
+
+	this._renderFirstFrame();
+
+}).prototype = p = new cjs.MovieClip();
+p.nominalBounds = new cjs.Rectangle(0,0,13,13);
+
+
+(lib.J12C1_btn = function(mode,startPosition,loop,reversed) {
+if (loop == null) { loop = true; }
+if (reversed == null) { reversed = false; }
+	var props = new Object();
+	props.mode = mode;
+	props.startPosition = startPosition;
+	props.labels = {};
+	props.loop = loop;
+	props.reversed = reversed;
+	cjs.MovieClip.apply(this,[props]);
+
+	// Layer_1
+	this.shape = new cjs.Shape();
+	this.shape.graphics.f("rgba(0,0,0,0.02)").s().p("AgtAuQgTgTAAgbQAAgaATgTQAUgTAZAAQAbAAATATQATATAAAaQAAAbgTATQgTATgbAAQgZAAgUgTg");
+	this.shape.setTransform(6.5,6.5);
+
+	this.timeline.addTween(cjs.Tween.get(this.shape).wait(1));
+
+	this._renderFirstFrame();
+
+}).prototype = p = new cjs.MovieClip();
+p.nominalBounds = new cjs.Rectangle(0,0,13,13);
+
+
+(lib.J10Vout_btn = function(mode,startPosition,loop,reversed) {
+if (loop == null) { loop = true; }
+if (reversed == null) { reversed = false; }
+	var props = new Object();
+	props.mode = mode;
+	props.startPosition = startPosition;
+	props.labels = {};
+	props.loop = loop;
+	props.reversed = reversed;
+	cjs.MovieClip.apply(this,[props]);
+
+	// Layer_1
+	this.shape = new cjs.Shape();
+	this.shape.graphics.f("rgba(0,0,0,0.02)").s().p("AgtAuQgTgTAAgbQAAgaATgTQAUgTAZAAQAbAAATATQATATAAAaQAAAbgTATQgTATgbAAQgZAAgUgTg");
+	this.shape.setTransform(6.5,6.5);
+
+	this.timeline.addTween(cjs.Tween.get(this.shape).wait(1));
+
+	this._renderFirstFrame();
+
+}).prototype = p = new cjs.MovieClip();
+p.nominalBounds = new cjs.Rectangle(0,0,13,13);
+
+
+(lib.J10RX1TX1_btn = function(mode,startPosition,loop,reversed) {
+if (loop == null) { loop = true; }
+if (reversed == null) { reversed = false; }
+	var props = new Object();
+	props.mode = mode;
+	props.startPosition = startPosition;
+	props.labels = {};
+	props.loop = loop;
+	props.reversed = reversed;
+	cjs.MovieClip.apply(this,[props]);
+
+	// Layer_1
+	this.shape = new cjs.Shape();
+	this.shape.graphics.f("rgba(0,0,0,0.02)").s().p("AgtAuQgTgTAAgbQAAgaATgTQAUgTAZAAQAbAAATATQATATAAAaQAAAbgTATQgTATgbAAQgZAAgUgTg");
+	this.shape.setTransform(6.5,6.5);
+
+	this.timeline.addTween(cjs.Tween.get(this.shape).wait(1));
+
+	this._renderFirstFrame();
+
+}).prototype = p = new cjs.MovieClip();
+p.nominalBounds = new cjs.Rectangle(0,0,13,13);
+
+
+(lib.J10RX0TX0_btn = function(mode,startPosition,loop,reversed) {
+if (loop == null) { loop = true; }
+if (reversed == null) { reversed = false; }
+	var props = new Object();
+	props.mode = mode;
+	props.startPosition = startPosition;
+	props.labels = {};
+	props.loop = loop;
+	props.reversed = reversed;
+	cjs.MovieClip.apply(this,[props]);
+
+	// Layer_1
+	this.shape = new cjs.Shape();
+	this.shape.graphics.f("rgba(0,0,0,0.02)").s().p("AgtAuQgTgTAAgbQAAgaATgTQAUgTAZAAQAbAAATATQATATAAAaQAAAbgTATQgTATgbAAQgZAAgUgTg");
+	this.shape.setTransform(6.5,6.5);
+
+	this.timeline.addTween(cjs.Tween.get(this.shape).wait(1));
+
+	this._renderFirstFrame();
+
+}).prototype = p = new cjs.MovieClip();
+p.nominalBounds = new cjs.Rectangle(0,0,13,13);
+
+
+(lib.J10GND_btn = function(mode,startPosition,loop,reversed) {
+if (loop == null) { loop = true; }
+if (reversed == null) { reversed = false; }
+	var props = new Object();
+	props.mode = mode;
+	props.startPosition = startPosition;
+	props.labels = {};
+	props.loop = loop;
+	props.reversed = reversed;
+	cjs.MovieClip.apply(this,[props]);
+
+	// Layer_1
+	this.shape = new cjs.Shape();
+	this.shape.graphics.f("rgba(0,0,0,0.02)").s().p("AgtAuQgTgTAAgbQAAgaATgTQAUgTAZAAQAbAAATATQATATAAAaQAAAbgTATQgTATgbAAQgZAAgUgTg");
+	this.shape.setTransform(6.5,6.5);
+
+	this.timeline.addTween(cjs.Tween.get(this.shape).wait(1));
+
+	this._renderFirstFrame();
+
+}).prototype = p = new cjs.MovieClip();
+p.nominalBounds = new cjs.Rectangle(0,0,13,13);
+
+
+(lib.J8RX1TX1_btn = function(mode,startPosition,loop,reversed) {
+if (loop == null) { loop = true; }
+if (reversed == null) { reversed = false; }
+	var props = new Object();
+	props.mode = mode;
+	props.startPosition = startPosition;
+	props.labels = {};
+	props.loop = loop;
+	props.reversed = reversed;
+	cjs.MovieClip.apply(this,[props]);
+
+	// Layer_1
+	this.shape = new cjs.Shape();
+	this.shape.graphics.f("rgba(0,0,0,0.02)").s().p("AgtAuQgTgTAAgbQAAgaATgTQAUgTAZAAQAbAAATATQATATAAAaQAAAbgTATQgTATgbAAQgZAAgUgTg");
+	this.shape.setTransform(6.5,6.5);
+
+	this.timeline.addTween(cjs.Tween.get(this.shape).wait(1));
+
+	this._renderFirstFrame();
+
+}).prototype = p = new cjs.MovieClip();
+p.nominalBounds = new cjs.Rectangle(0,0,13,13);
+
+
+(lib.J8RX0TX0_btn = function(mode,startPosition,loop,reversed) {
+if (loop == null) { loop = true; }
+if (reversed == null) { reversed = false; }
+	var props = new Object();
+	props.mode = mode;
+	props.startPosition = startPosition;
+	props.labels = {};
+	props.loop = loop;
+	props.reversed = reversed;
+	cjs.MovieClip.apply(this,[props]);
+
+	// Layer_1
+	this.shape = new cjs.Shape();
+	this.shape.graphics.f("rgba(0,0,0,0.02)").s().p("AgtAuQgTgTAAgbQAAgaATgTQAUgTAZAAQAbAAATATQATATAAAaQAAAbgTATQgTATgbAAQgZAAgUgTg");
+	this.shape.setTransform(6.5,6.5);
+
+	this.timeline.addTween(cjs.Tween.get(this.shape).wait(1));
+
+	this._renderFirstFrame();
+
+}).prototype = p = new cjs.MovieClip();
+p.nominalBounds = new cjs.Rectangle(0,0,13,13);
+
+
+(lib.J8GND_btn = function(mode,startPosition,loop,reversed) {
+if (loop == null) { loop = true; }
+if (reversed == null) { reversed = false; }
+	var props = new Object();
+	props.mode = mode;
+	props.startPosition = startPosition;
+	props.labels = {};
+	props.loop = loop;
+	props.reversed = reversed;
+	cjs.MovieClip.apply(this,[props]);
+
+	// Layer_1
+	this.shape = new cjs.Shape();
+	this.shape.graphics.f("rgba(0,0,0,0.02)").s().p("AgtAuQgTgTAAgbQAAgaATgTQAUgTAZAAQAbAAATATQATATAAAaQAAAbgTATQgTATgbAAQgZAAgUgTg");
+	this.shape.setTransform(6.5,6.5);
+
+	this.timeline.addTween(cjs.Tween.get(this.shape).wait(1));
+
+	this._renderFirstFrame();
+
+}).prototype = p = new cjs.MovieClip();
+p.nominalBounds = new cjs.Rectangle(0,0,13,13);
+
+
+(lib.J5Y4_btn = function(mode,startPosition,loop,reversed) {
+if (loop == null) { loop = true; }
+if (reversed == null) { reversed = false; }
+	var props = new Object();
+	props.mode = mode;
+	props.startPosition = startPosition;
+	props.labels = {};
+	props.loop = loop;
+	props.reversed = reversed;
+	cjs.MovieClip.apply(this,[props]);
+
+	// Layer_1
+	this.shape = new cjs.Shape();
+	this.shape.graphics.f("rgba(0,0,0,0.02)").s().p("AgtAuQgTgTAAgbQAAgaATgTQAUgTAZAAQAbAAATATQATATAAAaQAAAbgTATQgTATgbAAQgZAAgUgTg");
+	this.shape.setTransform(6.5,6.5);
+
+	this.timeline.addTween(cjs.Tween.get(this.shape).wait(1));
+
+	this._renderFirstFrame();
+
+}).prototype = p = new cjs.MovieClip();
+p.nominalBounds = new cjs.Rectangle(0,0,13,13);
+
+
+(lib.J5Y3_btn = function(mode,startPosition,loop,reversed) {
+if (loop == null) { loop = true; }
+if (reversed == null) { reversed = false; }
+	var props = new Object();
+	props.mode = mode;
+	props.startPosition = startPosition;
+	props.labels = {};
+	props.loop = loop;
+	props.reversed = reversed;
+	cjs.MovieClip.apply(this,[props]);
+
+	// Layer_1
+	this.shape = new cjs.Shape();
+	this.shape.graphics.f("rgba(0,0,0,0.02)").s().p("AgtAuQgTgTAAgbQAAgaATgTQAUgTAZAAQAbAAATATQATATAAAaQAAAbgTATQgTATgbAAQgZAAgUgTg");
+	this.shape.setTransform(6.5,6.5);
+
+	this.timeline.addTween(cjs.Tween.get(this.shape).wait(1));
+
+	this._renderFirstFrame();
+
+}).prototype = p = new cjs.MovieClip();
+p.nominalBounds = new cjs.Rectangle(0,0,13,13);
+
+
+(lib.J5Y2_btn = function(mode,startPosition,loop,reversed) {
+if (loop == null) { loop = true; }
+if (reversed == null) { reversed = false; }
+	var props = new Object();
+	props.mode = mode;
+	props.startPosition = startPosition;
+	props.labels = {};
+	props.loop = loop;
+	props.reversed = reversed;
+	cjs.MovieClip.apply(this,[props]);
+
+	// Layer_1
+	this.shape = new cjs.Shape();
+	this.shape.graphics.f("rgba(0,0,0,0.02)").s().p("AgtAuQgTgTAAgbQAAgaATgTQAUgTAZAAQAbAAATATQATATAAAaQAAAbgTATQgTATgbAAQgZAAgUgTg");
+	this.shape.setTransform(6.5,6.5);
+
+	this.timeline.addTween(cjs.Tween.get(this.shape).wait(1));
+
+	this._renderFirstFrame();
+
+}).prototype = p = new cjs.MovieClip();
+p.nominalBounds = new cjs.Rectangle(0,0,13,13);
+
+
+(lib.J5Y1_btn = function(mode,startPosition,loop,reversed) {
+if (loop == null) { loop = true; }
+if (reversed == null) { reversed = false; }
+	var props = new Object();
+	props.mode = mode;
+	props.startPosition = startPosition;
+	props.labels = {};
+	props.loop = loop;
+	props.reversed = reversed;
+	cjs.MovieClip.apply(this,[props]);
+
+	// Layer_1
+	this.shape = new cjs.Shape();
+	this.shape.graphics.f("rgba(0,0,0,0.02)").s().p("AgtAuQgTgTAAgbQAAgaATgTQAUgTAZAAQAbAAATATQATATAAAaQAAAbgTATQgTATgbAAQgZAAgUgTg");
+	this.shape.setTransform(6.5,6.5);
+
+	this.timeline.addTween(cjs.Tween.get(this.shape).wait(1));
+
+	this._renderFirstFrame();
+
+}).prototype = p = new cjs.MovieClip();
+p.nominalBounds = new cjs.Rectangle(0,0,13,13);
+
+
+(lib.J5GND_btn = function(mode,startPosition,loop,reversed) {
+if (loop == null) { loop = true; }
+if (reversed == null) { reversed = false; }
+	var props = new Object();
+	props.mode = mode;
+	props.startPosition = startPosition;
+	props.labels = {};
+	props.loop = loop;
+	props.reversed = reversed;
+	cjs.MovieClip.apply(this,[props]);
+
+	// Layer_1
+	this.shape = new cjs.Shape();
+	this.shape.graphics.f("rgba(0,0,0,0.02)").s().p("AgtAuQgTgTAAgbQAAgaATgTQAUgTAZAAQAbAAATATQATATAAAaQAAAbgTATQgTATgbAAQgZAAgUgTg");
+	this.shape.setTransform(6.5,6.5);
+
+	this.timeline.addTween(cjs.Tween.get(this.shape).wait(1));
+
+	this._renderFirstFrame();
+
+}).prototype = p = new cjs.MovieClip();
+p.nominalBounds = new cjs.Rectangle(0,0,13,13);
+
+
+(lib.J4DIC1_btn = function(mode,startPosition,loop,reversed) {
+if (loop == null) { loop = true; }
+if (reversed == null) { reversed = false; }
+	var props = new Object();
+	props.mode = mode;
+	props.startPosition = startPosition;
+	props.labels = {};
+	props.loop = loop;
+	props.reversed = reversed;
+	cjs.MovieClip.apply(this,[props]);
+
+	// Layer_1
+	this.shape = new cjs.Shape();
+	this.shape.graphics.f("rgba(0,0,0,0.02)").s().p("AgtAuQgTgTAAgbQAAgaATgTQAUgTAZAAQAbAAATATQATATAAAaQAAAbgTATQgTATgbAAQgZAAgUgTg");
+	this.shape.setTransform(6.5,6.5);
+
+	this.timeline.addTween(cjs.Tween.get(this.shape).wait(1));
+
+	this._renderFirstFrame();
+
+}).prototype = p = new cjs.MovieClip();
+p.nominalBounds = new cjs.Rectangle(0,0,13,13);
+
+
+(lib.J4DI7_btn = function(mode,startPosition,loop,reversed) {
+if (loop == null) { loop = true; }
+if (reversed == null) { reversed = false; }
+	var props = new Object();
+	props.mode = mode;
+	props.startPosition = startPosition;
+	props.labels = {};
+	props.loop = loop;
+	props.reversed = reversed;
+	cjs.MovieClip.apply(this,[props]);
+
+	// Layer_1
+	this.shape = new cjs.Shape();
+	this.shape.graphics.f("rgba(0,0,0,0.02)").s().p("AgtAuQgTgTAAgbQAAgaATgTQAUgTAZAAQAbAAATATQATATAAAaQAAAbgTATQgTATgbAAQgZAAgUgTg");
+	this.shape.setTransform(6.5,6.5);
+
+	this.timeline.addTween(cjs.Tween.get(this.shape).wait(1));
+
+	this._renderFirstFrame();
+
+}).prototype = p = new cjs.MovieClip();
+p.nominalBounds = new cjs.Rectangle(0,0,13,13);
+
+
+(lib.J4DI6_btn = function(mode,startPosition,loop,reversed) {
+if (loop == null) { loop = true; }
+if (reversed == null) { reversed = false; }
+	var props = new Object();
+	props.mode = mode;
+	props.startPosition = startPosition;
+	props.labels = {};
+	props.loop = loop;
+	props.reversed = reversed;
+	cjs.MovieClip.apply(this,[props]);
+
+	// Layer_1
+	this.shape = new cjs.Shape();
+	this.shape.graphics.f("rgba(0,0,0,0.02)").s().p("AgtAuQgTgTAAgbQAAgaATgTQAUgTAZAAQAbAAATATQATATAAAaQAAAbgTATQgTATgbAAQgZAAgUgTg");
+	this.shape.setTransform(6.5,6.5);
+
+	this.timeline.addTween(cjs.Tween.get(this.shape).wait(1));
+
+	this._renderFirstFrame();
+
+}).prototype = p = new cjs.MovieClip();
+p.nominalBounds = new cjs.Rectangle(0,0,13,13);
+
+
+(lib.J4DI5_btn = function(mode,startPosition,loop,reversed) {
+if (loop == null) { loop = true; }
+if (reversed == null) { reversed = false; }
+	var props = new Object();
+	props.mode = mode;
+	props.startPosition = startPosition;
+	props.labels = {};
+	props.loop = loop;
+	props.reversed = reversed;
+	cjs.MovieClip.apply(this,[props]);
+
+	// Layer_1
+	this.shape = new cjs.Shape();
+	this.shape.graphics.f("rgba(0,0,0,0.02)").s().p("AgtAuQgTgTAAgbQAAgaATgTQAUgTAZAAQAbAAATATQATATAAAaQAAAbgTATQgTATgbAAQgZAAgUgTg");
+	this.shape.setTransform(6.5,6.5);
+
+	this.timeline.addTween(cjs.Tween.get(this.shape).wait(1));
+
+	this._renderFirstFrame();
+
+}).prototype = p = new cjs.MovieClip();
+p.nominalBounds = new cjs.Rectangle(0,0,13,13);
+
+
+(lib.J4DI4_btn = function(mode,startPosition,loop,reversed) {
+if (loop == null) { loop = true; }
+if (reversed == null) { reversed = false; }
+	var props = new Object();
+	props.mode = mode;
+	props.startPosition = startPosition;
+	props.labels = {};
+	props.loop = loop;
+	props.reversed = reversed;
+	cjs.MovieClip.apply(this,[props]);
+
+	// Layer_1
+	this.shape = new cjs.Shape();
+	this.shape.graphics.f("rgba(0,0,0,0.02)").s().p("AgtAuQgTgTAAgbQAAgaATgTQAUgTAZAAQAbAAATATQATATAAAaQAAAbgTATQgTATgbAAQgZAAgUgTg");
+	this.shape.setTransform(6.5,6.5);
+
+	this.timeline.addTween(cjs.Tween.get(this.shape).wait(1));
+
+	this._renderFirstFrame();
+
+}).prototype = p = new cjs.MovieClip();
+p.nominalBounds = new cjs.Rectangle(0,0,13,13);
+
+
+(lib.J4DI3_btn = function(mode,startPosition,loop,reversed) {
+if (loop == null) { loop = true; }
+if (reversed == null) { reversed = false; }
+	var props = new Object();
+	props.mode = mode;
+	props.startPosition = startPosition;
+	props.labels = {};
+	props.loop = loop;
+	props.reversed = reversed;
+	cjs.MovieClip.apply(this,[props]);
+
+	// Layer_1
+	this.shape = new cjs.Shape();
+	this.shape.graphics.f("rgba(0,0,0,0.02)").s().p("AgtAuQgTgTAAgbQAAgaATgTQAUgTAZAAQAbAAATATQATATAAAaQAAAbgTATQgTATgbAAQgZAAgUgTg");
+	this.shape.setTransform(6.5,6.5);
+
+	this.timeline.addTween(cjs.Tween.get(this.shape).wait(1));
+
+	this._renderFirstFrame();
+
+}).prototype = p = new cjs.MovieClip();
+p.nominalBounds = new cjs.Rectangle(0,0,13,13);
+
+
+(lib.J4DI2_btn = function(mode,startPosition,loop,reversed) {
+if (loop == null) { loop = true; }
+if (reversed == null) { reversed = false; }
+	var props = new Object();
+	props.mode = mode;
+	props.startPosition = startPosition;
+	props.labels = {};
+	props.loop = loop;
+	props.reversed = reversed;
+	cjs.MovieClip.apply(this,[props]);
+
+	// Layer_1
+	this.shape = new cjs.Shape();
+	this.shape.graphics.f("rgba(0,0,0,0.02)").s().p("AgtAuQgTgTAAgbQAAgaATgTQAUgTAZAAQAbAAATATQATATAAAaQAAAbgTATQgTATgbAAQgZAAgUgTg");
+	this.shape.setTransform(6.5,6.5);
+
+	this.timeline.addTween(cjs.Tween.get(this.shape).wait(1));
+
+	this._renderFirstFrame();
+
+}).prototype = p = new cjs.MovieClip();
+p.nominalBounds = new cjs.Rectangle(0,0,13,13);
+
+
+(lib.J4DI1_btn = function(mode,startPosition,loop,reversed) {
+if (loop == null) { loop = true; }
+if (reversed == null) { reversed = false; }
+	var props = new Object();
+	props.mode = mode;
+	props.startPosition = startPosition;
+	props.labels = {};
+	props.loop = loop;
+	props.reversed = reversed;
+	cjs.MovieClip.apply(this,[props]);
+
+	// Layer_1
+	this.shape = new cjs.Shape();
+	this.shape.graphics.f("rgba(0,0,0,0.02)").s().p("AgtAuQgTgTAAgbQAAgaATgTQAUgTAZAAQAbAAATATQATATAAAaQAAAbgTATQgTATgbAAQgZAAgUgTg");
+	this.shape.setTransform(6.5,6.5);
+
+	this.timeline.addTween(cjs.Tween.get(this.shape).wait(1));
+
+	this._renderFirstFrame();
+
+}).prototype = p = new cjs.MovieClip();
+p.nominalBounds = new cjs.Rectangle(0,0,13,13);
+
+
 (lib.J1G0_btn = function(mode,startPosition,loop,reversed) {
 if (loop == null) { loop = true; }
 if (reversed == null) { reversed = false; }
@@ -3211,7 +4339,7 @@ if (reversed == null) { reversed = false; }
 p.nominalBounds = new cjs.Rectangle(-6.5,-6.5,13,13);
 
 
-(lib.GNDJ3 = function(mode,startPosition,loop,reversed) {
+(lib.GNDJ3_btn = function(mode,startPosition,loop,reversed) {
 if (loop == null) { loop = true; }
 if (reversed == null) { reversed = false; }
 	var props = new Object();
@@ -3235,7 +4363,7 @@ if (reversed == null) { reversed = false; }
 p.nominalBounds = new cjs.Rectangle(0,0,13,13);
 
 
-(lib.GNDJ2 = function(mode,startPosition,loop,reversed) {
+(lib.gndJ2_btn = function(mode,startPosition,loop,reversed) {
 if (loop == null) { loop = true; }
 if (reversed == null) { reversed = false; }
 	var props = new Object();
@@ -3310,7 +4438,7 @@ if (reversed == null) { reversed = false; }
 
 	// base
 	this.shape = new cjs.Shape();
-	var sprImg_shape = cjs.SpriteSheetUtils.extractFrame(ss["app_atlas_3"],3);
+	var sprImg_shape = cjs.SpriteSheetUtils.extractFrame(ss["app_atlas_1"],3);
 	sprImg_shape.onload = function(){
 		this.shape.graphics.bf(sprImg_shape, null, new cjs.Matrix2D(1,0,0,1,-64.3,-135.9)).s().p("AhdCoQg8ioADinIEuAAIAAFPg")
 	}.bind(this);
@@ -3337,7 +4465,7 @@ if (reversed == null) { reversed = false; }
 
 	// base
 	this.shape = new cjs.Shape();
-	var sprImg_shape = cjs.SpriteSheetUtils.extractFrame(ss["app_atlas_3"],3);
+	var sprImg_shape = cjs.SpriteSheetUtils.extractFrame(ss["app_atlas_1"],3);
 	sprImg_shape.onload = function(){
 		this.shape.graphics.bf(sprImg_shape, null, new cjs.Matrix2D(1,0,0,1,-303.5,-98.9)).s().p("AiWCvIAAldIEtAAIAAFdg")
 	}.bind(this);
@@ -3565,7 +4693,7 @@ if (reversed == null) { reversed = false; }
 
 	// base
 	this.shape = new cjs.Shape();
-	var sprImg_shape = cjs.SpriteSheetUtils.extractFrame(ss["app_atlas_3"],3);
+	var sprImg_shape = cjs.SpriteSheetUtils.extractFrame(ss["app_atlas_1"],3);
 	sprImg_shape.onload = function(){
 		this.shape.graphics.bf(sprImg_shape, null, new cjs.Matrix2D(1,0,0,1,-303.5,-62.2)).s().p("AiXCmIAAlLID2AAQA7ClgDCmg")
 	}.bind(this);
@@ -3660,7 +4788,7 @@ if (reversed == null) { reversed = false; }
 
 	// base
 	this.shape = new cjs.Shape();
-	var sprImg_shape = cjs.SpriteSheetUtils.extractFrame(ss["app_atlas_3"],3);
+	var sprImg_shape = cjs.SpriteSheetUtils.extractFrame(ss["app_atlas_1"],3);
 	sprImg_shape.onload = function(){
 		this.shape.graphics.bf(sprImg_shape, null, new cjs.Matrix2D(1,0,0,1,-303.5,-136.3)).s().p("AiXCsIAAlXIEuAAQADCng8CoIgDAIg")
 	}.bind(this);
@@ -3674,7 +4802,7 @@ if (reversed == null) { reversed = false; }
 p.nominalBounds = new cjs.Rectangle(-15.1,-17.2,30.299999999999997,34.4);
 
 
-(lib.B7J3 = function(mode,startPosition,loop,reversed) {
+(lib.B7J3_btn = function(mode,startPosition,loop,reversed) {
 if (loop == null) { loop = true; }
 if (reversed == null) { reversed = false; }
 	var props = new Object();
@@ -3698,7 +4826,7 @@ if (reversed == null) { reversed = false; }
 p.nominalBounds = new cjs.Rectangle(0,0,13,13);
 
 
-(lib.B6J3 = function(mode,startPosition,loop,reversed) {
+(lib.B6J3_btn = function(mode,startPosition,loop,reversed) {
 if (loop == null) { loop = true; }
 if (reversed == null) { reversed = false; }
 	var props = new Object();
@@ -3722,7 +4850,7 @@ if (reversed == null) { reversed = false; }
 p.nominalBounds = new cjs.Rectangle(0,0,13,13);
 
 
-(lib.B5J3 = function(mode,startPosition,loop,reversed) {
+(lib.B5J3_btn = function(mode,startPosition,loop,reversed) {
 if (loop == null) { loop = true; }
 if (reversed == null) { reversed = false; }
 	var props = new Object();
@@ -3746,7 +4874,7 @@ if (reversed == null) { reversed = false; }
 p.nominalBounds = new cjs.Rectangle(0,0,13,13);
 
 
-(lib.B4J3 = function(mode,startPosition,loop,reversed) {
+(lib.B4J3_btn = function(mode,startPosition,loop,reversed) {
 if (loop == null) { loop = true; }
 if (reversed == null) { reversed = false; }
 	var props = new Object();
@@ -3770,7 +4898,7 @@ if (reversed == null) { reversed = false; }
 p.nominalBounds = new cjs.Rectangle(0,0,13,13);
 
 
-(lib.B3J3 = function(mode,startPosition,loop,reversed) {
+(lib.B3J3_btn = function(mode,startPosition,loop,reversed) {
 if (loop == null) { loop = true; }
 if (reversed == null) { reversed = false; }
 	var props = new Object();
@@ -3794,7 +4922,7 @@ if (reversed == null) { reversed = false; }
 p.nominalBounds = new cjs.Rectangle(0,0,13,13);
 
 
-(lib.B2J3 = function(mode,startPosition,loop,reversed) {
+(lib.B2J3_btn = function(mode,startPosition,loop,reversed) {
 if (loop == null) { loop = true; }
 if (reversed == null) { reversed = false; }
 	var props = new Object();
@@ -3818,7 +4946,7 @@ if (reversed == null) { reversed = false; }
 p.nominalBounds = new cjs.Rectangle(0,0,13,13);
 
 
-(lib.B1J3 = function(mode,startPosition,loop,reversed) {
+(lib.B1J3_btn = function(mode,startPosition,loop,reversed) {
 if (loop == null) { loop = true; }
 if (reversed == null) { reversed = false; }
 	var props = new Object();
@@ -3855,7 +4983,7 @@ if (reversed == null) { reversed = false; }
 
 	// Layer_1
 	this.shape = new cjs.Shape();
-	var sprImg_shape = cjs.SpriteSheetUtils.extractFrame(ss["app_atlas_3"],3);
+	var sprImg_shape = cjs.SpriteSheetUtils.extractFrame(ss["app_atlas_1"],3);
 	sprImg_shape.onload = function(){
 		this.shape.graphics.bf(sprImg_shape, null, new cjs.Matrix2D(1,0,0,1,-64.3,-61.7)).s().p("AiWCrQgDirA+iqIDzAAIAAFVg")
 	}.bind(this);
@@ -3936,16 +5064,17 @@ if (reversed == null) { reversed = false; }
 	cjs.MovieClip.apply(this,[props]);
 
 	// ponta_vermelha
-	this.ponta_vermelha_final_mc = new lib.ponta_vermelha_final_mc();
-	this.ponta_vermelha_final_mc.name = "ponta_vermelha_final_mc";
-	this.ponta_vermelha_final_mc.setTransform(854.95,288.25,1,1,-105.0002);
-	this.ponta_vermelha_final_mc.visible = false;
-
 	this.ponta_vermelha_inicial_mc = new lib.ponta_vermelha_inicial_mc();
 	this.ponta_vermelha_inicial_mc.name = "ponta_vermelha_inicial_mc";
 	this.ponta_vermelha_inicial_mc.setTransform(1573,880);
 
-	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.ponta_vermelha_inicial_mc},{t:this.ponta_vermelha_final_mc}]}).to({state:[{t:this.ponta_vermelha_inicial_mc},{t:this.ponta_vermelha_final_mc}]},1).to({state:[{t:this.ponta_vermelha_inicial_mc},{t:this.ponta_vermelha_final_mc}]},1).to({state:[{t:this.ponta_vermelha_inicial_mc},{t:this.ponta_vermelha_final_mc}]},1).to({state:[{t:this.ponta_vermelha_inicial_mc},{t:this.ponta_vermelha_final_mc}]},1).to({state:[{t:this.ponta_vermelha_inicial_mc},{t:this.ponta_vermelha_final_mc}]},1).wait(1));
+	this.ponta_vermelha_final_mc = new lib.ponta_vermelha_final_mc();
+	this.ponta_vermelha_final_mc.name = "ponta_vermelha_final_mc";
+	this.ponta_vermelha_final_mc.setTransform(859.55,324.55,1,1,-90.0009,0,0,-0.1,0.1);
+	this.ponta_vermelha_final_mc.visible = false;
+
+	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.ponta_vermelha_inicial_mc}]}).to({state:[{t:this.ponta_vermelha_inicial_mc},{t:this.ponta_vermelha_final_mc}]},1).to({state:[{t:this.ponta_vermelha_inicial_mc}]},1).to({state:[{t:this.ponta_vermelha_inicial_mc}]},1).to({state:[{t:this.ponta_vermelha_inicial_mc}]},1).to({state:[{t:this.ponta_vermelha_inicial_mc}]},1).wait(1));
+	this.timeline.addTween(cjs.Tween.get(this.ponta_vermelha_inicial_mc).wait(6));
 
 	this._renderFirstFrame();
 
@@ -3971,11 +5100,12 @@ if (reversed == null) { reversed = false; }
 
 	this.ponta_preta_final_mc = new lib.ponta_preta_final_mc();
 	this.ponta_preta_final_mc.name = "ponta_preta_final_mc";
-	this.ponta_preta_final_mc.setTransform(815.2,440.15,1,1,-45);
+	this.ponta_preta_final_mc.setTransform(577.4,337.6,1,1,90);
 	this.ponta_preta_final_mc.visible = false;
 	new cjs.ButtonHelper(this.ponta_preta_final_mc, 0, 1, 1);
 
-	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.ponta_preta_final_mc},{t:this.ponta_preta_inicial_mc}]}).to({state:[{t:this.ponta_preta_final_mc},{t:this.ponta_preta_inicial_mc}]},1).to({state:[{t:this.ponta_preta_final_mc},{t:this.ponta_preta_inicial_mc}]},1).to({state:[{t:this.ponta_preta_final_mc},{t:this.ponta_preta_inicial_mc}]},1).to({state:[{t:this.ponta_preta_final_mc},{t:this.ponta_preta_inicial_mc}]},1).to({state:[{t:this.ponta_preta_final_mc},{t:this.ponta_preta_inicial_mc}]},1).wait(1));
+	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.ponta_preta_inicial_mc}]}).to({state:[{t:this.ponta_preta_final_mc},{t:this.ponta_preta_inicial_mc}]},1).to({state:[{t:this.ponta_preta_inicial_mc}]},1).to({state:[{t:this.ponta_preta_inicial_mc}]},1).to({state:[{t:this.ponta_preta_inicial_mc}]},1).to({state:[{t:this.ponta_preta_inicial_mc}]},1).wait(1));
+	this.timeline.addTween(cjs.Tween.get(this.ponta_preta_inicial_mc).wait(6));
 
 	this._renderFirstFrame();
 
@@ -4164,7 +5294,7 @@ if (reversed == null) { reversed = false; }
 	new cjs.ButtonHelper(this.alarme_btn, 0, 1, 2, false, new lib.alarme_btn(), 3);
 
 	this.shape = new cjs.Shape();
-	var sprImg_shape = cjs.SpriteSheetUtils.extractFrame(ss["app_atlas_3"],3);
+	var sprImg_shape = cjs.SpriteSheetUtils.extractFrame(ss["app_atlas_1"],3);
 	sprImg_shape.onload = function(){
 		this.shape.graphics.bf(sprImg_shape, null, new cjs.Matrix2D(1,0,0,1,-183.5,-100)).s().p("A8qPoIAA/PMA5VAAAIAAfPgAQYIXIDzAAIAEgJQA7ingCioIkwAAgA0FIOID1AAIAAlPIkuAAQgDCoA8CngAtKm0IAAMjQAAAVAUAAIZ1AAQAUAAAAgVIAAsjQAAgTgUAAI51AAQgUAAAAATgAQYCkIEwAAIAAlcIkwAAgA0+CkIEuAAIAAlcIkuAAgAQYjTIEwAAQACimg6inIj4AAgA0+jTIEuAAIAAlXIjzAAQg/CsAECrg")
 	}.bind(this);
@@ -4189,297 +5319,297 @@ if (reversed == null) { reversed = false; }
 	cjs.MovieClip.apply(this,[props]);
 
 	// contactos_placa
-	this.Vref5J2 = new lib.Vref5J2();
+	this.Vref5J2 = new lib.Vref5J2_btn();
 	this.Vref5J2.name = "Vref5J2";
 	this.Vref5J2.setTransform(1050.8,991.9,0.8657,0.8657,0,0,0,6.5,6.5);
 	new cjs.ButtonHelper(this.Vref5J2, 0, 1, 1);
 
-	this.Vref5J2_1 = new lib.Vref5J2();
+	this.Vref5J2_1 = new lib.Vref5J2_btn();
 	this.Vref5J2_1.name = "Vref5J2_1";
 	this.Vref5J2_1.setTransform(1050.95,974.4,0.8657,0.8657,0,0,0,6.5,6.5);
 	new cjs.ButtonHelper(this.Vref5J2_1, 0, 1, 1);
 
-	this.Vref5J2_2 = new lib.Vref5J2();
+	this.Vref5J2_2 = new lib.Vref5J2_btn();
 	this.Vref5J2_2.name = "Vref5J2_2";
 	this.Vref5J2_2.setTransform(1050.8,957.4,0.8657,0.8657,0,0,0,6.5,6.5);
 	new cjs.ButtonHelper(this.Vref5J2_2, 0, 1, 1);
 
-	this.gndJ2 = new lib.GNDJ2();
+	this.gndJ2 = new lib.gndJ2_btn();
 	this.gndJ2.name = "gndJ2";
 	this.gndJ2.setTransform(1051.2,940.4,0.8657,0.8657,0,0,0,6.6,6.5);
 	new cjs.ButtonHelper(this.gndJ2, 0, 1, 1);
 
-	this.VdcJ2 = new lib.VdcJ2();
+	this.VdcJ2 = new lib.VdcJ2_btn();
 	this.VdcJ2.name = "VdcJ2";
 	this.VdcJ2.setTransform(1051.05,922.85,0.8657,0.8657,0,0,0,6.6,6.5);
 	new cjs.ButtonHelper(this.VdcJ2, 0, 1, 1);
 
-	this.Vref5J2_3 = new lib.Vref5J2();
+	this.Vref5J2_3 = new lib.Vref5J2_btn();
 	this.Vref5J2_3.name = "Vref5J2_3";
 	this.Vref5J2_3.setTransform(1050.8,905.95,0.8657,0.8657,0,0,0,6.5,6.5);
 	new cjs.ButtonHelper(this.Vref5J2_3, 0, 1, 1);
 
-	this.Vref5J2_4 = new lib.Vref5J2();
+	this.Vref5J2_4 = new lib.Vref5J2_btn();
 	this.Vref5J2_4.name = "Vref5J2_4";
 	this.Vref5J2_4.setTransform(1051.9,796.15,0.8657,0.8657,0,0,0,6.5,6.5);
 	new cjs.ButtonHelper(this.Vref5J2_4, 0, 1, 1);
 
-	this.gndJ2_1 = new lib.GNDJ2();
+	this.gndJ2_1 = new lib.gndJ2_btn();
 	this.gndJ2_1.name = "gndJ2_1";
 	this.gndJ2_1.setTransform(1051.8,779.25,0.8657,0.8657,0,0,0,6.6,6.5);
 	new cjs.ButtonHelper(this.gndJ2_1, 0, 1, 1);
 
-	this.VdcJ2_1 = new lib.VdcJ2();
+	this.VdcJ2_1 = new lib.VdcJ2_btn();
 	this.VdcJ2_1.name = "VdcJ2_1";
 	this.VdcJ2_1.setTransform(1051.65,762.5,0.8657,0.8657,0,0,0,6.6,6.5);
 	new cjs.ButtonHelper(this.VdcJ2_1, 0, 1, 1);
 
-	this.Vref5J2_5 = new lib.Vref5J2();
+	this.Vref5J2_5 = new lib.Vref5J2_btn();
 	this.Vref5J2_5.name = "Vref5J2_5";
 	this.Vref5J2_5.setTransform(1052,707.45,0.8657,0.8657,0,0,0,6.5,6.5);
 	new cjs.ButtonHelper(this.Vref5J2_5, 0, 1, 1);
 
-	this.Vref5J2_6 = new lib.Vref5J2();
+	this.Vref5J2_6 = new lib.Vref5J2_btn();
 	this.Vref5J2_6.name = "Vref5J2_6";
 	this.Vref5J2_6.setTransform(1051.85,691.25,0.8657,0.8657,0,0,0,6.5,6.5);
 	new cjs.ButtonHelper(this.Vref5J2_6, 0, 1, 1);
 
-	this.gndJ2_2 = new lib.GNDJ2();
+	this.gndJ2_2 = new lib.gndJ2_btn();
 	this.gndJ2_2.name = "gndJ2_2";
 	this.gndJ2_2.setTransform(1051.75,674.35,0.8657,0.8657,0,0,0,6.6,6.5);
 	new cjs.ButtonHelper(this.gndJ2_2, 0, 1, 1);
 
-	this.VdcJ2_2 = new lib.VdcJ2();
+	this.VdcJ2_2 = new lib.VdcJ2_btn();
 	this.VdcJ2_2.name = "VdcJ2_2";
 	this.VdcJ2_2.setTransform(1051.6,657.6,0.8657,0.8657,0,0,0,6.6,6.5);
 	new cjs.ButtonHelper(this.VdcJ2_2, 0, 1, 1);
 
-	this.Vref5J2_7 = new lib.Vref5J2();
+	this.Vref5J2_7 = new lib.Vref5J2_btn();
 	this.Vref5J2_7.name = "Vref5J2_7";
 	this.Vref5J2_7.setTransform(1051.75,611.75,0.8657,0.8657,0,0,0,6.5,6.5);
 	new cjs.ButtonHelper(this.Vref5J2_7, 0, 1, 1);
 
-	this.Vref5J2_8 = new lib.Vref5J2();
+	this.Vref5J2_8 = new lib.Vref5J2_btn();
 	this.Vref5J2_8.name = "Vref5J2_8";
 	this.Vref5J2_8.setTransform(1051.6,595.55,0.8657,0.8657,0,0,0,6.5,6.5);
 	new cjs.ButtonHelper(this.Vref5J2_8, 0, 1, 1);
 
-	this.gndJ2_3 = new lib.GNDJ2();
+	this.gndJ2_3 = new lib.gndJ2_btn();
 	this.gndJ2_3.name = "gndJ2_3";
 	this.gndJ2_3.setTransform(1051.5,578.65,0.8657,0.8657,0,0,0,6.6,6.5);
 	new cjs.ButtonHelper(this.gndJ2_3, 0, 1, 1);
 
-	this.VdcJ2_3 = new lib.VdcJ2();
+	this.VdcJ2_3 = new lib.VdcJ2_btn();
 	this.VdcJ2_3.name = "VdcJ2_3";
 	this.VdcJ2_3.setTransform(1051.35,561.9,0.8657,0.8657,0,0,0,6.6,6.5);
 	new cjs.ButtonHelper(this.VdcJ2_3, 0, 1, 1);
 
-	this.Vref5J2_9 = new lib.Vref5J2();
+	this.Vref5J2_9 = new lib.Vref5J2_btn();
 	this.Vref5J2_9.name = "Vref5J2_9";
 	this.Vref5J2_9.setTransform(1063.7,480.9,0.8657,0.8657,0,0,0,6.5,6.5);
 	new cjs.ButtonHelper(this.Vref5J2_9, 0, 1, 1);
 
-	this.Vref5J2_10 = new lib.Vref5J2();
+	this.Vref5J2_10 = new lib.Vref5J2_btn();
 	this.Vref5J2_10.name = "Vref5J2_10";
 	this.Vref5J2_10.setTransform(1064,467.55,0.8657,0.8657,0,0,0,6.5,6.5);
 	new cjs.ButtonHelper(this.Vref5J2_10, 0, 1, 1);
 
-	this.gndJ2_4 = new lib.GNDJ2();
+	this.gndJ2_4 = new lib.gndJ2_btn();
 	this.gndJ2_4.name = "gndJ2_4";
 	this.gndJ2_4.setTransform(1063.9,453.95,0.8657,0.8657,0,0,0,6.6,6.5);
 	new cjs.ButtonHelper(this.gndJ2_4, 0, 1, 1);
 
-	this.VdcJ2_4 = new lib.VdcJ2();
+	this.VdcJ2_4 = new lib.VdcJ2_btn();
 	this.VdcJ2_4.name = "VdcJ2_4";
 	this.VdcJ2_4.setTransform(1063.75,439.9,0.8657,0.8657,0,0,0,6.6,6.5);
 	new cjs.ButtonHelper(this.VdcJ2_4, 0, 1, 1);
 
-	this.Vref5J2_11 = new lib.Vref5J2();
+	this.Vref5J2_11 = new lib.Vref5J2_btn();
 	this.Vref5J2_11.name = "Vref5J2_11";
 	this.Vref5J2_11.setTransform(1063.75,388.25,0.8657,0.8657,0,0,0,6.5,6.5);
 	new cjs.ButtonHelper(this.Vref5J2_11, 0, 1, 1);
 
-	this.gndJ2_5 = new lib.GNDJ2();
+	this.gndJ2_5 = new lib.gndJ2_btn();
 	this.gndJ2_5.name = "gndJ2_5";
 	this.gndJ2_5.setTransform(1063.8,373.45,0.8657,0.8657,0,0,0,6.6,6.5);
 	new cjs.ButtonHelper(this.gndJ2_5, 0, 1, 1);
 
-	this.VdcJ2_5 = new lib.VdcJ2();
+	this.VdcJ2_5 = new lib.VdcJ2_btn();
 	this.VdcJ2_5.name = "VdcJ2_5";
 	this.VdcJ2_5.setTransform(1063.8,357.9,0.8657,0.8657,0,0,0,6.6,6.5);
 	new cjs.ButtonHelper(this.VdcJ2_5, 0, 1, 1);
 
-	this.gndJ2_6 = new lib.GNDJ2();
+	this.gndJ2_6 = new lib.gndJ2_btn();
 	this.gndJ2_6.name = "gndJ2_6";
 	this.gndJ2_6.setTransform(718.25,1032.45,1,1,0,0,0,6.5,6.5);
 	new cjs.ButtonHelper(this.gndJ2_6, 0, 1, 1);
 
-	this.VdcJ2_6 = new lib.VdcJ2();
+	this.VdcJ2_6 = new lib.VdcJ2_btn();
 	this.VdcJ2_6.name = "VdcJ2_6";
 	this.VdcJ2_6.setTransform(718.25,1015.55,1,1,0,0,0,6.5,6.5);
 	new cjs.ButtonHelper(this.VdcJ2_6, 0, 1, 1);
 
-	this.Vref5J2_12 = new lib.Vref5J2();
+	this.Vref5J2_12 = new lib.Vref5J2_btn();
 	this.Vref5J2_12.name = "Vref5J2_12";
 	this.Vref5J2_12.setTransform(717.75,999.4,1,1,0,0,0,6.5,6.5);
 	new cjs.ButtonHelper(this.Vref5J2_12, 0, 1, 1);
 
-	this.gndJ2_7 = new lib.GNDJ2();
+	this.gndJ2_7 = new lib.gndJ2_btn();
 	this.gndJ2_7.name = "gndJ2_7";
 	this.gndJ2_7.setTransform(718.1,982.95,1,1,0,0,0,6.5,6.5);
 	new cjs.ButtonHelper(this.gndJ2_7, 0, 1, 1);
 
-	this.gndJ2_8 = new lib.GNDJ2();
+	this.gndJ2_8 = new lib.gndJ2_btn();
 	this.gndJ2_8.name = "gndJ2_8";
 	this.gndJ2_8.setTransform(718.2,954.65,1,1,0,0,0,6.5,6.5);
 	new cjs.ButtonHelper(this.gndJ2_8, 0, 1, 1);
 
-	this.VdcJ2_7 = new lib.VdcJ2();
+	this.VdcJ2_7 = new lib.VdcJ2_btn();
 	this.VdcJ2_7.name = "VdcJ2_7";
 	this.VdcJ2_7.setTransform(718.2,937.75,1,1,0,0,0,6.5,6.5);
 	new cjs.ButtonHelper(this.VdcJ2_7, 0, 1, 1);
 
-	this.Vref5J2_13 = new lib.Vref5J2();
+	this.Vref5J2_13 = new lib.Vref5J2_btn();
 	this.Vref5J2_13.name = "Vref5J2_13";
 	this.Vref5J2_13.setTransform(717.7,921.6,1,1,0,0,0,6.5,6.5);
 	new cjs.ButtonHelper(this.Vref5J2_13, 0, 1, 1);
 
-	this.gndJ2_9 = new lib.GNDJ2();
+	this.gndJ2_9 = new lib.gndJ2_btn();
 	this.gndJ2_9.name = "gndJ2_9";
 	this.gndJ2_9.setTransform(718.05,905.15,1,1,0,0,0,6.5,6.5);
 	new cjs.ButtonHelper(this.gndJ2_9, 0, 1, 1);
 
-	this.VdcJ2_8 = new lib.VdcJ2();
+	this.VdcJ2_8 = new lib.VdcJ2_btn();
 	this.VdcJ2_8.name = "VdcJ2_8";
 	this.VdcJ2_8.setTransform(718.05,888.25,1,1,0,0,0,6.5,6.5);
 	new cjs.ButtonHelper(this.VdcJ2_8, 0, 1, 1);
 
-	this.Vref5J2_14 = new lib.Vref5J2();
+	this.Vref5J2_14 = new lib.Vref5J2_btn();
 	this.Vref5J2_14.name = "Vref5J2_14";
 	this.Vref5J2_14.setTransform(718.05,872.2,1,1,0,0,0,6.5,6.5);
 	new cjs.ButtonHelper(this.Vref5J2_14, 0, 1, 1);
 
-	this.gndJ2_10 = new lib.GNDJ2();
+	this.gndJ2_10 = new lib.gndJ2_btn();
 	this.gndJ2_10.name = "gndJ2_10";
 	this.gndJ2_10.setTransform(717.95,792.15,1,1,0,0,0,6.5,6.5);
 	new cjs.ButtonHelper(this.gndJ2_10, 0, 1, 1);
 
-	this.VdcJ2_9 = new lib.VdcJ2();
+	this.VdcJ2_9 = new lib.VdcJ2_btn();
 	this.VdcJ2_9.name = "VdcJ2_9";
 	this.VdcJ2_9.setTransform(717.95,775.25,1,1,0,0,0,6.5,6.5);
 	new cjs.ButtonHelper(this.VdcJ2_9, 0, 1, 1);
 
-	this.Vref5J2_15 = new lib.Vref5J2();
+	this.Vref5J2_15 = new lib.Vref5J2_btn();
 	this.Vref5J2_15.name = "Vref5J2_15";
 	this.Vref5J2_15.setTransform(717.45,759.1,1,1,0,0,0,6.5,6.5);
 	new cjs.ButtonHelper(this.Vref5J2_15, 0, 1, 1);
 
-	this.gndJ2_11 = new lib.GNDJ2();
+	this.gndJ2_11 = new lib.gndJ2_btn();
 	this.gndJ2_11.name = "gndJ2_11";
 	this.gndJ2_11.setTransform(717.8,742.65,1,1,0,0,0,6.5,6.5);
 	new cjs.ButtonHelper(this.gndJ2_11, 0, 1, 1);
 
-	this.Vref5J2_16 = new lib.Vref5J2();
+	this.Vref5J2_16 = new lib.Vref5J2_btn();
 	this.Vref5J2_16.name = "Vref5J2_16";
 	this.Vref5J2_16.setTransform(717.85,726.1,1,1,0,0,0,6.5,6.5);
 	new cjs.ButtonHelper(this.Vref5J2_16, 0, 1, 1);
 
-	this.gndJ2_12 = new lib.GNDJ2();
+	this.gndJ2_12 = new lib.gndJ2_btn();
 	this.gndJ2_12.name = "gndJ2_12";
 	this.gndJ2_12.setTransform(717.45,700.65,1,1,0,0,0,6.5,6.5);
 	new cjs.ButtonHelper(this.gndJ2_12, 0, 1, 1);
 
-	this.VdcJ2_10 = new lib.VdcJ2();
+	this.VdcJ2_10 = new lib.VdcJ2_btn();
 	this.VdcJ2_10.name = "VdcJ2_10";
 	this.VdcJ2_10.setTransform(717.45,683.75,1,1,0,0,0,6.5,6.5);
 	new cjs.ButtonHelper(this.VdcJ2_10, 0, 1, 1);
 
-	this.Vref5J2_17 = new lib.Vref5J2();
+	this.Vref5J2_17 = new lib.Vref5J2_btn();
 	this.Vref5J2_17.name = "Vref5J2_17";
 	this.Vref5J2_17.setTransform(716.95,667.6,1,1,0,0,0,6.5,6.5);
 	new cjs.ButtonHelper(this.Vref5J2_17, 0, 1, 1);
 
-	this.gndJ2_13 = new lib.GNDJ2();
+	this.gndJ2_13 = new lib.gndJ2_btn();
 	this.gndJ2_13.name = "gndJ2_13";
 	this.gndJ2_13.setTransform(717.3,651.15,1,1,0,0,0,6.5,6.5);
 	new cjs.ButtonHelper(this.gndJ2_13, 0, 1, 1);
 
-	this.VdcJ2_11 = new lib.VdcJ2();
+	this.VdcJ2_11 = new lib.VdcJ2_btn();
 	this.VdcJ2_11.name = "VdcJ2_11";
 	this.VdcJ2_11.setTransform(717.3,634.25,1,1,0,0,0,6.5,6.5);
 	new cjs.ButtonHelper(this.VdcJ2_11, 0, 1, 1);
 
-	this.Vref5J2_18 = new lib.Vref5J2();
+	this.Vref5J2_18 = new lib.Vref5J2_btn();
 	this.Vref5J2_18.name = "Vref5J2_18";
 	this.Vref5J2_18.setTransform(717.3,618.2,1,1,0,0,0,6.5,6.5);
 	new cjs.ButtonHelper(this.Vref5J2_18, 0, 1, 1);
 
-	this.gndJ2_14 = new lib.GNDJ2();
+	this.gndJ2_14 = new lib.gndJ2_btn();
 	this.gndJ2_14.name = "gndJ2_14";
 	this.gndJ2_14.setTransform(717.65,601.75,1,1,0,0,0,6.5,6.5);
 	new cjs.ButtonHelper(this.gndJ2_14, 0, 1, 1);
 
-	this.VdcJ2_12 = new lib.VdcJ2();
+	this.VdcJ2_12 = new lib.VdcJ2_btn();
 	this.VdcJ2_12.name = "VdcJ2_12";
 	this.VdcJ2_12.setTransform(717.65,584.85,1,1,0,0,0,6.5,6.5);
 	new cjs.ButtonHelper(this.VdcJ2_12, 0, 1, 1);
 
-	this.VdcJ3 = new lib.VdcJ3();
+	this.VdcJ3 = new lib.VdcJ3_btn();
 	this.VdcJ3.name = "VdcJ3";
 	this.VdcJ3.setTransform(717.45,558.75,1,1,0,0,0,6.5,6.5);
 	new cjs.ButtonHelper(this.VdcJ3, 0, 1, 1);
 
-	this.GNDJ3 = new lib.GNDJ3();
+	this.GNDJ3 = new lib.GNDJ3_btn();
 	this.GNDJ3.name = "GNDJ3";
 	this.GNDJ3.setTransform(717.8,542.3,1,1,0,0,0,6.5,6.5);
 	new cjs.ButtonHelper(this.GNDJ3, 0, 1, 1);
 
-	this.B7J3 = new lib.B7J3();
+	this.B7J3 = new lib.B7J3_btn();
 	this.B7J3.name = "B7J3";
 	this.B7J3.setTransform(717.8,525.4,1,1,0,0,0,6.5,6.5);
 	new cjs.ButtonHelper(this.B7J3, 0, 1, 1);
 
-	this.B5J3 = new lib.B6J3();
+	this.B5J3 = new lib.B6J3_btn();
 	this.B5J3.name = "B5J3";
 	this.B5J3.setTransform(717.3,509.25,1,1,0,0,0,6.5,6.5);
 	new cjs.ButtonHelper(this.B5J3, 0, 1, 1);
 
-	this.B5J3_1 = new lib.B5J3();
+	this.B5J3_1 = new lib.B5J3_btn();
 	this.B5J3_1.name = "B5J3_1";
 	this.B5J3_1.setTransform(717.65,492.8,1,1,0,0,0,6.5,6.5);
 	new cjs.ButtonHelper(this.B5J3_1, 0, 1, 1);
 
-	this.B4J3 = new lib.B4J3();
+	this.B4J3 = new lib.B4J3_btn();
 	this.B4J3.name = "B4J3";
 	this.B4J3.setTransform(717.65,475.9,1,1,0,0,0,6.5,6.5);
 	new cjs.ButtonHelper(this.B4J3, 0, 1, 1);
 
-	this.B3J3 = new lib.B3J3();
+	this.B3J3 = new lib.B3J3_btn();
 	this.B3J3.name = "B3J3";
 	this.B3J3.setTransform(717.65,459.85,1,1,0,0,0,6.5,6.5);
 	new cjs.ButtonHelper(this.B3J3, 0, 1, 1);
 
-	this.B2J3 = new lib.B2J3();
+	this.B2J3 = new lib.B2J3_btn();
 	this.B2J3.name = "B2J3";
 	this.B2J3.setTransform(718,443.4,1,1,0,0,0,6.5,6.5);
 	new cjs.ButtonHelper(this.B2J3, 0, 1, 1);
 
-	this.B1J3 = new lib.B1J3();
+	this.B1J3 = new lib.B1J3_btn();
 	this.B1J3.name = "B1J3";
 	this.B1J3.setTransform(718,426.5,1,1,0,0,0,6.5,6.5);
 	new cjs.ButtonHelper(this.B1J3, 0, 1, 1);
 
-	this.Vref5J2_19 = new lib.Vref5J2();
+	this.Vref5J2_19 = new lib.Vref5J2_btn();
 	this.Vref5J2_19.name = "Vref5J2_19";
 	this.Vref5J2_19.setTransform(717.65,401,1,1,0,0,0,6.5,6.5);
 	new cjs.ButtonHelper(this.Vref5J2_19, 0, 1, 1);
 
-	this.gndJ2_15 = new lib.GNDJ2();
+	this.gndJ2_15 = new lib.gndJ2_btn();
 	this.gndJ2_15.name = "gndJ2_15";
 	this.gndJ2_15.setTransform(718,384.55,1,1,0,0,0,6.5,6.5);
 	new cjs.ButtonHelper(this.gndJ2_15, 0, 1, 1);
 
-	this.VdcJ2_13 = new lib.VdcJ2();
+	this.VdcJ2_13 = new lib.VdcJ2_btn();
 	this.VdcJ2_13.name = "VdcJ2_13";
 	this.VdcJ2_13.setTransform(718,367.65,1,1,0,0,0,6.5,6.5);
 	new cjs.ButtonHelper(this.VdcJ2_13, 0, 1, 1);
@@ -4494,7 +5624,302 @@ if (reversed == null) { reversed = false; }
 	this.J1G_btn.setTransform(718,323.35);
 	new cjs.ButtonHelper(this.J1G_btn, 0, 1, 1);
 
-	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.J1G_btn},{t:this.J1G0_btn},{t:this.VdcJ2_13},{t:this.gndJ2_15},{t:this.Vref5J2_19},{t:this.B1J3},{t:this.B2J3},{t:this.B3J3},{t:this.B4J3},{t:this.B5J3_1},{t:this.B5J3},{t:this.B7J3},{t:this.GNDJ3},{t:this.VdcJ3},{t:this.VdcJ2_12},{t:this.gndJ2_14},{t:this.Vref5J2_18},{t:this.VdcJ2_11},{t:this.gndJ2_13},{t:this.Vref5J2_17},{t:this.VdcJ2_10},{t:this.gndJ2_12},{t:this.Vref5J2_16},{t:this.gndJ2_11},{t:this.Vref5J2_15},{t:this.VdcJ2_9},{t:this.gndJ2_10},{t:this.Vref5J2_14},{t:this.VdcJ2_8},{t:this.gndJ2_9},{t:this.Vref5J2_13},{t:this.VdcJ2_7},{t:this.gndJ2_8},{t:this.gndJ2_7},{t:this.Vref5J2_12},{t:this.VdcJ2_6},{t:this.gndJ2_6},{t:this.VdcJ2_5},{t:this.gndJ2_5},{t:this.Vref5J2_11},{t:this.VdcJ2_4},{t:this.gndJ2_4},{t:this.Vref5J2_10},{t:this.Vref5J2_9},{t:this.VdcJ2_3},{t:this.gndJ2_3},{t:this.Vref5J2_8},{t:this.Vref5J2_7},{t:this.VdcJ2_2},{t:this.gndJ2_2},{t:this.Vref5J2_6},{t:this.Vref5J2_5},{t:this.VdcJ2_1},{t:this.gndJ2_1},{t:this.Vref5J2_4},{t:this.Vref5J2_3},{t:this.VdcJ2},{t:this.gndJ2},{t:this.Vref5J2_2},{t:this.Vref5J2_1},{t:this.Vref5J2}]}).to({state:[{t:this.J1G_btn},{t:this.J1G0_btn},{t:this.VdcJ2_13},{t:this.gndJ2_15},{t:this.Vref5J2_19},{t:this.B1J3},{t:this.B2J3},{t:this.B3J3},{t:this.B4J3},{t:this.B5J3_1},{t:this.B5J3},{t:this.B7J3},{t:this.GNDJ3},{t:this.VdcJ3},{t:this.VdcJ2_12},{t:this.gndJ2_14},{t:this.Vref5J2_18},{t:this.VdcJ2_11},{t:this.gndJ2_13},{t:this.Vref5J2_17},{t:this.VdcJ2_10},{t:this.gndJ2_12},{t:this.Vref5J2_16},{t:this.gndJ2_11},{t:this.Vref5J2_15},{t:this.VdcJ2_9},{t:this.gndJ2_10},{t:this.Vref5J2_14},{t:this.VdcJ2_8},{t:this.gndJ2_9},{t:this.Vref5J2_13},{t:this.VdcJ2_7},{t:this.gndJ2_8},{t:this.gndJ2_7},{t:this.Vref5J2_12},{t:this.VdcJ2_6},{t:this.gndJ2_6},{t:this.VdcJ2_5},{t:this.gndJ2_5},{t:this.Vref5J2_11},{t:this.VdcJ2_4},{t:this.gndJ2_4},{t:this.Vref5J2_10},{t:this.Vref5J2_9},{t:this.VdcJ2_3},{t:this.gndJ2_3},{t:this.Vref5J2_8},{t:this.Vref5J2_7},{t:this.VdcJ2_2},{t:this.gndJ2_2},{t:this.Vref5J2_6},{t:this.Vref5J2_5},{t:this.VdcJ2_1},{t:this.gndJ2_1},{t:this.Vref5J2_4},{t:this.Vref5J2_3},{t:this.VdcJ2},{t:this.gndJ2},{t:this.Vref5J2_2},{t:this.Vref5J2_1},{t:this.Vref5J2}]},1).to({state:[{t:this.J1G_btn},{t:this.J1G0_btn},{t:this.VdcJ2_13},{t:this.gndJ2_15},{t:this.Vref5J2_19},{t:this.B1J3},{t:this.B2J3},{t:this.B3J3},{t:this.B4J3},{t:this.B5J3_1},{t:this.B5J3},{t:this.B7J3},{t:this.GNDJ3},{t:this.VdcJ3},{t:this.VdcJ2_12},{t:this.gndJ2_14},{t:this.Vref5J2_18},{t:this.VdcJ2_11},{t:this.gndJ2_13},{t:this.Vref5J2_17},{t:this.VdcJ2_10},{t:this.gndJ2_12},{t:this.Vref5J2_16},{t:this.gndJ2_11},{t:this.Vref5J2_15},{t:this.VdcJ2_9},{t:this.gndJ2_10},{t:this.Vref5J2_14},{t:this.VdcJ2_8},{t:this.gndJ2_9},{t:this.Vref5J2_13},{t:this.VdcJ2_7},{t:this.gndJ2_8},{t:this.gndJ2_7},{t:this.Vref5J2_12},{t:this.VdcJ2_6},{t:this.gndJ2_6},{t:this.VdcJ2_5},{t:this.gndJ2_5},{t:this.Vref5J2_11},{t:this.VdcJ2_4},{t:this.gndJ2_4},{t:this.Vref5J2_10},{t:this.Vref5J2_9},{t:this.VdcJ2_3},{t:this.gndJ2_3},{t:this.Vref5J2_8},{t:this.Vref5J2_7},{t:this.VdcJ2_2},{t:this.gndJ2_2},{t:this.Vref5J2_6},{t:this.Vref5J2_5},{t:this.VdcJ2_1},{t:this.gndJ2_1},{t:this.Vref5J2_4},{t:this.Vref5J2_3},{t:this.VdcJ2},{t:this.gndJ2},{t:this.Vref5J2_2},{t:this.Vref5J2_1},{t:this.Vref5J2}]},1).to({state:[{t:this.J1G_btn},{t:this.J1G0_btn},{t:this.VdcJ2_13},{t:this.gndJ2_15},{t:this.Vref5J2_19},{t:this.B1J3},{t:this.B2J3},{t:this.B3J3},{t:this.B4J3},{t:this.B5J3_1},{t:this.B5J3},{t:this.B7J3},{t:this.GNDJ3},{t:this.VdcJ3},{t:this.VdcJ2_12},{t:this.gndJ2_14},{t:this.Vref5J2_18},{t:this.VdcJ2_11},{t:this.gndJ2_13},{t:this.Vref5J2_17},{t:this.VdcJ2_10},{t:this.gndJ2_12},{t:this.Vref5J2_16},{t:this.gndJ2_11},{t:this.Vref5J2_15},{t:this.VdcJ2_9},{t:this.gndJ2_10},{t:this.Vref5J2_14},{t:this.VdcJ2_8},{t:this.gndJ2_9},{t:this.Vref5J2_13},{t:this.VdcJ2_7},{t:this.gndJ2_8},{t:this.gndJ2_7},{t:this.Vref5J2_12},{t:this.VdcJ2_6},{t:this.gndJ2_6},{t:this.VdcJ2_5},{t:this.gndJ2_5},{t:this.Vref5J2_11},{t:this.VdcJ2_4},{t:this.gndJ2_4},{t:this.Vref5J2_10},{t:this.Vref5J2_9},{t:this.VdcJ2_3},{t:this.gndJ2_3},{t:this.Vref5J2_8},{t:this.Vref5J2_7},{t:this.VdcJ2_2},{t:this.gndJ2_2},{t:this.Vref5J2_6},{t:this.Vref5J2_5},{t:this.VdcJ2_1},{t:this.gndJ2_1},{t:this.Vref5J2_4},{t:this.Vref5J2_3},{t:this.VdcJ2},{t:this.gndJ2},{t:this.Vref5J2_2},{t:this.Vref5J2_1},{t:this.Vref5J2}]},1).to({state:[{t:this.J1G_btn},{t:this.J1G0_btn},{t:this.VdcJ2_13},{t:this.gndJ2_15},{t:this.Vref5J2_19},{t:this.B1J3},{t:this.B2J3},{t:this.B3J3},{t:this.B4J3},{t:this.B5J3_1},{t:this.B5J3},{t:this.B7J3},{t:this.GNDJ3},{t:this.VdcJ3},{t:this.VdcJ2_12},{t:this.gndJ2_14},{t:this.Vref5J2_18},{t:this.VdcJ2_11},{t:this.gndJ2_13},{t:this.Vref5J2_17},{t:this.VdcJ2_10},{t:this.gndJ2_12},{t:this.Vref5J2_16},{t:this.gndJ2_11},{t:this.Vref5J2_15},{t:this.VdcJ2_9},{t:this.gndJ2_10},{t:this.Vref5J2_14},{t:this.VdcJ2_8},{t:this.gndJ2_9},{t:this.Vref5J2_13},{t:this.VdcJ2_7},{t:this.gndJ2_8},{t:this.gndJ2_7},{t:this.Vref5J2_12},{t:this.VdcJ2_6},{t:this.gndJ2_6},{t:this.VdcJ2_5},{t:this.gndJ2_5},{t:this.Vref5J2_11},{t:this.VdcJ2_4},{t:this.gndJ2_4},{t:this.Vref5J2_10},{t:this.Vref5J2_9},{t:this.VdcJ2_3},{t:this.gndJ2_3},{t:this.Vref5J2_8},{t:this.Vref5J2_7},{t:this.VdcJ2_2},{t:this.gndJ2_2},{t:this.Vref5J2_6},{t:this.Vref5J2_5},{t:this.VdcJ2_1},{t:this.gndJ2_1},{t:this.Vref5J2_4},{t:this.Vref5J2_3},{t:this.VdcJ2},{t:this.gndJ2},{t:this.Vref5J2_2},{t:this.Vref5J2_1},{t:this.Vref5J2}]},1).to({state:[{t:this.J1G_btn},{t:this.J1G0_btn},{t:this.VdcJ2_13},{t:this.gndJ2_15},{t:this.Vref5J2_19},{t:this.B1J3},{t:this.B2J3},{t:this.B3J3},{t:this.B4J3},{t:this.B5J3_1},{t:this.B5J3},{t:this.B7J3},{t:this.GNDJ3},{t:this.VdcJ3},{t:this.VdcJ2_12},{t:this.gndJ2_14},{t:this.Vref5J2_18},{t:this.VdcJ2_11},{t:this.gndJ2_13},{t:this.Vref5J2_17},{t:this.VdcJ2_10},{t:this.gndJ2_12},{t:this.Vref5J2_16},{t:this.gndJ2_11},{t:this.Vref5J2_15},{t:this.VdcJ2_9},{t:this.gndJ2_10},{t:this.Vref5J2_14},{t:this.VdcJ2_8},{t:this.gndJ2_9},{t:this.Vref5J2_13},{t:this.VdcJ2_7},{t:this.gndJ2_8},{t:this.gndJ2_7},{t:this.Vref5J2_12},{t:this.VdcJ2_6},{t:this.gndJ2_6},{t:this.VdcJ2_5},{t:this.gndJ2_5},{t:this.Vref5J2_11},{t:this.VdcJ2_4},{t:this.gndJ2_4},{t:this.Vref5J2_10},{t:this.Vref5J2_9},{t:this.VdcJ2_3},{t:this.gndJ2_3},{t:this.Vref5J2_8},{t:this.Vref5J2_7},{t:this.VdcJ2_2},{t:this.gndJ2_2},{t:this.Vref5J2_6},{t:this.Vref5J2_5},{t:this.VdcJ2_1},{t:this.gndJ2_1},{t:this.Vref5J2_4},{t:this.Vref5J2_3},{t:this.VdcJ2},{t:this.gndJ2},{t:this.Vref5J2_2},{t:this.Vref5J2_1},{t:this.Vref5J2}]},1).wait(1));
+	this.J15NO12_btn = new lib.J15NO12_btn();
+	this.J15NO12_btn.name = "J15NO12_btn";
+	this.J15NO12_btn.setTransform(1050.8,991.9,0.8657,0.8657,0,0,0,6.5,6.5);
+	new cjs.ButtonHelper(this.J15NO12_btn, 0, 1, 1);
+
+	this.J15NO11_btn = new lib.J15NO11_btn();
+	this.J15NO11_btn.name = "J15NO11_btn";
+	this.J15NO11_btn.setTransform(1050.95,974.4,0.8657,0.8657,0,0,0,6.5,6.5);
+	new cjs.ButtonHelper(this.J15NO11_btn, 0, 1, 1);
+
+	this.J15NO10_btn = new lib.J15NO10_btn();
+	this.J15NO10_btn.name = "J15NO10_btn";
+	this.J15NO10_btn.setTransform(1050.8,957.4,0.8657,0.8657,0,0,0,6.5,6.5);
+	new cjs.ButtonHelper(this.J15NO10_btn, 0, 1, 1);
+
+	this.J15NO9_btn = new lib.J15NO9_btn();
+	this.J15NO9_btn.name = "J15NO9_btn";
+	this.J15NO9_btn.setTransform(1051.2,940.4,0.8657,0.8657,0,0,0,6.6,6.5);
+	new cjs.ButtonHelper(this.J15NO9_btn, 0, 1, 1);
+
+	this.J15NO8_btn = new lib.J15NO8_btn();
+	this.J15NO8_btn.name = "J15NO8_btn";
+	this.J15NO8_btn.setTransform(1051.05,922.85,0.8657,0.8657,0,0,0,6.6,6.5);
+	new cjs.ButtonHelper(this.J15NO8_btn, 0, 1, 1);
+
+	this.J15C4_btn = new lib.J15C4_btn();
+	this.J15C4_btn.name = "J15C4_btn";
+	this.J15C4_btn.setTransform(1050.8,905.95,0.8657,0.8657,0,0,0,6.5,6.5);
+	new cjs.ButtonHelper(this.J15C4_btn, 0, 1, 1);
+
+	this.J14NC7_btn = new lib.J14NC7_btn();
+	this.J14NC7_btn.name = "J14NC7_btn";
+	this.J14NC7_btn.setTransform(1051.9,796.15,0.8657,0.8657,0,0,0,6.5,6.5);
+	new cjs.ButtonHelper(this.J14NC7_btn, 0, 1, 1);
+
+	this.J14C3_btn = new lib.J14C3_btn();
+	this.J14C3_btn.name = "J14C3_btn";
+	this.J14C3_btn.setTransform(1051.8,779.25,0.8657,0.8657,0,0,0,6.6,6.5);
+	new cjs.ButtonHelper(this.J14C3_btn, 0, 1, 1);
+
+	this.J14NO7_btn = new lib.J14NO7_btn();
+	this.J14NO7_btn.name = "J14NO7_btn";
+	this.J14NO7_btn.setTransform(1051.65,762.5,0.8657,0.8657,0,0,0,6.6,6.5);
+	new cjs.ButtonHelper(this.J14NO7_btn, 0, 1, 1);
+
+	this.J13NO6_btn = new lib.J13NO6_btn();
+	this.J13NO6_btn.name = "J13NO6_btn";
+	this.J13NO6_btn.setTransform(1052,707.45,0.8657,0.8657,0,0,0,6.5,6.5);
+	new cjs.ButtonHelper(this.J13NO6_btn, 0, 1, 1);
+
+	this.J13NO5_btn = new lib.J13NO5_btn();
+	this.J13NO5_btn.name = "J13NO5_btn";
+	this.J13NO5_btn.setTransform(1051.85,691.25,0.8657,0.8657,0,0,0,6.5,6.5);
+	new cjs.ButtonHelper(this.J13NO5_btn, 0, 1, 1);
+
+	this.J13NO4_btn = new lib.J13NO4_btn();
+	this.J13NO4_btn.name = "J13NO4_btn";
+	this.J13NO4_btn.setTransform(1051.75,674.35,0.8657,0.8657,0,0,0,6.6,6.5);
+	new cjs.ButtonHelper(this.J13NO4_btn, 0, 1, 1);
+
+	this.J13C2_btn = new lib.J13C2_btn();
+	this.J13C2_btn.name = "J13C2_btn";
+	this.J13C2_btn.setTransform(1051.6,657.6,0.8657,0.8657,0,0,0,6.6,6.5);
+	new cjs.ButtonHelper(this.J13C2_btn, 0, 1, 1);
+
+	this.J12NO3_btn = new lib.J12NO3_btn();
+	this.J12NO3_btn.name = "J12NO3_btn";
+	this.J12NO3_btn.setTransform(1051.75,611.75,0.8657,0.8657,0,0,0,6.5,6.5);
+	new cjs.ButtonHelper(this.J12NO3_btn, 0, 1, 1);
+
+	this.J12NO2_btn = new lib.J12NO2_btn();
+	this.J12NO2_btn.name = "J12NO2_btn";
+	this.J12NO2_btn.setTransform(1051.6,595.55,0.8657,0.8657,0,0,0,6.5,6.5);
+	new cjs.ButtonHelper(this.J12NO2_btn, 0, 1, 1);
+
+	this.J12NO1_btn = new lib.J12NO1_btn();
+	this.J12NO1_btn.name = "J12NO1_btn";
+	this.J12NO1_btn.setTransform(1051.5,578.65,0.8657,0.8657,0,0,0,6.6,6.5);
+	new cjs.ButtonHelper(this.J12NO1_btn, 0, 1, 1);
+
+	this.J12C1_btn = new lib.J12C1_btn();
+	this.J12C1_btn.name = "J12C1_btn";
+	this.J12C1_btn.setTransform(1051.35,561.9,0.8657,0.8657,0,0,0,6.6,6.5);
+	new cjs.ButtonHelper(this.J12C1_btn, 0, 1, 1);
+
+	this.J10GND_btn = new lib.J10GND_btn();
+	this.J10GND_btn.name = "J10GND_btn";
+	this.J10GND_btn.setTransform(1063.7,480.9,0.8657,0.8657,0,0,0,6.5,6.5);
+	new cjs.ButtonHelper(this.J10GND_btn, 0, 1, 1);
+
+	this.J10RX1TX1_btn = new lib.J10RX1TX1_btn();
+	this.J10RX1TX1_btn.name = "J10RX1TX1_btn";
+	this.J10RX1TX1_btn.setTransform(1064,467.55,0.8657,0.8657,0,0,0,6.5,6.5);
+	new cjs.ButtonHelper(this.J10RX1TX1_btn, 0, 1, 1);
+
+	this.J10RX0TX0_btn = new lib.J10RX0TX0_btn();
+	this.J10RX0TX0_btn.name = "J10RX0TX0_btn";
+	this.J10RX0TX0_btn.setTransform(1063.9,453.95,0.8657,0.8657,0,0,0,6.6,6.5);
+	new cjs.ButtonHelper(this.J10RX0TX0_btn, 0, 1, 1);
+
+	this.J10Vout_btn = new lib.J10Vout_btn();
+	this.J10Vout_btn.name = "J10Vout_btn";
+	this.J10Vout_btn.setTransform(1063.75,439.9,0.8657,0.8657,0,0,0,6.6,6.5);
+	new cjs.ButtonHelper(this.J10Vout_btn, 0, 1, 1);
+
+	this.J8GND_btn = new lib.J8GND_btn();
+	this.J8GND_btn.name = "J8GND_btn";
+	this.J8GND_btn.setTransform(1063.75,388.25,0.8657,0.8657,0,0,0,6.5,6.5);
+	new cjs.ButtonHelper(this.J8GND_btn, 0, 1, 1);
+
+	this.J8RX1TX1_btn = new lib.J8RX1TX1_btn();
+	this.J8RX1TX1_btn.name = "J8RX1TX1_btn";
+	this.J8RX1TX1_btn.setTransform(1063.8,373.45,0.8657,0.8657,0,0,0,6.6,6.5);
+	new cjs.ButtonHelper(this.J8RX1TX1_btn, 0, 1, 1);
+
+	this.J8RX0TX0_btn = new lib.J8RX0TX0_btn();
+	this.J8RX0TX0_btn.name = "J8RX0TX0_btn";
+	this.J8RX0TX0_btn.setTransform(1063.8,357.9,0.8657,0.8657,0,0,0,6.6,6.5);
+	new cjs.ButtonHelper(this.J8RX0TX0_btn, 0, 1, 1);
+
+	this.J16IDC2_btn = new lib.J16IDC2_btn();
+	this.J16IDC2_btn.name = "J16IDC2_btn";
+	this.J16IDC2_btn.setTransform(718.25,1032.45,1,1,0,0,0,6.5,6.5);
+	new cjs.ButtonHelper(this.J16IDC2_btn, 0, 1, 1);
+
+	this.J16ID10_btn = new lib.J16ID10_btn();
+	this.J16ID10_btn.name = "J16ID10_btn";
+	this.J16ID10_btn.setTransform(718.25,1015.55,1,1,0,0,0,6.5,6.5);
+	new cjs.ButtonHelper(this.J16ID10_btn, 0, 1, 1);
+
+	this.J16ID9_btn = new lib.J16ID9_btn();
+	this.J16ID9_btn.name = "J16ID9_btn";
+	this.J16ID9_btn.setTransform(717.75,999.4,1,1,0,0,0,6.5,6.5);
+	new cjs.ButtonHelper(this.J16ID9_btn, 0, 1, 1);
+
+	this.J16ID8_btn = new lib.J16ID8_btn();
+	this.J16ID8_btn.name = "J16ID8_btn";
+	this.J16ID8_btn.setTransform(718.1,982.95,1,1,0,0,0,6.5,6.5);
+	new cjs.ButtonHelper(this.J16ID8_btn, 0, 1, 1);
+
+	this.J18GND_btn = new lib.J18GND_btn();
+	this.J18GND_btn.name = "J18GND_btn";
+	this.J18GND_btn.setTransform(718.2,954.65,1,1,0,0,0,6.5,6.5);
+	new cjs.ButtonHelper(this.J18GND_btn, 0, 1, 1);
+
+	this.J18B12_btn = new lib.J18B12_btn();
+	this.J18B12_btn.name = "J18B12_btn";
+	this.J18B12_btn.setTransform(718.2,937.75,1,1,0,0,0,6.5,6.5);
+	new cjs.ButtonHelper(this.J18B12_btn, 0, 1, 1);
+
+	this.J18B11_btn = new lib.J18B11_btn();
+	this.J18B11_btn.name = "J18B11_btn";
+	this.J18B11_btn.setTransform(717.7,921.6,1,1,0,0,0,6.5,6.5);
+	new cjs.ButtonHelper(this.J18B11_btn, 0, 1, 1);
+
+	this.J18B10_btn = new lib.J18B10_btn();
+	this.J18B10_btn.name = "J18B10_btn";
+	this.J18B10_btn.setTransform(718.05,905.15,1,1,0,0,0,6.5,6.5);
+	new cjs.ButtonHelper(this.J18B10_btn, 0, 1, 1);
+
+	this.J18B9_btn = new lib.J18B9_btn();
+	this.J18B9_btn.name = "J18B9_btn";
+	this.J18B9_btn.setTransform(718.05,888.25,1,1,0,0,0,6.5,6.5);
+	new cjs.ButtonHelper(this.J18B9_btn, 0, 1, 1);
+
+	this.J18B8_btn = new lib.J18B8_btn();
+	this.J18B8_btn.name = "J18B8_btn";
+	this.J18B8_btn.setTransform(718.05,872.2,1,1,0,0,0,6.5,6.5);
+	new cjs.ButtonHelper(this.J18B8_btn, 0, 1, 1);
+
+	this.J5Y4_btn = new lib.J5Y4_btn();
+	this.J5Y4_btn.name = "J5Y4_btn";
+	this.J5Y4_btn.setTransform(717.95,792.15,1,1,0,0,0,6.5,6.5);
+	new cjs.ButtonHelper(this.J5Y4_btn, 0, 1, 1);
+
+	this.J5Y3_btn = new lib.J5Y3_btn();
+	this.J5Y3_btn.name = "J5Y3_btn";
+	this.J5Y3_btn.setTransform(717.95,775.25,1,1,0,0,0,6.5,6.5);
+	new cjs.ButtonHelper(this.J5Y3_btn, 0, 1, 1);
+
+	this.J5Y2_btn = new lib.J5Y2_btn();
+	this.J5Y2_btn.name = "J5Y2_btn";
+	this.J5Y2_btn.setTransform(717.45,759.1,1,1,0,0,0,6.5,6.5);
+	new cjs.ButtonHelper(this.J5Y2_btn, 0, 1, 1);
+
+	this.J5Y1_btn = new lib.J5Y1_btn();
+	this.J5Y1_btn.name = "J5Y1_btn";
+	this.J5Y1_btn.setTransform(717.8,742.65,1,1,0,0,0,6.5,6.5);
+	new cjs.ButtonHelper(this.J5Y1_btn, 0, 1, 1);
+
+	this.J5GND_btn = new lib.J5GND_btn();
+	this.J5GND_btn.name = "J5GND_btn";
+	this.J5GND_btn.setTransform(717.85,726.1,1,1,0,0,0,6.5,6.5);
+	new cjs.ButtonHelper(this.J5GND_btn, 0, 1, 1);
+
+	this.J4DIC1_btn = new lib.J4DIC1_btn();
+	this.J4DIC1_btn.name = "J4DIC1_btn";
+	this.J4DIC1_btn.setTransform(717.45,700.65,1,1,0,0,0,6.5,6.5);
+	new cjs.ButtonHelper(this.J4DIC1_btn, 0, 1, 1);
+
+	this.J4DI7_btn = new lib.J4DI7_btn();
+	this.J4DI7_btn.name = "J4DI7_btn";
+	this.J4DI7_btn.setTransform(717.45,683.75,1,1,0,0,0,6.5,6.5);
+	new cjs.ButtonHelper(this.J4DI7_btn, 0, 1, 1);
+
+	this.J4DI6_btn = new lib.J4DI6_btn();
+	this.J4DI6_btn.name = "J4DI6_btn";
+	this.J4DI6_btn.setTransform(716.95,667.6,1,1,0,0,0,6.5,6.5);
+	new cjs.ButtonHelper(this.J4DI6_btn, 0, 1, 1);
+
+	this.J4DI5_btn = new lib.J4DI5_btn();
+	this.J4DI5_btn.name = "J4DI5_btn";
+	this.J4DI5_btn.setTransform(717.3,651.15,1,1,0,0,0,6.5,6.5);
+	new cjs.ButtonHelper(this.J4DI5_btn, 0, 1, 1);
+
+	this.J4DI4_btn = new lib.J4DI4_btn();
+	this.J4DI4_btn.name = "J4DI4_btn";
+	this.J4DI4_btn.setTransform(717.3,634.25,1,1,0,0,0,6.5,6.5);
+	new cjs.ButtonHelper(this.J4DI4_btn, 0, 1, 1);
+
+	this.J4DI3_btn = new lib.J4DI3_btn();
+	this.J4DI3_btn.name = "J4DI3_btn";
+	this.J4DI3_btn.setTransform(717.3,618.2,1,1,0,0,0,6.5,6.5);
+	new cjs.ButtonHelper(this.J4DI3_btn, 0, 1, 1);
+
+	this.J4DI2_btn = new lib.J4DI2_btn();
+	this.J4DI2_btn.name = "J4DI2_btn";
+	this.J4DI2_btn.setTransform(717.65,601.75,1,1,0,0,0,6.5,6.5);
+	new cjs.ButtonHelper(this.J4DI2_btn, 0, 1, 1);
+
+	this.J4DI1_btn = new lib.J4DI1_btn();
+	this.J4DI1_btn.name = "J4DI1_btn";
+	this.J4DI1_btn.setTransform(717.65,584.85,1,1,0,0,0,6.5,6.5);
+	new cjs.ButtonHelper(this.J4DI1_btn, 0, 1, 1);
+
+	this.VdcJ3_btn = new lib.VdcJ3_btn();
+	this.VdcJ3_btn.name = "VdcJ3_btn";
+	this.VdcJ3_btn.setTransform(717.45,558.75,1,1,0,0,0,6.5,6.5);
+	new cjs.ButtonHelper(this.VdcJ3_btn, 0, 1, 1);
+
+	this.GNDJ3_btn = new lib.GNDJ3_btn();
+	this.GNDJ3_btn.name = "GNDJ3_btn";
+	this.GNDJ3_btn.setTransform(717.8,542.3,1,1,0,0,0,6.5,6.5);
+	new cjs.ButtonHelper(this.GNDJ3_btn, 0, 1, 1);
+
+	this.B7J3_btn = new lib.B7J3_btn();
+	this.B7J3_btn.name = "B7J3_btn";
+	this.B7J3_btn.setTransform(717.8,525.4,1,1,0,0,0,6.5,6.5);
+	new cjs.ButtonHelper(this.B7J3_btn, 0, 1, 1);
+
+	this.B6J3_btn = new lib.B6J3_btn();
+	this.B6J3_btn.name = "B6J3_btn";
+	this.B6J3_btn.setTransform(717.3,509.25,1,1,0,0,0,6.5,6.5);
+	new cjs.ButtonHelper(this.B6J3_btn, 0, 1, 1);
+
+	this.B5J3_btn = new lib.B5J3_btn();
+	this.B5J3_btn.name = "B5J3_btn";
+	this.B5J3_btn.setTransform(717.65,492.8,1,1,0,0,0,6.5,6.5);
+	new cjs.ButtonHelper(this.B5J3_btn, 0, 1, 1);
+
+	this.B4J3_btn = new lib.B4J3_btn();
+	this.B4J3_btn.name = "B4J3_btn";
+	this.B4J3_btn.setTransform(717.65,475.9,1,1,0,0,0,6.5,6.5);
+	new cjs.ButtonHelper(this.B4J3_btn, 0, 1, 1);
+
+	this.B3J3_btn = new lib.B3J3_btn();
+	this.B3J3_btn.name = "B3J3_btn";
+	this.B3J3_btn.setTransform(717.65,459.85,1,1,0,0,0,6.5,6.5);
+	new cjs.ButtonHelper(this.B3J3_btn, 0, 1, 1);
+
+	this.B2J3_btn = new lib.B2J3_btn();
+	this.B2J3_btn.name = "B2J3_btn";
+	this.B2J3_btn.setTransform(718,443.4,1,1,0,0,0,6.5,6.5);
+	new cjs.ButtonHelper(this.B2J3_btn, 0, 1, 1);
+
+	this.B1J3_btn = new lib.B1J3_btn();
+	this.B1J3_btn.name = "B1J3_btn";
+	this.B1J3_btn.setTransform(718,426.5,1,1,0,0,0,6.5,6.5);
+	new cjs.ButtonHelper(this.B1J3_btn, 0, 1, 1);
+
+	this.Vref5J2_btn = new lib.Vref5J2_btn();
+	this.Vref5J2_btn.name = "Vref5J2_btn";
+	this.Vref5J2_btn.setTransform(717.65,401,1,1,0,0,0,6.5,6.5);
+	new cjs.ButtonHelper(this.Vref5J2_btn, 0, 1, 1);
+
+	this.gndJ2_btn = new lib.gndJ2_btn();
+	this.gndJ2_btn.name = "gndJ2_btn";
+	this.gndJ2_btn.setTransform(718,384.55,1,1,0,0,0,6.5,6.5);
+	new cjs.ButtonHelper(this.gndJ2_btn, 0, 1, 1);
+
+	this.VdcJ2_btn = new lib.VdcJ2_btn();
+	this.VdcJ2_btn.name = "VdcJ2_btn";
+	this.VdcJ2_btn.setTransform(718,367.65,1,1,0,0,0,6.5,6.5);
+	new cjs.ButtonHelper(this.VdcJ2_btn, 0, 1, 1);
+
+	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.J1G_btn},{t:this.J1G0_btn},{t:this.VdcJ2_13},{t:this.gndJ2_15},{t:this.Vref5J2_19},{t:this.B1J3},{t:this.B2J3},{t:this.B3J3},{t:this.B4J3},{t:this.B5J3_1},{t:this.B5J3},{t:this.B7J3},{t:this.GNDJ3},{t:this.VdcJ3},{t:this.VdcJ2_12},{t:this.gndJ2_14},{t:this.Vref5J2_18},{t:this.VdcJ2_11},{t:this.gndJ2_13},{t:this.Vref5J2_17},{t:this.VdcJ2_10},{t:this.gndJ2_12},{t:this.Vref5J2_16},{t:this.gndJ2_11},{t:this.Vref5J2_15},{t:this.VdcJ2_9},{t:this.gndJ2_10},{t:this.Vref5J2_14},{t:this.VdcJ2_8},{t:this.gndJ2_9},{t:this.Vref5J2_13},{t:this.VdcJ2_7},{t:this.gndJ2_8},{t:this.gndJ2_7},{t:this.Vref5J2_12},{t:this.VdcJ2_6},{t:this.gndJ2_6},{t:this.VdcJ2_5},{t:this.gndJ2_5},{t:this.Vref5J2_11},{t:this.VdcJ2_4},{t:this.gndJ2_4},{t:this.Vref5J2_10},{t:this.Vref5J2_9},{t:this.VdcJ2_3},{t:this.gndJ2_3},{t:this.Vref5J2_8},{t:this.Vref5J2_7},{t:this.VdcJ2_2},{t:this.gndJ2_2},{t:this.Vref5J2_6},{t:this.Vref5J2_5},{t:this.VdcJ2_1},{t:this.gndJ2_1},{t:this.Vref5J2_4},{t:this.Vref5J2_3},{t:this.VdcJ2},{t:this.gndJ2},{t:this.Vref5J2_2},{t:this.Vref5J2_1},{t:this.Vref5J2}]}).to({state:[{t:this.J1G_btn},{t:this.J1G0_btn},{t:this.VdcJ2_btn},{t:this.gndJ2_btn},{t:this.Vref5J2_btn},{t:this.B1J3_btn},{t:this.B2J3_btn},{t:this.B3J3_btn},{t:this.B4J3_btn},{t:this.B5J3_btn},{t:this.B6J3_btn},{t:this.B7J3_btn},{t:this.GNDJ3_btn},{t:this.VdcJ3_btn},{t:this.J4DI1_btn},{t:this.J4DI2_btn},{t:this.J4DI3_btn},{t:this.J4DI4_btn},{t:this.J4DI5_btn},{t:this.J4DI6_btn},{t:this.J4DI7_btn},{t:this.J4DIC1_btn},{t:this.J5GND_btn},{t:this.J5Y1_btn},{t:this.J5Y2_btn},{t:this.J5Y3_btn},{t:this.J5Y4_btn},{t:this.J18B8_btn},{t:this.J18B9_btn},{t:this.J18B10_btn},{t:this.J18B11_btn},{t:this.J18B12_btn},{t:this.J18GND_btn},{t:this.J16ID8_btn},{t:this.J16ID9_btn},{t:this.J16ID10_btn},{t:this.J16IDC2_btn},{t:this.J8RX0TX0_btn},{t:this.J8RX1TX1_btn},{t:this.J8GND_btn},{t:this.J10Vout_btn},{t:this.J10RX0TX0_btn},{t:this.J10RX1TX1_btn},{t:this.J10GND_btn},{t:this.J12C1_btn},{t:this.J12NO1_btn},{t:this.J12NO2_btn},{t:this.J12NO3_btn},{t:this.J13C2_btn},{t:this.J13NO4_btn},{t:this.J13NO5_btn},{t:this.J13NO6_btn},{t:this.J14NO7_btn},{t:this.J14C3_btn},{t:this.J14NC7_btn},{t:this.J15C4_btn},{t:this.J15NO8_btn},{t:this.J15NO9_btn},{t:this.J15NO10_btn},{t:this.J15NO11_btn},{t:this.J15NO12_btn}]},1).to({state:[{t:this.J1G_btn},{t:this.J1G0_btn},{t:this.VdcJ2_13},{t:this.gndJ2_15},{t:this.Vref5J2_19},{t:this.B1J3},{t:this.B2J3},{t:this.B3J3},{t:this.B4J3},{t:this.B5J3_1},{t:this.B5J3},{t:this.B7J3},{t:this.GNDJ3},{t:this.VdcJ3},{t:this.VdcJ2_12},{t:this.gndJ2_14},{t:this.Vref5J2_18},{t:this.VdcJ2_11},{t:this.gndJ2_13},{t:this.Vref5J2_17},{t:this.VdcJ2_10},{t:this.gndJ2_12},{t:this.Vref5J2_16},{t:this.gndJ2_11},{t:this.Vref5J2_15},{t:this.VdcJ2_9},{t:this.gndJ2_10},{t:this.Vref5J2_14},{t:this.VdcJ2_8},{t:this.gndJ2_9},{t:this.Vref5J2_13},{t:this.VdcJ2_7},{t:this.gndJ2_8},{t:this.gndJ2_7},{t:this.Vref5J2_12},{t:this.VdcJ2_6},{t:this.gndJ2_6},{t:this.VdcJ2_5},{t:this.gndJ2_5},{t:this.Vref5J2_11},{t:this.VdcJ2_4},{t:this.gndJ2_4},{t:this.Vref5J2_10},{t:this.Vref5J2_9},{t:this.VdcJ2_3},{t:this.gndJ2_3},{t:this.Vref5J2_8},{t:this.Vref5J2_7},{t:this.VdcJ2_2},{t:this.gndJ2_2},{t:this.Vref5J2_6},{t:this.Vref5J2_5},{t:this.VdcJ2_1},{t:this.gndJ2_1},{t:this.Vref5J2_4},{t:this.Vref5J2_3},{t:this.VdcJ2},{t:this.gndJ2},{t:this.Vref5J2_2},{t:this.Vref5J2_1},{t:this.Vref5J2}]},1).to({state:[{t:this.J1G_btn},{t:this.J1G0_btn},{t:this.VdcJ2_13},{t:this.gndJ2_15},{t:this.Vref5J2_19},{t:this.B1J3},{t:this.B2J3},{t:this.B3J3},{t:this.B4J3},{t:this.B5J3_1},{t:this.B5J3},{t:this.B7J3},{t:this.GNDJ3},{t:this.VdcJ3},{t:this.VdcJ2_12},{t:this.gndJ2_14},{t:this.Vref5J2_18},{t:this.VdcJ2_11},{t:this.gndJ2_13},{t:this.Vref5J2_17},{t:this.VdcJ2_10},{t:this.gndJ2_12},{t:this.Vref5J2_16},{t:this.gndJ2_11},{t:this.Vref5J2_15},{t:this.VdcJ2_9},{t:this.gndJ2_10},{t:this.Vref5J2_14},{t:this.VdcJ2_8},{t:this.gndJ2_9},{t:this.Vref5J2_13},{t:this.VdcJ2_7},{t:this.gndJ2_8},{t:this.gndJ2_7},{t:this.Vref5J2_12},{t:this.VdcJ2_6},{t:this.gndJ2_6},{t:this.VdcJ2_5},{t:this.gndJ2_5},{t:this.Vref5J2_11},{t:this.VdcJ2_4},{t:this.gndJ2_4},{t:this.Vref5J2_10},{t:this.Vref5J2_9},{t:this.VdcJ2_3},{t:this.gndJ2_3},{t:this.Vref5J2_8},{t:this.Vref5J2_7},{t:this.VdcJ2_2},{t:this.gndJ2_2},{t:this.Vref5J2_6},{t:this.Vref5J2_5},{t:this.VdcJ2_1},{t:this.gndJ2_1},{t:this.Vref5J2_4},{t:this.Vref5J2_3},{t:this.VdcJ2},{t:this.gndJ2},{t:this.Vref5J2_2},{t:this.Vref5J2_1},{t:this.Vref5J2}]},1).to({state:[{t:this.J1G_btn},{t:this.J1G0_btn},{t:this.VdcJ2_13},{t:this.gndJ2_15},{t:this.Vref5J2_19},{t:this.B1J3},{t:this.B2J3},{t:this.B3J3},{t:this.B4J3},{t:this.B5J3_1},{t:this.B5J3},{t:this.B7J3},{t:this.GNDJ3},{t:this.VdcJ3},{t:this.VdcJ2_12},{t:this.gndJ2_14},{t:this.Vref5J2_18},{t:this.VdcJ2_11},{t:this.gndJ2_13},{t:this.Vref5J2_17},{t:this.VdcJ2_10},{t:this.gndJ2_12},{t:this.Vref5J2_16},{t:this.gndJ2_11},{t:this.Vref5J2_15},{t:this.VdcJ2_9},{t:this.gndJ2_10},{t:this.Vref5J2_14},{t:this.VdcJ2_8},{t:this.gndJ2_9},{t:this.Vref5J2_13},{t:this.VdcJ2_7},{t:this.gndJ2_8},{t:this.gndJ2_7},{t:this.Vref5J2_12},{t:this.VdcJ2_6},{t:this.gndJ2_6},{t:this.VdcJ2_5},{t:this.gndJ2_5},{t:this.Vref5J2_11},{t:this.VdcJ2_4},{t:this.gndJ2_4},{t:this.Vref5J2_10},{t:this.Vref5J2_9},{t:this.VdcJ2_3},{t:this.gndJ2_3},{t:this.Vref5J2_8},{t:this.Vref5J2_7},{t:this.VdcJ2_2},{t:this.gndJ2_2},{t:this.Vref5J2_6},{t:this.Vref5J2_5},{t:this.VdcJ2_1},{t:this.gndJ2_1},{t:this.Vref5J2_4},{t:this.Vref5J2_3},{t:this.VdcJ2},{t:this.gndJ2},{t:this.Vref5J2_2},{t:this.Vref5J2_1},{t:this.Vref5J2}]},1).to({state:[{t:this.J1G_btn},{t:this.J1G0_btn},{t:this.VdcJ2_13},{t:this.gndJ2_15},{t:this.Vref5J2_19},{t:this.B1J3},{t:this.B2J3},{t:this.B3J3},{t:this.B4J3},{t:this.B5J3_1},{t:this.B5J3},{t:this.B7J3},{t:this.GNDJ3},{t:this.VdcJ3},{t:this.VdcJ2_12},{t:this.gndJ2_14},{t:this.Vref5J2_18},{t:this.VdcJ2_11},{t:this.gndJ2_13},{t:this.Vref5J2_17},{t:this.VdcJ2_10},{t:this.gndJ2_12},{t:this.Vref5J2_16},{t:this.gndJ2_11},{t:this.Vref5J2_15},{t:this.VdcJ2_9},{t:this.gndJ2_10},{t:this.Vref5J2_14},{t:this.VdcJ2_8},{t:this.gndJ2_9},{t:this.Vref5J2_13},{t:this.VdcJ2_7},{t:this.gndJ2_8},{t:this.gndJ2_7},{t:this.Vref5J2_12},{t:this.VdcJ2_6},{t:this.gndJ2_6},{t:this.VdcJ2_5},{t:this.gndJ2_5},{t:this.Vref5J2_11},{t:this.VdcJ2_4},{t:this.gndJ2_4},{t:this.Vref5J2_10},{t:this.Vref5J2_9},{t:this.VdcJ2_3},{t:this.gndJ2_3},{t:this.Vref5J2_8},{t:this.Vref5J2_7},{t:this.VdcJ2_2},{t:this.gndJ2_2},{t:this.Vref5J2_6},{t:this.Vref5J2_5},{t:this.VdcJ2_1},{t:this.gndJ2_1},{t:this.Vref5J2_4},{t:this.Vref5J2_3},{t:this.VdcJ2},{t:this.gndJ2},{t:this.Vref5J2_2},{t:this.Vref5J2_1},{t:this.Vref5J2}]},1).wait(1));
 
 	this._renderFirstFrame();
 
@@ -4562,195 +5987,200 @@ if (reversed == null) { reversed = false; }
 	// botoes
 	this.menu_avarias_btn = new lib.menu_avarias_btn();
 	this.menu_avarias_btn.name = "menu_avarias_btn";
-	this.menu_avarias_btn.setTransform(1676.2,862.5);
-	this.menu_avarias_btn.visible = false;
+	this.menu_avarias_btn.setTransform(1191.1,31);
 	new cjs.ButtonHelper(this.menu_avarias_btn, 0, 1, 2, false, new lib.menu_avarias_btn(), 3);
 
 	this.menu_avarias_btn_1 = new lib.menu_avarias_btn();
 	this.menu_avarias_btn_1.name = "menu_avarias_btn_1";
-	this.menu_avarias_btn_1.setTransform(1676.2,810);
+	this.menu_avarias_btn_1.setTransform(1676.2,862.5);
 	this.menu_avarias_btn_1.visible = false;
 	new cjs.ButtonHelper(this.menu_avarias_btn_1, 0, 1, 2, false, new lib.menu_avarias_btn(), 3);
 
 	this.menu_avarias_btn_2 = new lib.menu_avarias_btn();
 	this.menu_avarias_btn_2.name = "menu_avarias_btn_2";
-	this.menu_avarias_btn_2.setTransform(1676.2,758);
+	this.menu_avarias_btn_2.setTransform(1676.2,810);
 	this.menu_avarias_btn_2.visible = false;
 	new cjs.ButtonHelper(this.menu_avarias_btn_2, 0, 1, 2, false, new lib.menu_avarias_btn(), 3);
 
 	this.menu_avarias_btn_3 = new lib.menu_avarias_btn();
 	this.menu_avarias_btn_3.name = "menu_avarias_btn_3";
-	this.menu_avarias_btn_3.setTransform(1676.2,706);
+	this.menu_avarias_btn_3.setTransform(1676.2,758);
 	this.menu_avarias_btn_3.visible = false;
 	new cjs.ButtonHelper(this.menu_avarias_btn_3, 0, 1, 2, false, new lib.menu_avarias_btn(), 3);
 
 	this.menu_avarias_btn_4 = new lib.menu_avarias_btn();
 	this.menu_avarias_btn_4.name = "menu_avarias_btn_4";
-	this.menu_avarias_btn_4.setTransform(1676.2,654.5);
+	this.menu_avarias_btn_4.setTransform(1676.2,706);
 	this.menu_avarias_btn_4.visible = false;
 	new cjs.ButtonHelper(this.menu_avarias_btn_4, 0, 1, 2, false, new lib.menu_avarias_btn(), 3);
 
 	this.menu_avarias_btn_5 = new lib.menu_avarias_btn();
 	this.menu_avarias_btn_5.name = "menu_avarias_btn_5";
-	this.menu_avarias_btn_5.setTransform(1676.2,602.5);
+	this.menu_avarias_btn_5.setTransform(1676.2,654.5);
 	this.menu_avarias_btn_5.visible = false;
 	new cjs.ButtonHelper(this.menu_avarias_btn_5, 0, 1, 2, false, new lib.menu_avarias_btn(), 3);
 
 	this.menu_avarias_btn_6 = new lib.menu_avarias_btn();
 	this.menu_avarias_btn_6.name = "menu_avarias_btn_6";
-	this.menu_avarias_btn_6.setTransform(1676.2,550.5);
+	this.menu_avarias_btn_6.setTransform(1676.2,602.5);
 	this.menu_avarias_btn_6.visible = false;
 	new cjs.ButtonHelper(this.menu_avarias_btn_6, 0, 1, 2, false, new lib.menu_avarias_btn(), 3);
 
 	this.menu_avarias_btn_7 = new lib.menu_avarias_btn();
 	this.menu_avarias_btn_7.name = "menu_avarias_btn_7";
-	this.menu_avarias_btn_7.setTransform(1676.2,498.5);
+	this.menu_avarias_btn_7.setTransform(1676.2,550.5);
 	this.menu_avarias_btn_7.visible = false;
 	new cjs.ButtonHelper(this.menu_avarias_btn_7, 0, 1, 2, false, new lib.menu_avarias_btn(), 3);
 
 	this.menu_avarias_btn_8 = new lib.menu_avarias_btn();
 	this.menu_avarias_btn_8.name = "menu_avarias_btn_8";
-	this.menu_avarias_btn_8.setTransform(1676.2,446.5);
+	this.menu_avarias_btn_8.setTransform(1676.2,498.5);
 	this.menu_avarias_btn_8.visible = false;
 	new cjs.ButtonHelper(this.menu_avarias_btn_8, 0, 1, 2, false, new lib.menu_avarias_btn(), 3);
 
 	this.menu_avarias_btn_9 = new lib.menu_avarias_btn();
 	this.menu_avarias_btn_9.name = "menu_avarias_btn_9";
-	this.menu_avarias_btn_9.setTransform(1676.2,394.5);
+	this.menu_avarias_btn_9.setTransform(1676.2,446.5);
 	this.menu_avarias_btn_9.visible = false;
 	new cjs.ButtonHelper(this.menu_avarias_btn_9, 0, 1, 2, false, new lib.menu_avarias_btn(), 3);
 
 	this.menu_avarias_btn_10 = new lib.menu_avarias_btn();
 	this.menu_avarias_btn_10.name = "menu_avarias_btn_10";
-	this.menu_avarias_btn_10.setTransform(1676.2,342.5);
+	this.menu_avarias_btn_10.setTransform(1676.2,394.5);
 	this.menu_avarias_btn_10.visible = false;
 	new cjs.ButtonHelper(this.menu_avarias_btn_10, 0, 1, 2, false, new lib.menu_avarias_btn(), 3);
 
 	this.menu_avarias_btn_11 = new lib.menu_avarias_btn();
 	this.menu_avarias_btn_11.name = "menu_avarias_btn_11";
-	this.menu_avarias_btn_11.setTransform(1676.2,290.5);
+	this.menu_avarias_btn_11.setTransform(1676.2,342.5);
 	this.menu_avarias_btn_11.visible = false;
 	new cjs.ButtonHelper(this.menu_avarias_btn_11, 0, 1, 2, false, new lib.menu_avarias_btn(), 3);
 
 	this.menu_avarias_btn_12 = new lib.menu_avarias_btn();
 	this.menu_avarias_btn_12.name = "menu_avarias_btn_12";
-	this.menu_avarias_btn_12.setTransform(1676.2,238.5);
+	this.menu_avarias_btn_12.setTransform(1676.2,290.5);
 	this.menu_avarias_btn_12.visible = false;
 	new cjs.ButtonHelper(this.menu_avarias_btn_12, 0, 1, 2, false, new lib.menu_avarias_btn(), 3);
 
 	this.menu_avarias_btn_13 = new lib.menu_avarias_btn();
 	this.menu_avarias_btn_13.name = "menu_avarias_btn_13";
-	this.menu_avarias_btn_13.setTransform(1676.2,186.5);
+	this.menu_avarias_btn_13.setTransform(1676.2,238.5);
 	this.menu_avarias_btn_13.visible = false;
 	new cjs.ButtonHelper(this.menu_avarias_btn_13, 0, 1, 2, false, new lib.menu_avarias_btn(), 3);
 
 	this.menu_avarias_btn_14 = new lib.menu_avarias_btn();
 	this.menu_avarias_btn_14.name = "menu_avarias_btn_14";
-	this.menu_avarias_btn_14.setTransform(1676.2,134.5);
+	this.menu_avarias_btn_14.setTransform(1676.2,186.5);
 	this.menu_avarias_btn_14.visible = false;
 	new cjs.ButtonHelper(this.menu_avarias_btn_14, 0, 1, 2, false, new lib.menu_avarias_btn(), 3);
 
 	this.menu_avarias_btn_15 = new lib.menu_avarias_btn();
 	this.menu_avarias_btn_15.name = "menu_avarias_btn_15";
-	this.menu_avarias_btn_15.setTransform(1676.2,82.5);
+	this.menu_avarias_btn_15.setTransform(1676.2,134.5);
 	this.menu_avarias_btn_15.visible = false;
 	new cjs.ButtonHelper(this.menu_avarias_btn_15, 0, 1, 2, false, new lib.menu_avarias_btn(), 3);
 
 	this.menu_avarias_btn_16 = new lib.menu_avarias_btn();
 	this.menu_avarias_btn_16.name = "menu_avarias_btn_16";
-	this.menu_avarias_btn_16.setTransform(1433.65,862.5);
+	this.menu_avarias_btn_16.setTransform(1676.2,82.5);
 	this.menu_avarias_btn_16.visible = false;
 	new cjs.ButtonHelper(this.menu_avarias_btn_16, 0, 1, 2, false, new lib.menu_avarias_btn(), 3);
 
 	this.menu_avarias_btn_17 = new lib.menu_avarias_btn();
 	this.menu_avarias_btn_17.name = "menu_avarias_btn_17";
-	this.menu_avarias_btn_17.setTransform(1433.65,810);
+	this.menu_avarias_btn_17.setTransform(1433.65,862.5);
 	this.menu_avarias_btn_17.visible = false;
 	new cjs.ButtonHelper(this.menu_avarias_btn_17, 0, 1, 2, false, new lib.menu_avarias_btn(), 3);
 
 	this.menu_avarias_btn_18 = new lib.menu_avarias_btn();
 	this.menu_avarias_btn_18.name = "menu_avarias_btn_18";
-	this.menu_avarias_btn_18.setTransform(1433.65,758);
+	this.menu_avarias_btn_18.setTransform(1433.65,810);
 	this.menu_avarias_btn_18.visible = false;
 	new cjs.ButtonHelper(this.menu_avarias_btn_18, 0, 1, 2, false, new lib.menu_avarias_btn(), 3);
 
 	this.menu_avarias_btn_19 = new lib.menu_avarias_btn();
 	this.menu_avarias_btn_19.name = "menu_avarias_btn_19";
-	this.menu_avarias_btn_19.setTransform(1433.65,706);
+	this.menu_avarias_btn_19.setTransform(1433.65,758);
 	this.menu_avarias_btn_19.visible = false;
 	new cjs.ButtonHelper(this.menu_avarias_btn_19, 0, 1, 2, false, new lib.menu_avarias_btn(), 3);
 
 	this.menu_avarias_btn_20 = new lib.menu_avarias_btn();
 	this.menu_avarias_btn_20.name = "menu_avarias_btn_20";
-	this.menu_avarias_btn_20.setTransform(1433.65,654.5);
+	this.menu_avarias_btn_20.setTransform(1433.65,706);
 	this.menu_avarias_btn_20.visible = false;
 	new cjs.ButtonHelper(this.menu_avarias_btn_20, 0, 1, 2, false, new lib.menu_avarias_btn(), 3);
 
 	this.menu_avarias_btn_21 = new lib.menu_avarias_btn();
 	this.menu_avarias_btn_21.name = "menu_avarias_btn_21";
-	this.menu_avarias_btn_21.setTransform(1433.65,602.5);
+	this.menu_avarias_btn_21.setTransform(1433.65,654.5);
 	this.menu_avarias_btn_21.visible = false;
 	new cjs.ButtonHelper(this.menu_avarias_btn_21, 0, 1, 2, false, new lib.menu_avarias_btn(), 3);
 
 	this.menu_avarias_btn_22 = new lib.menu_avarias_btn();
 	this.menu_avarias_btn_22.name = "menu_avarias_btn_22";
-	this.menu_avarias_btn_22.setTransform(1433.65,550.5);
+	this.menu_avarias_btn_22.setTransform(1433.65,602.5);
 	this.menu_avarias_btn_22.visible = false;
 	new cjs.ButtonHelper(this.menu_avarias_btn_22, 0, 1, 2, false, new lib.menu_avarias_btn(), 3);
 
 	this.menu_avarias_btn_23 = new lib.menu_avarias_btn();
 	this.menu_avarias_btn_23.name = "menu_avarias_btn_23";
-	this.menu_avarias_btn_23.setTransform(1433.65,498.5);
+	this.menu_avarias_btn_23.setTransform(1433.65,550.5);
 	this.menu_avarias_btn_23.visible = false;
 	new cjs.ButtonHelper(this.menu_avarias_btn_23, 0, 1, 2, false, new lib.menu_avarias_btn(), 3);
 
 	this.menu_avarias_btn_24 = new lib.menu_avarias_btn();
 	this.menu_avarias_btn_24.name = "menu_avarias_btn_24";
-	this.menu_avarias_btn_24.setTransform(1433.65,446.5);
+	this.menu_avarias_btn_24.setTransform(1433.65,498.5);
 	this.menu_avarias_btn_24.visible = false;
 	new cjs.ButtonHelper(this.menu_avarias_btn_24, 0, 1, 2, false, new lib.menu_avarias_btn(), 3);
 
 	this.menu_avarias_btn_25 = new lib.menu_avarias_btn();
 	this.menu_avarias_btn_25.name = "menu_avarias_btn_25";
-	this.menu_avarias_btn_25.setTransform(1433.65,394.5);
+	this.menu_avarias_btn_25.setTransform(1433.65,446.5);
 	this.menu_avarias_btn_25.visible = false;
 	new cjs.ButtonHelper(this.menu_avarias_btn_25, 0, 1, 2, false, new lib.menu_avarias_btn(), 3);
 
 	this.menu_avarias_btn_26 = new lib.menu_avarias_btn();
 	this.menu_avarias_btn_26.name = "menu_avarias_btn_26";
-	this.menu_avarias_btn_26.setTransform(1433.65,342.5);
+	this.menu_avarias_btn_26.setTransform(1433.65,394.5);
 	this.menu_avarias_btn_26.visible = false;
 	new cjs.ButtonHelper(this.menu_avarias_btn_26, 0, 1, 2, false, new lib.menu_avarias_btn(), 3);
 
 	this.menu_avarias_btn_27 = new lib.menu_avarias_btn();
 	this.menu_avarias_btn_27.name = "menu_avarias_btn_27";
-	this.menu_avarias_btn_27.setTransform(1433.65,290.5);
+	this.menu_avarias_btn_27.setTransform(1433.65,342.5);
 	this.menu_avarias_btn_27.visible = false;
 	new cjs.ButtonHelper(this.menu_avarias_btn_27, 0, 1, 2, false, new lib.menu_avarias_btn(), 3);
 
 	this.menu_avarias_btn_28 = new lib.menu_avarias_btn();
 	this.menu_avarias_btn_28.name = "menu_avarias_btn_28";
-	this.menu_avarias_btn_28.setTransform(1433.65,238.5);
+	this.menu_avarias_btn_28.setTransform(1433.65,290.5);
 	this.menu_avarias_btn_28.visible = false;
 	new cjs.ButtonHelper(this.menu_avarias_btn_28, 0, 1, 2, false, new lib.menu_avarias_btn(), 3);
 
 	this.menu_avarias_btn_29 = new lib.menu_avarias_btn();
 	this.menu_avarias_btn_29.name = "menu_avarias_btn_29";
-	this.menu_avarias_btn_29.setTransform(1433.65,186.5);
+	this.menu_avarias_btn_29.setTransform(1433.65,238.5);
 	this.menu_avarias_btn_29.visible = false;
 	new cjs.ButtonHelper(this.menu_avarias_btn_29, 0, 1, 2, false, new lib.menu_avarias_btn(), 3);
 
 	this.menu_avarias_btn_30 = new lib.menu_avarias_btn();
 	this.menu_avarias_btn_30.name = "menu_avarias_btn_30";
-	this.menu_avarias_btn_30.setTransform(1433.65,134.5);
+	this.menu_avarias_btn_30.setTransform(1433.65,186.5);
 	this.menu_avarias_btn_30.visible = false;
 	new cjs.ButtonHelper(this.menu_avarias_btn_30, 0, 1, 2, false, new lib.menu_avarias_btn(), 3);
 
 	this.menu_avarias_btn_31 = new lib.menu_avarias_btn();
 	this.menu_avarias_btn_31.name = "menu_avarias_btn_31";
-	this.menu_avarias_btn_31.setTransform(1433.65,82.5);
+	this.menu_avarias_btn_31.setTransform(1433.65,134.5);
 	this.menu_avarias_btn_31.visible = false;
 	new cjs.ButtonHelper(this.menu_avarias_btn_31, 0, 1, 2, false, new lib.menu_avarias_btn(), 3);
+
+	this.menu_avarias_btn_32 = new lib.menu_avarias_btn();
+	this.menu_avarias_btn_32.name = "menu_avarias_btn_32";
+	this.menu_avarias_btn_32.setTransform(1433.65,82.5);
+	this.menu_avarias_btn_32.visible = false;
+	new cjs.ButtonHelper(this.menu_avarias_btn_32, 0, 1, 2, false, new lib.menu_avarias_btn(), 3);
 
 	this.menu_AL13b_btn = new lib.menu_AL13b_btn();
 	this.menu_AL13b_btn.name = "menu_AL13b_btn";
@@ -4888,11 +6318,6 @@ if (reversed == null) { reversed = false; }
 	this.menu_setpoint_btn.setTransform(464.7,82.5);
 	this.menu_setpoint_btn.visible = false;
 	new cjs.ButtonHelper(this.menu_setpoint_btn, 0, 1, 2, false, new lib.menu_setpoint_btn(), 3);
-
-	this.menu_avarias_btn_32 = new lib.menu_avarias_btn();
-	this.menu_avarias_btn_32.name = "menu_avarias_btn_32";
-	this.menu_avarias_btn_32.setTransform(1191.1,31);
-	new cjs.ButtonHelper(this.menu_avarias_btn_32, 0, 1, 2, false, new lib.menu_avarias_btn(), 3);
 
 	this.menu_circuitos_btn = new lib.menu_circuitos_btn();
 	this.menu_circuitos_btn.name = "menu_circuitos_btn";
@@ -5109,7 +6534,7 @@ if (reversed == null) { reversed = false; }
 	this.shape.graphics.f("#CCCCCC").s().p("A5NMiIAAvTIPUAAIAAPTgA6DktIAAnzMA0HAAAIAAHzg");
 	this.shape.setTransform(175.75,86.15);
 
-	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.shape},{t:this.instance},{t:this.menu_avarias_electricas,p:{regX:0.1,scaleX:0.9998,x:1433.35}},{t:this.menu_controle_remoto_btn},{t:this.menu_multimetro_btn},{t:this.menu_avarias_electronicas_btn,p:{x:1676.35}},{t:this.compressor_btn},{t:this.compressor_mecanica_btn},{t:this.compressor_electrica_btn},{t:this.vex_btn},{t:this.vex_mecanica_btn},{t:this.vex_electrica_btn},{t:this.ventilador_radial_btn},{t:this.ventilador_radial_mecanica_btn},{t:this.ventilador_radial_electricidade_btn},{t:this.sensor_btn},{t:this.sensor_mecanica_btn},{t:this.sensor_electrica_btn},{t:this.ventilador_axial_btn},{t:this.ventilador_axial_mecanica_btn},{t:this.ventilador_axial_electrica_btn},{t:this.transductor_btn},{t:this.transductor_mecanica_btn},{t:this.transductor_electrica_btn},{t:this.pressostato_btn},{t:this.pressostato_mecanica_btn},{t:this.pressostato_electrica_btn},{t:this.pda_btn},{t:this.pda_mecanica_btn},{t:this.pda_electrica_btn},{t:this.placa_electronica_btn},{t:this.placa_electronica_mecanica_btn},{t:this.placa_electronica_electrica_btn},{t:this.continuar_btn},{t:this.menu_circuitos_btn},{t:this.menu_avarias_btn_32},{t:this.menu_setpoint_btn},{t:this.menu_valores_medidas_btn},{t:this.menu_entradas_saidas_btn},{t:this.frigorifico_btn},{t:this.controle_btn},{t:this.potencia_btn},{t:this.menu_ajuda_btn,p:{x:1918.35}},{t:this.menu_AL05_btn},{t:this.menu_AL06_btn},{t:this.menu_AL05a_btn},{t:this.menu_AL06a_btn},{t:this.menu_AL07_btn},{t:this.menu_AL08_btn},{t:this.menu_AL09_btn},{t:this.menu_AL10_btn},{t:this.menu_AL11_btn},{t:this.menu_AL12_btn},{t:this.menu_AL13_btn},{t:this.menu_AL12a_btn},{t:this.menu_AL13a_btn},{t:this.menu_AL12b_btn},{t:this.menu_AL12c_btn},{t:this.menu_AL13b_btn},{t:this.menu_avarias_btn_31},{t:this.menu_avarias_btn_30},{t:this.menu_avarias_btn_29},{t:this.menu_avarias_btn_28},{t:this.menu_avarias_btn_27},{t:this.menu_avarias_btn_26},{t:this.menu_avarias_btn_25},{t:this.menu_avarias_btn_24},{t:this.menu_avarias_btn_23},{t:this.menu_avarias_btn_22},{t:this.menu_avarias_btn_21},{t:this.menu_avarias_btn_20},{t:this.menu_avarias_btn_19},{t:this.menu_avarias_btn_18},{t:this.menu_avarias_btn_17},{t:this.menu_avarias_btn_16},{t:this.menu_avarias_btn_15},{t:this.menu_avarias_btn_14},{t:this.menu_avarias_btn_13},{t:this.menu_avarias_btn_12},{t:this.menu_avarias_btn_11},{t:this.menu_avarias_btn_10},{t:this.menu_avarias_btn_9},{t:this.menu_avarias_btn_8},{t:this.menu_avarias_btn_7},{t:this.menu_avarias_btn_6},{t:this.menu_avarias_btn_5},{t:this.menu_avarias_btn_4},{t:this.menu_avarias_btn_3},{t:this.menu_avarias_btn_2},{t:this.menu_avarias_btn_1},{t:this.menu_avarias_btn,p:{x:1676.2,y:862.5,visible:false}}]}).to({state:[{t:this.shape},{t:this.instance},{t:this.menu_avarias_electricas,p:{regX:0,scaleX:1,x:1433.45}},{t:this.menu_controle_remoto_btn},{t:this.menu_multimetro_btn},{t:this.menu_avarias_electronicas_btn,p:{x:1675.45}},{t:this.compressor_btn},{t:this.compressor_mecanica_btn},{t:this.compressor_electrica_btn},{t:this.vex_btn},{t:this.vex_mecanica_btn},{t:this.vex_electrica_btn},{t:this.ventilador_radial_btn},{t:this.ventilador_radial_mecanica_btn},{t:this.ventilador_radial_electricidade_btn},{t:this.sensor_btn},{t:this.sensor_mecanica_btn},{t:this.sensor_electrica_btn},{t:this.ventilador_axial_btn},{t:this.ventilador_axial_mecanica_btn},{t:this.ventilador_axial_electrica_btn},{t:this.transductor_btn},{t:this.transductor_mecanica_btn},{t:this.transductor_electrica_btn},{t:this.pressostato_btn},{t:this.pressostato_mecanica_btn},{t:this.pressostato_electrica_btn},{t:this.pda_btn},{t:this.pda_mecanica_btn},{t:this.pda_electrica_btn},{t:this.placa_electronica_btn},{t:this.placa_electronica_mecanica_btn},{t:this.placa_electronica_electrica_btn},{t:this.menu_circuitos_btn},{t:this.frigorifico_btn},{t:this.controle_btn},{t:this.potencia_btn},{t:this.menu_avarias_btn,p:{x:1191.1,y:31,visible:true}},{t:this.menu_setpoint_btn},{t:this.menu_valores_medidas_btn},{t:this.menu_entradas_saidas_btn},{t:this.menu_ajuda_btn,p:{x:1917.45}},{t:this.menu_AL05_btn},{t:this.menu_AL06_btn},{t:this.menu_AL05a_btn},{t:this.menu_AL06a_btn},{t:this.menu_AL07_btn},{t:this.menu_AL08_btn},{t:this.menu_AL09_btn},{t:this.menu_AL10_btn},{t:this.menu_AL11_btn},{t:this.menu_AL12_btn},{t:this.menu_AL13_btn},{t:this.menu_AL12a_btn},{t:this.menu_AL13a_btn},{t:this.menu_AL12b_btn},{t:this.menu_AL12c_btn},{t:this.menu_AL13b_btn}]},1).to({state:[{t:this.shape},{t:this.instance},{t:this.menu_avarias_electricas,p:{regX:0,scaleX:1,x:1433.45}},{t:this.menu_controle_remoto_btn},{t:this.menu_multimetro_btn},{t:this.menu_avarias_electronicas_btn,p:{x:1675.45}},{t:this.compressor_btn},{t:this.compressor_mecanica_btn},{t:this.compressor_electrica_btn},{t:this.vex_btn},{t:this.vex_mecanica_btn},{t:this.vex_electrica_btn},{t:this.ventilador_radial_btn},{t:this.ventilador_radial_mecanica_btn},{t:this.ventilador_radial_electricidade_btn},{t:this.sensor_btn},{t:this.sensor_mecanica_btn},{t:this.sensor_electrica_btn},{t:this.ventilador_axial_btn},{t:this.ventilador_axial_mecanica_btn},{t:this.ventilador_axial_electrica_btn},{t:this.transductor_btn},{t:this.transductor_mecanica_btn},{t:this.transductor_electrica_btn},{t:this.pressostato_btn},{t:this.pressostato_mecanica_btn},{t:this.pressostato_electrica_btn},{t:this.pda_btn},{t:this.pda_mecanica_btn},{t:this.pda_electrica_btn},{t:this.placa_electronica_btn},{t:this.placa_electronica_mecanica_btn},{t:this.placa_electronica_electrica_btn},{t:this.menu_circuitos_btn},{t:this.frigorifico_btn},{t:this.controle_btn},{t:this.potencia_btn},{t:this.menu_avarias_btn,p:{x:1191.1,y:31,visible:true}},{t:this.menu_setpoint_btn},{t:this.menu_valores_medidas_btn},{t:this.menu_entradas_saidas_btn},{t:this.menu_ajuda_btn,p:{x:1917.45}},{t:this.menu_AL05_btn},{t:this.menu_AL06_btn},{t:this.menu_AL05a_btn},{t:this.menu_AL06a_btn},{t:this.menu_AL07_btn},{t:this.menu_AL08_btn},{t:this.menu_AL09_btn},{t:this.menu_AL10_btn},{t:this.menu_AL11_btn},{t:this.menu_AL12_btn},{t:this.menu_AL13_btn},{t:this.menu_AL12a_btn},{t:this.menu_AL13a_btn},{t:this.menu_AL12b_btn},{t:this.menu_AL12c_btn},{t:this.menu_AL13b_btn}]},1).to({state:[{t:this.shape},{t:this.instance},{t:this.menu_avarias_electricas,p:{regX:0,scaleX:1,x:1433.45}},{t:this.menu_controle_remoto_btn},{t:this.menu_multimetro_btn},{t:this.menu_avarias_electronicas_btn,p:{x:1675.45}},{t:this.compressor_btn},{t:this.compressor_mecanica_btn},{t:this.compressor_electrica_btn},{t:this.vex_btn},{t:this.vex_mecanica_btn},{t:this.vex_electrica_btn},{t:this.ventilador_radial_btn},{t:this.ventilador_radial_mecanica_btn},{t:this.ventilador_radial_electricidade_btn},{t:this.sensor_btn},{t:this.sensor_mecanica_btn},{t:this.sensor_electrica_btn},{t:this.ventilador_axial_btn},{t:this.ventilador_axial_mecanica_btn},{t:this.ventilador_axial_electrica_btn},{t:this.transductor_btn},{t:this.transductor_mecanica_btn},{t:this.transductor_electrica_btn},{t:this.pressostato_btn},{t:this.pressostato_mecanica_btn},{t:this.pressostato_electrica_btn},{t:this.pda_btn},{t:this.pda_mecanica_btn},{t:this.pda_electrica_btn},{t:this.placa_electronica_btn},{t:this.placa_electronica_mecanica_btn},{t:this.placa_electronica_electrica_btn},{t:this.menu_circuitos_btn},{t:this.frigorifico_btn},{t:this.controle_btn},{t:this.potencia_btn},{t:this.menu_avarias_btn,p:{x:1191.1,y:31,visible:true}},{t:this.menu_setpoint_btn},{t:this.menu_valores_medidas_btn},{t:this.menu_entradas_saidas_btn},{t:this.menu_ajuda_btn,p:{x:1917.45}},{t:this.menu_AL05_btn},{t:this.menu_AL06_btn},{t:this.menu_AL05a_btn},{t:this.menu_AL06a_btn},{t:this.menu_AL07_btn},{t:this.menu_AL08_btn},{t:this.menu_AL09_btn},{t:this.menu_AL10_btn},{t:this.menu_AL11_btn},{t:this.menu_AL12_btn},{t:this.menu_AL13_btn},{t:this.menu_AL12a_btn},{t:this.menu_AL13a_btn},{t:this.menu_AL12b_btn},{t:this.menu_AL12c_btn},{t:this.menu_AL13b_btn}]},1).to({state:[{t:this.shape},{t:this.instance},{t:this.menu_avarias_electricas,p:{regX:0,scaleX:1,x:1433.45}},{t:this.menu_controle_remoto_btn},{t:this.menu_multimetro_btn},{t:this.menu_avarias_electronicas_btn,p:{x:1675.45}},{t:this.compressor_btn},{t:this.compressor_mecanica_btn},{t:this.compressor_electrica_btn},{t:this.vex_btn},{t:this.vex_mecanica_btn},{t:this.vex_electrica_btn},{t:this.ventilador_radial_btn},{t:this.ventilador_radial_mecanica_btn},{t:this.ventilador_radial_electricidade_btn},{t:this.sensor_btn},{t:this.sensor_mecanica_btn},{t:this.sensor_electrica_btn},{t:this.ventilador_axial_btn},{t:this.ventilador_axial_mecanica_btn},{t:this.ventilador_axial_electrica_btn},{t:this.transductor_btn},{t:this.transductor_mecanica_btn},{t:this.transductor_electrica_btn},{t:this.pressostato_btn},{t:this.pressostato_mecanica_btn},{t:this.pressostato_electrica_btn},{t:this.pda_btn},{t:this.pda_mecanica_btn},{t:this.pda_electrica_btn},{t:this.placa_electronica_btn},{t:this.placa_electronica_mecanica_btn},{t:this.placa_electronica_electrica_btn},{t:this.menu_circuitos_btn},{t:this.frigorifico_btn},{t:this.controle_btn},{t:this.potencia_btn},{t:this.menu_avarias_btn,p:{x:1191.1,y:31,visible:true}},{t:this.menu_setpoint_btn},{t:this.menu_valores_medidas_btn},{t:this.menu_entradas_saidas_btn},{t:this.menu_ajuda_btn,p:{x:1917.45}},{t:this.menu_AL05_btn},{t:this.menu_AL06_btn},{t:this.menu_AL05a_btn},{t:this.menu_AL06a_btn},{t:this.menu_AL07_btn},{t:this.menu_AL08_btn},{t:this.menu_AL09_btn},{t:this.menu_AL10_btn},{t:this.menu_AL11_btn},{t:this.menu_AL12_btn},{t:this.menu_AL13_btn},{t:this.menu_AL12a_btn},{t:this.menu_AL13a_btn},{t:this.menu_AL12b_btn},{t:this.menu_AL12c_btn},{t:this.menu_AL13b_btn}]},1).to({state:[{t:this.shape},{t:this.instance},{t:this.menu_avarias_electricas,p:{regX:0,scaleX:1,x:1433.45}},{t:this.menu_controle_remoto_btn},{t:this.menu_multimetro_btn},{t:this.menu_avarias_electronicas_btn,p:{x:1675.45}},{t:this.compressor_btn},{t:this.compressor_mecanica_btn},{t:this.compressor_electrica_btn},{t:this.vex_btn},{t:this.vex_mecanica_btn},{t:this.vex_electrica_btn},{t:this.ventilador_radial_btn},{t:this.ventilador_radial_mecanica_btn},{t:this.ventilador_radial_electricidade_btn},{t:this.sensor_btn},{t:this.sensor_mecanica_btn},{t:this.sensor_electrica_btn},{t:this.ventilador_axial_btn},{t:this.ventilador_axial_mecanica_btn},{t:this.ventilador_axial_electrica_btn},{t:this.transductor_btn},{t:this.transductor_mecanica_btn},{t:this.transductor_electrica_btn},{t:this.pressostato_btn},{t:this.pressostato_mecanica_btn},{t:this.pressostato_electrica_btn},{t:this.pda_btn},{t:this.pda_mecanica_btn},{t:this.pda_electrica_btn},{t:this.placa_electronica_btn},{t:this.placa_electronica_mecanica_btn},{t:this.placa_electronica_electrica_btn},{t:this.menu_circuitos_btn},{t:this.frigorifico_btn},{t:this.controle_btn},{t:this.potencia_btn},{t:this.menu_avarias_btn,p:{x:1191.1,y:31,visible:true}},{t:this.menu_setpoint_btn},{t:this.menu_valores_medidas_btn},{t:this.menu_entradas_saidas_btn},{t:this.menu_ajuda_btn,p:{x:1917.45}},{t:this.menu_AL05_btn},{t:this.menu_AL06_btn},{t:this.menu_AL05a_btn},{t:this.menu_AL06a_btn},{t:this.menu_AL07_btn},{t:this.menu_AL08_btn},{t:this.menu_AL09_btn},{t:this.menu_AL10_btn},{t:this.menu_AL11_btn},{t:this.menu_AL12_btn},{t:this.menu_AL13_btn},{t:this.menu_AL12a_btn},{t:this.menu_AL13a_btn},{t:this.menu_AL12b_btn},{t:this.menu_AL12c_btn},{t:this.menu_AL13b_btn}]},1).wait(1));
+	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.shape},{t:this.instance},{t:this.menu_avarias_electricas,p:{regX:0.1,scaleX:0.9998,x:1433.35}},{t:this.menu_controle_remoto_btn},{t:this.menu_multimetro_btn},{t:this.menu_avarias_electronicas_btn,p:{x:1676.35}},{t:this.compressor_btn},{t:this.compressor_mecanica_btn},{t:this.compressor_electrica_btn},{t:this.vex_btn},{t:this.vex_mecanica_btn},{t:this.vex_electrica_btn},{t:this.ventilador_radial_btn},{t:this.ventilador_radial_mecanica_btn},{t:this.ventilador_radial_electricidade_btn},{t:this.sensor_btn},{t:this.sensor_mecanica_btn},{t:this.sensor_electrica_btn},{t:this.ventilador_axial_btn},{t:this.ventilador_axial_mecanica_btn},{t:this.ventilador_axial_electrica_btn},{t:this.transductor_btn},{t:this.transductor_mecanica_btn},{t:this.transductor_electrica_btn},{t:this.pressostato_btn},{t:this.pressostato_mecanica_btn},{t:this.pressostato_electrica_btn},{t:this.pda_btn},{t:this.pda_mecanica_btn},{t:this.pda_electrica_btn},{t:this.placa_electronica_btn},{t:this.placa_electronica_mecanica_btn},{t:this.placa_electronica_electrica_btn},{t:this.continuar_btn},{t:this.menu_circuitos_btn},{t:this.menu_setpoint_btn},{t:this.menu_valores_medidas_btn},{t:this.menu_entradas_saidas_btn},{t:this.frigorifico_btn},{t:this.controle_btn},{t:this.potencia_btn},{t:this.menu_ajuda_btn,p:{x:1918.35}},{t:this.menu_AL05_btn},{t:this.menu_AL06_btn},{t:this.menu_AL05a_btn},{t:this.menu_AL06a_btn},{t:this.menu_AL07_btn},{t:this.menu_AL08_btn},{t:this.menu_AL09_btn},{t:this.menu_AL10_btn},{t:this.menu_AL11_btn},{t:this.menu_AL12_btn},{t:this.menu_AL13_btn},{t:this.menu_AL12a_btn},{t:this.menu_AL13a_btn},{t:this.menu_AL12b_btn},{t:this.menu_AL12c_btn},{t:this.menu_AL13b_btn},{t:this.menu_avarias_btn_32},{t:this.menu_avarias_btn_31},{t:this.menu_avarias_btn_30},{t:this.menu_avarias_btn_29},{t:this.menu_avarias_btn_28},{t:this.menu_avarias_btn_27},{t:this.menu_avarias_btn_26},{t:this.menu_avarias_btn_25},{t:this.menu_avarias_btn_24},{t:this.menu_avarias_btn_23},{t:this.menu_avarias_btn_22},{t:this.menu_avarias_btn_21},{t:this.menu_avarias_btn_20},{t:this.menu_avarias_btn_19},{t:this.menu_avarias_btn_18},{t:this.menu_avarias_btn_17},{t:this.menu_avarias_btn_16},{t:this.menu_avarias_btn_15},{t:this.menu_avarias_btn_14},{t:this.menu_avarias_btn_13},{t:this.menu_avarias_btn_12},{t:this.menu_avarias_btn_11},{t:this.menu_avarias_btn_10},{t:this.menu_avarias_btn_9},{t:this.menu_avarias_btn_8},{t:this.menu_avarias_btn_7},{t:this.menu_avarias_btn_6},{t:this.menu_avarias_btn_5},{t:this.menu_avarias_btn_4},{t:this.menu_avarias_btn_3},{t:this.menu_avarias_btn_2},{t:this.menu_avarias_btn_1},{t:this.menu_avarias_btn}]}).to({state:[{t:this.shape},{t:this.instance},{t:this.menu_avarias_electricas,p:{regX:0,scaleX:1,x:1433.45}},{t:this.menu_controle_remoto_btn},{t:this.menu_multimetro_btn},{t:this.menu_avarias_electronicas_btn,p:{x:1675.45}},{t:this.compressor_btn},{t:this.compressor_mecanica_btn},{t:this.compressor_electrica_btn},{t:this.vex_btn},{t:this.vex_mecanica_btn},{t:this.vex_electrica_btn},{t:this.ventilador_radial_btn},{t:this.ventilador_radial_mecanica_btn},{t:this.ventilador_radial_electricidade_btn},{t:this.sensor_btn},{t:this.sensor_mecanica_btn},{t:this.sensor_electrica_btn},{t:this.ventilador_axial_btn},{t:this.ventilador_axial_mecanica_btn},{t:this.ventilador_axial_electrica_btn},{t:this.transductor_btn},{t:this.transductor_mecanica_btn},{t:this.transductor_electrica_btn},{t:this.pressostato_btn},{t:this.pressostato_mecanica_btn},{t:this.pressostato_electrica_btn},{t:this.pda_btn},{t:this.pda_mecanica_btn},{t:this.pda_electrica_btn},{t:this.placa_electronica_btn},{t:this.placa_electronica_mecanica_btn},{t:this.placa_electronica_electrica_btn},{t:this.menu_circuitos_btn},{t:this.frigorifico_btn},{t:this.controle_btn},{t:this.potencia_btn},{t:this.menu_avarias_btn},{t:this.menu_setpoint_btn},{t:this.menu_valores_medidas_btn},{t:this.menu_entradas_saidas_btn},{t:this.menu_ajuda_btn,p:{x:1917.45}},{t:this.menu_AL05_btn},{t:this.menu_AL06_btn},{t:this.menu_AL05a_btn},{t:this.menu_AL06a_btn},{t:this.menu_AL07_btn},{t:this.menu_AL08_btn},{t:this.menu_AL09_btn},{t:this.menu_AL10_btn},{t:this.menu_AL11_btn},{t:this.menu_AL12_btn},{t:this.menu_AL13_btn},{t:this.menu_AL12a_btn},{t:this.menu_AL13a_btn},{t:this.menu_AL12b_btn},{t:this.menu_AL12c_btn},{t:this.menu_AL13b_btn}]},1).to({state:[{t:this.shape},{t:this.instance},{t:this.menu_avarias_electricas,p:{regX:0,scaleX:1,x:1433.45}},{t:this.menu_controle_remoto_btn},{t:this.menu_multimetro_btn},{t:this.menu_avarias_electronicas_btn,p:{x:1675.45}},{t:this.compressor_btn},{t:this.compressor_mecanica_btn},{t:this.compressor_electrica_btn},{t:this.vex_btn},{t:this.vex_mecanica_btn},{t:this.vex_electrica_btn},{t:this.ventilador_radial_btn},{t:this.ventilador_radial_mecanica_btn},{t:this.ventilador_radial_electricidade_btn},{t:this.sensor_btn},{t:this.sensor_mecanica_btn},{t:this.sensor_electrica_btn},{t:this.ventilador_axial_btn},{t:this.ventilador_axial_mecanica_btn},{t:this.ventilador_axial_electrica_btn},{t:this.transductor_btn},{t:this.transductor_mecanica_btn},{t:this.transductor_electrica_btn},{t:this.pressostato_btn},{t:this.pressostato_mecanica_btn},{t:this.pressostato_electrica_btn},{t:this.pda_btn},{t:this.pda_mecanica_btn},{t:this.pda_electrica_btn},{t:this.placa_electronica_btn},{t:this.placa_electronica_mecanica_btn},{t:this.placa_electronica_electrica_btn},{t:this.menu_circuitos_btn},{t:this.frigorifico_btn},{t:this.controle_btn},{t:this.potencia_btn},{t:this.menu_avarias_btn},{t:this.menu_setpoint_btn},{t:this.menu_valores_medidas_btn},{t:this.menu_entradas_saidas_btn},{t:this.menu_ajuda_btn,p:{x:1917.45}},{t:this.menu_AL05_btn},{t:this.menu_AL06_btn},{t:this.menu_AL05a_btn},{t:this.menu_AL06a_btn},{t:this.menu_AL07_btn},{t:this.menu_AL08_btn},{t:this.menu_AL09_btn},{t:this.menu_AL10_btn},{t:this.menu_AL11_btn},{t:this.menu_AL12_btn},{t:this.menu_AL13_btn},{t:this.menu_AL12a_btn},{t:this.menu_AL13a_btn},{t:this.menu_AL12b_btn},{t:this.menu_AL12c_btn},{t:this.menu_AL13b_btn}]},1).to({state:[{t:this.shape},{t:this.instance},{t:this.menu_avarias_electricas,p:{regX:0,scaleX:1,x:1433.45}},{t:this.menu_controle_remoto_btn},{t:this.menu_multimetro_btn},{t:this.menu_avarias_electronicas_btn,p:{x:1675.45}},{t:this.compressor_btn},{t:this.compressor_mecanica_btn},{t:this.compressor_electrica_btn},{t:this.vex_btn},{t:this.vex_mecanica_btn},{t:this.vex_electrica_btn},{t:this.ventilador_radial_btn},{t:this.ventilador_radial_mecanica_btn},{t:this.ventilador_radial_electricidade_btn},{t:this.sensor_btn},{t:this.sensor_mecanica_btn},{t:this.sensor_electrica_btn},{t:this.ventilador_axial_btn},{t:this.ventilador_axial_mecanica_btn},{t:this.ventilador_axial_electrica_btn},{t:this.transductor_btn},{t:this.transductor_mecanica_btn},{t:this.transductor_electrica_btn},{t:this.pressostato_btn},{t:this.pressostato_mecanica_btn},{t:this.pressostato_electrica_btn},{t:this.pda_btn},{t:this.pda_mecanica_btn},{t:this.pda_electrica_btn},{t:this.placa_electronica_btn},{t:this.placa_electronica_mecanica_btn},{t:this.placa_electronica_electrica_btn},{t:this.menu_circuitos_btn},{t:this.frigorifico_btn},{t:this.controle_btn},{t:this.potencia_btn},{t:this.menu_avarias_btn},{t:this.menu_setpoint_btn},{t:this.menu_valores_medidas_btn},{t:this.menu_entradas_saidas_btn},{t:this.menu_ajuda_btn,p:{x:1917.45}},{t:this.menu_AL05_btn},{t:this.menu_AL06_btn},{t:this.menu_AL05a_btn},{t:this.menu_AL06a_btn},{t:this.menu_AL07_btn},{t:this.menu_AL08_btn},{t:this.menu_AL09_btn},{t:this.menu_AL10_btn},{t:this.menu_AL11_btn},{t:this.menu_AL12_btn},{t:this.menu_AL13_btn},{t:this.menu_AL12a_btn},{t:this.menu_AL13a_btn},{t:this.menu_AL12b_btn},{t:this.menu_AL12c_btn},{t:this.menu_AL13b_btn}]},1).to({state:[{t:this.shape},{t:this.instance},{t:this.menu_avarias_electricas,p:{regX:0,scaleX:1,x:1433.45}},{t:this.menu_controle_remoto_btn},{t:this.menu_multimetro_btn},{t:this.menu_avarias_electronicas_btn,p:{x:1675.45}},{t:this.compressor_btn},{t:this.compressor_mecanica_btn},{t:this.compressor_electrica_btn},{t:this.vex_btn},{t:this.vex_mecanica_btn},{t:this.vex_electrica_btn},{t:this.ventilador_radial_btn},{t:this.ventilador_radial_mecanica_btn},{t:this.ventilador_radial_electricidade_btn},{t:this.sensor_btn},{t:this.sensor_mecanica_btn},{t:this.sensor_electrica_btn},{t:this.ventilador_axial_btn},{t:this.ventilador_axial_mecanica_btn},{t:this.ventilador_axial_electrica_btn},{t:this.transductor_btn},{t:this.transductor_mecanica_btn},{t:this.transductor_electrica_btn},{t:this.pressostato_btn},{t:this.pressostato_mecanica_btn},{t:this.pressostato_electrica_btn},{t:this.pda_btn},{t:this.pda_mecanica_btn},{t:this.pda_electrica_btn},{t:this.placa_electronica_btn},{t:this.placa_electronica_mecanica_btn},{t:this.placa_electronica_electrica_btn},{t:this.menu_circuitos_btn},{t:this.frigorifico_btn},{t:this.controle_btn},{t:this.potencia_btn},{t:this.menu_avarias_btn},{t:this.menu_setpoint_btn},{t:this.menu_valores_medidas_btn},{t:this.menu_entradas_saidas_btn},{t:this.menu_ajuda_btn,p:{x:1917.45}},{t:this.menu_AL05_btn},{t:this.menu_AL06_btn},{t:this.menu_AL05a_btn},{t:this.menu_AL06a_btn},{t:this.menu_AL07_btn},{t:this.menu_AL08_btn},{t:this.menu_AL09_btn},{t:this.menu_AL10_btn},{t:this.menu_AL11_btn},{t:this.menu_AL12_btn},{t:this.menu_AL13_btn},{t:this.menu_AL12a_btn},{t:this.menu_AL13a_btn},{t:this.menu_AL12b_btn},{t:this.menu_AL12c_btn},{t:this.menu_AL13b_btn}]},1).to({state:[{t:this.shape},{t:this.instance},{t:this.menu_avarias_electricas,p:{regX:0,scaleX:1,x:1433.45}},{t:this.menu_controle_remoto_btn},{t:this.menu_multimetro_btn},{t:this.menu_avarias_electronicas_btn,p:{x:1675.45}},{t:this.compressor_btn},{t:this.compressor_mecanica_btn},{t:this.compressor_electrica_btn},{t:this.vex_btn},{t:this.vex_mecanica_btn},{t:this.vex_electrica_btn},{t:this.ventilador_radial_btn},{t:this.ventilador_radial_mecanica_btn},{t:this.ventilador_radial_electricidade_btn},{t:this.sensor_btn},{t:this.sensor_mecanica_btn},{t:this.sensor_electrica_btn},{t:this.ventilador_axial_btn},{t:this.ventilador_axial_mecanica_btn},{t:this.ventilador_axial_electrica_btn},{t:this.transductor_btn},{t:this.transductor_mecanica_btn},{t:this.transductor_electrica_btn},{t:this.pressostato_btn},{t:this.pressostato_mecanica_btn},{t:this.pressostato_electrica_btn},{t:this.pda_btn},{t:this.pda_mecanica_btn},{t:this.pda_electrica_btn},{t:this.placa_electronica_btn},{t:this.placa_electronica_mecanica_btn},{t:this.placa_electronica_electrica_btn},{t:this.menu_circuitos_btn},{t:this.frigorifico_btn},{t:this.controle_btn},{t:this.potencia_btn},{t:this.menu_avarias_btn},{t:this.menu_setpoint_btn},{t:this.menu_valores_medidas_btn},{t:this.menu_entradas_saidas_btn},{t:this.menu_ajuda_btn,p:{x:1917.45}},{t:this.menu_AL05_btn},{t:this.menu_AL06_btn},{t:this.menu_AL05a_btn},{t:this.menu_AL06a_btn},{t:this.menu_AL07_btn},{t:this.menu_AL08_btn},{t:this.menu_AL09_btn},{t:this.menu_AL10_btn},{t:this.menu_AL11_btn},{t:this.menu_AL12_btn},{t:this.menu_AL13_btn},{t:this.menu_AL12a_btn},{t:this.menu_AL13a_btn},{t:this.menu_AL12b_btn},{t:this.menu_AL12c_btn},{t:this.menu_AL13b_btn}]},1).wait(1));
 
 	this._renderFirstFrame();
 
@@ -5141,7 +6566,7 @@ if (reversed == null) { reversed = false; }
 
 
 // stage content:
-(lib.SimuladorRooftopCiatRPFJunho1 = function(mode,startPosition,loop,reversed) {
+(lib.SimuladorRooftopCiatRPFjulho15 = function(mode,startPosition,loop,reversed) {
 if (loop == null) { loop = true; }
 if (reversed == null) { reversed = false; }
 	var props = new Object();
@@ -5227,7 +6652,6 @@ if (reversed == null) { reversed = false; }
 		this.placa_electronica_electrica_btn = this.botoes.placa_electronica_electrica_btn;
 		this.continuar_btn = this.botoes.continuar_btn;
 		this.menu_circuitos_btn = this.botoes.menu_circuitos_btn;
-		this.menu_avarias_btn = this.botoes.menu_avarias_btn;
 		this.menu_setpoint_btn = this.botoes.menu_setpoint_btn;
 		this.menu_valores_medidas_btn = this.botoes.menu_valores_medidas_btn;
 		this.menu_entradas_saidas_btn = this.botoes.menu_entradas_saidas_btn;
@@ -5283,10 +6707,9 @@ if (reversed == null) { reversed = false; }
 		this.menu_avarias_btn = this.botoes.menu_avarias_btn;
 		this.menu_avarias_btn = this.botoes.menu_avarias_btn;
 		this.menu_avarias_btn = this.botoes.menu_avarias_btn;
-		this.ponta_preta_final_mc = this.ponta_preta.ponta_preta_final_mc;
+		this.menu_avarias_btn = this.botoes.menu_avarias_btn;
 		this.ponta_preta_inicial_mc = this.ponta_preta.ponta_preta_inicial_mc;
 		this.ponta_vermelha_inicial_mc = this.ponta_vermelha.ponta_vermelha_inicial_mc;
-		this.ponta_vermelha_final_mc = this.ponta_vermelha.ponta_vermelha_final_mc;
 		this.J1G_btn = this.contactos_placa.J1G_btn;
 		this.J1G0_btn = this.contactos_placa.J1G0_btn;
 		this.VdcJ2 = this.contactos_placa.VdcJ2;
@@ -5379,7 +6802,7 @@ if (reversed == null) { reversed = false; }
 	this.frame_1 = function() {
 		var soundInstance = playSound("SomBotao",0);
 		this.InsertIntoSoundStreamData(soundInstance,1,2,1);
-		this.logo_mc = undefined;this.alarme_btn = undefined;this.prog_btn = undefined;this.esc_btn = undefined;this.cima_btn = undefined;this.enter_btn = undefined;this.baixo_btn = undefined;this.display_controlador_mc = undefined;this.roda_multimetro_btn = undefined;this.display_inferior_txt = undefined;this.display_texto_superior_txt = undefined;this.capa_display_mc = undefined;this.menu_ligar_btn = undefined;this.menu_desligar_btn = undefined;this.menu_tensao_ac_btn = undefined;this.menu_tensao_dc_btn = undefined;this.menu_resistencia_btn = undefined;this.menu_capacidade_btn = undefined;this.menu_corrente_btn = undefined;this.menu_tensao_ac_milivolts_btn = undefined;this.J1G_btn = undefined;this.J1G0_btn = undefined;this.VdcJ2 = undefined;this.gndJ2 = undefined;this.Vref5J2 = undefined;this.B1J3 = undefined;this.B2J3 = undefined;this.B3J3 = undefined;this.B4J3 = undefined;this.B5J3 = undefined;this.B5J3 = undefined;this.B7J3 = undefined;this.GNDJ3 = undefined;this.VdcJ3 = undefined;this.VdcJ2 = undefined;this.gndJ2 = undefined;this.Vref5J2 = undefined;this.VdcJ2 = undefined;this.gndJ2 = undefined;this.Vref5J2 = undefined;this.VdcJ2 = undefined;this.gndJ2 = undefined;this.Vref5J2 = undefined;this.gndJ2 = undefined;this.Vref5J2 = undefined;this.VdcJ2 = undefined;this.gndJ2 = undefined;this.Vref5J2 = undefined;this.VdcJ2 = undefined;this.gndJ2 = undefined;this.Vref5J2 = undefined;this.VdcJ2 = undefined;this.gndJ2 = undefined;this.gndJ2 = undefined;this.Vref5J2 = undefined;this.VdcJ2 = undefined;this.gndJ2 = undefined;this.VdcJ2 = undefined;this.gndJ2 = undefined;this.Vref5J2 = undefined;this.VdcJ2 = undefined;this.gndJ2 = undefined;this.Vref5J2 = undefined;this.Vref5J2 = undefined;this.VdcJ2 = undefined;this.gndJ2 = undefined;this.Vref5J2 = undefined;this.Vref5J2 = undefined;this.VdcJ2 = undefined;this.gndJ2 = undefined;this.Vref5J2 = undefined;this.Vref5J2 = undefined;this.VdcJ2 = undefined;this.gndJ2 = undefined;this.Vref5J2 = undefined;this.Vref5J2 = undefined;this.VdcJ2 = undefined;this.gndJ2 = undefined;this.Vref5J2 = undefined;this.Vref5J2 = undefined;this.Vref5J2 = undefined;this.ponta_vermelha_inicial_mc = undefined;this.ponta_vermelha_final_mc = undefined;this.ponta_preta_final_mc = undefined;this.ponta_preta_inicial_mc = undefined;this.menu_avarias_electricas = undefined;this.menu_controle_remoto_btn = undefined;this.menu_multimetro_btn = undefined;this.menu_avarias_electronicas_btn = undefined;this.compressor_btn = undefined;this.compressor_mecanica_btn = undefined;this.compressor_electrica_btn = undefined;this.vex_btn = undefined;this.vex_mecanica_btn = undefined;this.vex_electrica_btn = undefined;this.ventilador_radial_btn = undefined;this.ventilador_radial_mecanica_btn = undefined;this.ventilador_radial_electricidade_btn = undefined;this.sensor_btn = undefined;this.sensor_mecanica_btn = undefined;this.sensor_electrica_btn = undefined;this.ventilador_axial_btn = undefined;this.ventilador_axial_mecanica_btn = undefined;this.ventilador_axial_electrica_btn = undefined;this.transductor_btn = undefined;this.transductor_mecanica_btn = undefined;this.transductor_electrica_btn = undefined;this.pressostato_btn = undefined;this.pressostato_mecanica_btn = undefined;this.pressostato_electrica_btn = undefined;this.pda_btn = undefined;this.pda_mecanica_btn = undefined;this.pda_electrica_btn = undefined;this.placa_electronica_btn = undefined;this.placa_electronica_mecanica_btn = undefined;this.placa_electronica_electrica_btn = undefined;this.continuar_btn = undefined;this.menu_circuitos_btn = undefined;this.menu_avarias_btn = undefined;this.menu_setpoint_btn = undefined;this.menu_valores_medidas_btn = undefined;this.menu_entradas_saidas_btn = undefined;this.frigorifico_btn = undefined;this.controle_btn = undefined;this.potencia_btn = undefined;this.menu_ajuda_btn = undefined;this.menu_AL05_btn = undefined;this.menu_AL06_btn = undefined;this.menu_AL05a_btn = undefined;this.menu_AL06a_btn = undefined;this.menu_AL07_btn = undefined;this.menu_AL08_btn = undefined;this.menu_AL09_btn = undefined;this.menu_AL10_btn = undefined;this.menu_AL11_btn = undefined;this.menu_AL12_btn = undefined;this.menu_AL13_btn = undefined;this.menu_AL12a_btn = undefined;this.menu_AL13a_btn = undefined;this.menu_AL12b_btn = undefined;this.menu_AL12c_btn = undefined;this.menu_AL13b_btn = undefined;this.menu_avarias_btn = undefined;this.menu_avarias_btn = undefined;this.menu_avarias_btn = undefined;this.menu_avarias_btn = undefined;this.menu_avarias_btn = undefined;this.menu_avarias_btn = undefined;this.menu_avarias_btn = undefined;this.menu_avarias_btn = undefined;this.menu_avarias_btn = undefined;this.menu_avarias_btn = undefined;this.menu_avarias_btn = undefined;this.menu_avarias_btn = undefined;this.menu_avarias_btn = undefined;this.menu_avarias_btn = undefined;this.menu_avarias_btn = undefined;this.menu_avarias_btn = undefined;this.menu_avarias_btn = undefined;this.menu_avarias_btn = undefined;this.menu_avarias_btn = undefined;this.menu_avarias_btn = undefined;this.menu_avarias_btn = undefined;this.menu_avarias_btn = undefined;this.menu_avarias_btn = undefined;this.menu_avarias_btn = undefined;this.menu_avarias_btn = undefined;this.menu_avarias_btn = undefined;this.menu_avarias_btn = undefined;this.menu_avarias_btn = undefined;this.menu_avarias_btn = undefined;this.menu_avarias_btn = undefined;this.menu_avarias_btn = undefined;this.menu_avarias_btn = undefined;this.botao_on_btn = undefined;this.botao_off_btn = undefined;this.logo_dois_mc = undefined;this.logo_dois_mc = this.logo.logo_dois_mc;
+		this.logo_mc = undefined;this.alarme_btn = undefined;this.prog_btn = undefined;this.esc_btn = undefined;this.cima_btn = undefined;this.enter_btn = undefined;this.baixo_btn = undefined;this.display_controlador_mc = undefined;this.roda_multimetro_btn = undefined;this.display_inferior_txt = undefined;this.display_texto_superior_txt = undefined;this.capa_display_mc = undefined;this.menu_ligar_btn = undefined;this.menu_desligar_btn = undefined;this.menu_tensao_ac_btn = undefined;this.menu_tensao_dc_btn = undefined;this.menu_resistencia_btn = undefined;this.menu_capacidade_btn = undefined;this.menu_corrente_btn = undefined;this.menu_tensao_ac_milivolts_btn = undefined;this.J1G_btn = undefined;this.J1G0_btn = undefined;this.VdcJ2 = undefined;this.gndJ2 = undefined;this.Vref5J2 = undefined;this.B1J3 = undefined;this.B2J3 = undefined;this.B3J3 = undefined;this.B4J3 = undefined;this.B5J3 = undefined;this.B5J3 = undefined;this.B7J3 = undefined;this.GNDJ3 = undefined;this.VdcJ3 = undefined;this.VdcJ2 = undefined;this.gndJ2 = undefined;this.Vref5J2 = undefined;this.VdcJ2 = undefined;this.gndJ2 = undefined;this.Vref5J2 = undefined;this.VdcJ2 = undefined;this.gndJ2 = undefined;this.Vref5J2 = undefined;this.gndJ2 = undefined;this.Vref5J2 = undefined;this.VdcJ2 = undefined;this.gndJ2 = undefined;this.Vref5J2 = undefined;this.VdcJ2 = undefined;this.gndJ2 = undefined;this.Vref5J2 = undefined;this.VdcJ2 = undefined;this.gndJ2 = undefined;this.gndJ2 = undefined;this.Vref5J2 = undefined;this.VdcJ2 = undefined;this.gndJ2 = undefined;this.VdcJ2 = undefined;this.gndJ2 = undefined;this.Vref5J2 = undefined;this.VdcJ2 = undefined;this.gndJ2 = undefined;this.Vref5J2 = undefined;this.Vref5J2 = undefined;this.VdcJ2 = undefined;this.gndJ2 = undefined;this.Vref5J2 = undefined;this.Vref5J2 = undefined;this.VdcJ2 = undefined;this.gndJ2 = undefined;this.Vref5J2 = undefined;this.Vref5J2 = undefined;this.VdcJ2 = undefined;this.gndJ2 = undefined;this.Vref5J2 = undefined;this.Vref5J2 = undefined;this.VdcJ2 = undefined;this.gndJ2 = undefined;this.Vref5J2 = undefined;this.Vref5J2 = undefined;this.Vref5J2 = undefined;this.ponta_vermelha_inicial_mc = undefined;this.ponta_preta_inicial_mc = undefined;this.menu_avarias_electricas = undefined;this.menu_controle_remoto_btn = undefined;this.menu_multimetro_btn = undefined;this.menu_avarias_electronicas_btn = undefined;this.compressor_btn = undefined;this.compressor_mecanica_btn = undefined;this.compressor_electrica_btn = undefined;this.vex_btn = undefined;this.vex_mecanica_btn = undefined;this.vex_electrica_btn = undefined;this.ventilador_radial_btn = undefined;this.ventilador_radial_mecanica_btn = undefined;this.ventilador_radial_electricidade_btn = undefined;this.sensor_btn = undefined;this.sensor_mecanica_btn = undefined;this.sensor_electrica_btn = undefined;this.ventilador_axial_btn = undefined;this.ventilador_axial_mecanica_btn = undefined;this.ventilador_axial_electrica_btn = undefined;this.transductor_btn = undefined;this.transductor_mecanica_btn = undefined;this.transductor_electrica_btn = undefined;this.pressostato_btn = undefined;this.pressostato_mecanica_btn = undefined;this.pressostato_electrica_btn = undefined;this.pda_btn = undefined;this.pda_mecanica_btn = undefined;this.pda_electrica_btn = undefined;this.placa_electronica_btn = undefined;this.placa_electronica_mecanica_btn = undefined;this.placa_electronica_electrica_btn = undefined;this.continuar_btn = undefined;this.menu_circuitos_btn = undefined;this.menu_setpoint_btn = undefined;this.menu_valores_medidas_btn = undefined;this.menu_entradas_saidas_btn = undefined;this.frigorifico_btn = undefined;this.controle_btn = undefined;this.potencia_btn = undefined;this.menu_ajuda_btn = undefined;this.menu_AL05_btn = undefined;this.menu_AL06_btn = undefined;this.menu_AL05a_btn = undefined;this.menu_AL06a_btn = undefined;this.menu_AL07_btn = undefined;this.menu_AL08_btn = undefined;this.menu_AL09_btn = undefined;this.menu_AL10_btn = undefined;this.menu_AL11_btn = undefined;this.menu_AL12_btn = undefined;this.menu_AL13_btn = undefined;this.menu_AL12a_btn = undefined;this.menu_AL13a_btn = undefined;this.menu_AL12b_btn = undefined;this.menu_AL12c_btn = undefined;this.menu_AL13b_btn = undefined;this.menu_avarias_btn = undefined;this.menu_avarias_btn = undefined;this.menu_avarias_btn = undefined;this.menu_avarias_btn = undefined;this.menu_avarias_btn = undefined;this.menu_avarias_btn = undefined;this.menu_avarias_btn = undefined;this.menu_avarias_btn = undefined;this.menu_avarias_btn = undefined;this.menu_avarias_btn = undefined;this.menu_avarias_btn = undefined;this.menu_avarias_btn = undefined;this.menu_avarias_btn = undefined;this.menu_avarias_btn = undefined;this.menu_avarias_btn = undefined;this.menu_avarias_btn = undefined;this.menu_avarias_btn = undefined;this.menu_avarias_btn = undefined;this.menu_avarias_btn = undefined;this.menu_avarias_btn = undefined;this.menu_avarias_btn = undefined;this.menu_avarias_btn = undefined;this.menu_avarias_btn = undefined;this.menu_avarias_btn = undefined;this.menu_avarias_btn = undefined;this.menu_avarias_btn = undefined;this.menu_avarias_btn = undefined;this.menu_avarias_btn = undefined;this.menu_avarias_btn = undefined;this.menu_avarias_btn = undefined;this.menu_avarias_btn = undefined;this.menu_avarias_btn = undefined;this.menu_avarias_btn = undefined;this.botao_on_btn = undefined;this.botao_off_btn = undefined;this.logo_dois_mc = undefined;this.logo_dois_mc = this.logo.logo_dois_mc;
 		this.botao_off_btn = this.botão_off.botao_off_btn;
 		this.botao_on_btn = this.botao_on.botao_on_btn;
 		this.menu_avarias_electricas = this.botoes.menu_avarias_electricas;
@@ -5442,6 +6865,1143 @@ if (reversed == null) { reversed = false; }
 		this.ponta_preta_inicial_mc = this.ponta_preta.ponta_preta_inicial_mc;
 		this.ponta_vermelha_inicial_mc = this.ponta_vermelha.ponta_vermelha_inicial_mc;
 		this.ponta_vermelha_final_mc = this.ponta_vermelha.ponta_vermelha_final_mc;
+		this.J1G_btn = this.contactos_placa.J1G_btn;
+		this.J1G0_btn = this.contactos_placa.J1G0_btn;
+		this.VdcJ2_btn = this.contactos_placa.VdcJ2_btn;
+		this.gndJ2_btn = this.contactos_placa.gndJ2_btn;
+		this.Vref5J2_btn = this.contactos_placa.Vref5J2_btn;
+		this.B1J3_btn = this.contactos_placa.B1J3_btn;
+		this.B2J3_btn = this.contactos_placa.B2J3_btn;
+		this.B3J3_btn = this.contactos_placa.B3J3_btn;
+		this.B4J3_btn = this.contactos_placa.B4J3_btn;
+		this.B5J3_btn = this.contactos_placa.B5J3_btn;
+		this.B6J3_btn = this.contactos_placa.B6J3_btn;
+		this.B7J3_btn = this.contactos_placa.B7J3_btn;
+		this.GNDJ3_btn = this.contactos_placa.GNDJ3_btn;
+		this.VdcJ3_btn = this.contactos_placa.VdcJ3_btn;
+		this.J4DI1_btn = this.contactos_placa.J4DI1_btn;
+		this.J4DI2_btn = this.contactos_placa.J4DI2_btn;
+		this.J4DI3_btn = this.contactos_placa.J4DI3_btn;
+		this.J4DI4_btn = this.contactos_placa.J4DI4_btn;
+		this.J4DI5_btn = this.contactos_placa.J4DI5_btn;
+		this.J4DI6_btn = this.contactos_placa.J4DI6_btn;
+		this.J4DI7_btn = this.contactos_placa.J4DI7_btn;
+		this.J4DIC1_btn = this.contactos_placa.J4DIC1_btn;
+		this.J5GND_btn = this.contactos_placa.J5GND_btn;
+		this.J5Y1_btn = this.contactos_placa.J5Y1_btn;
+		this.J5Y2_btn = this.contactos_placa.J5Y2_btn;
+		this.J5Y3_btn = this.contactos_placa.J5Y3_btn;
+		this.J5Y4_btn = this.contactos_placa.J5Y4_btn;
+		this.J18B8_btn = this.contactos_placa.J18B8_btn;
+		this.J18B9_btn = this.contactos_placa.J18B9_btn;
+		this.J18B10_btn = this.contactos_placa.J18B10_btn;
+		this.J18B11_btn = this.contactos_placa.J18B11_btn;
+		this.J18B12_btn = this.contactos_placa.J18B12_btn;
+		this.J18GND_btn = this.contactos_placa.J18GND_btn;
+		this.J16ID8_btn = this.contactos_placa.J16ID8_btn;
+		this.J16ID9_btn = this.contactos_placa.J16ID9_btn;
+		this.J16ID10_btn = this.contactos_placa.J16ID10_btn;
+		this.J16IDC2_btn = this.contactos_placa.J16IDC2_btn;
+		this.J8RX0TX0_btn = this.contactos_placa.J8RX0TX0_btn;
+		this.J8RX1TX1_btn = this.contactos_placa.J8RX1TX1_btn;
+		this.J8GND_btn = this.contactos_placa.J8GND_btn;
+		this.J10Vout_btn = this.contactos_placa.J10Vout_btn;
+		this.J10RX0TX0_btn = this.contactos_placa.J10RX0TX0_btn;
+		this.J10RX1TX1_btn = this.contactos_placa.J10RX1TX1_btn;
+		this.J10GND_btn = this.contactos_placa.J10GND_btn;
+		this.J12C1_btn = this.contactos_placa.J12C1_btn;
+		this.J12NO1_btn = this.contactos_placa.J12NO1_btn;
+		this.J12NO2_btn = this.contactos_placa.J12NO2_btn;
+		this.J12NO3_btn = this.contactos_placa.J12NO3_btn;
+		this.J13C2_btn = this.contactos_placa.J13C2_btn;
+		this.J13NO4_btn = this.contactos_placa.J13NO4_btn;
+		this.J13NO5_btn = this.contactos_placa.J13NO5_btn;
+		this.J13NO6_btn = this.contactos_placa.J13NO6_btn;
+		this.J14NO7_btn = this.contactos_placa.J14NO7_btn;
+		this.J14C3_btn = this.contactos_placa.J14C3_btn;
+		this.J14NC7_btn = this.contactos_placa.J14NC7_btn;
+		this.J15C4_btn = this.contactos_placa.J15C4_btn;
+		this.J15NO8_btn = this.contactos_placa.J15NO8_btn;
+		this.J15NO9_btn = this.contactos_placa.J15NO9_btn;
+		this.J15NO10_btn = this.contactos_placa.J15NO10_btn;
+		this.J15NO11_btn = this.contactos_placa.J15NO11_btn;
+		this.J15NO12_btn = this.contactos_placa.J15NO12_btn;
+		this.menu_ligar_btn = this.menus.menu_ligar_btn;
+		this.menu_desligar_btn = this.menus.menu_desligar_btn;
+		this.menu_tensao_ac_btn = this.menus.menu_tensao_ac_btn;
+		this.menu_tensao_dc_btn = this.menus.menu_tensao_dc_btn;
+		this.menu_resistencia_btn = this.menus.menu_resistencia_btn;
+		this.menu_capacidade_btn = this.menus.menu_capacidade_btn;
+		this.menu_corrente_btn = this.menus.menu_corrente_btn;
+		this.menu_tensao_ac_milivolts_btn = this.menus.menu_tensao_ac_milivolts_btn;
+		this.capa_display_mc = this.capa_display.capa_display_mc;
+		this.display_texto_superior_txt = this.texto_superior.display_texto_superior_txt;
+		this.display_inferior_txt = this.texto_inferior.display_inferior_txt;
+		this.roda_multimetro_btn = this.roda_multimetro.roda_multimetro_btn;
+		this.alarme_btn = this.controlador.alarme_btn;
+		this.prog_btn = this.controlador.prog_btn;
+		this.esc_btn = this.controlador.esc_btn;
+		this.cima_btn = this.controlador.cima_btn;
+		this.enter_btn = this.controlador.enter_btn;
+		this.baixo_btn = this.controlador.baixo_btn;
+		this.display_controlador_mc = this.controlador.display_controlador_mc;
+		this.estado_simulador_txt = this.tela_inicial.estado_simulador_txt;
+		///variaveis globais
+		var contar_botao_compressor = 0;
+		var contar_botao_circuitos = 0;
+		var altera_estados = false;
+		const este = this;
+		
+		// Configurações dos componentes (mantido igual)
+		const COMPONENTES_CONFIG = {
+		    1: {
+		        nome: "Compressor",
+		        botoes: ["compressor_mecanica_btn", "compressor_electrica_btn"],
+		    },
+		    2: {
+		        nome: "Vavula de Expansão",
+		        botoes: ["vex_electrica_btn", "vex_mecanica_btn"],
+		    },
+		    3: {
+		        nome: "Ventilador Radial",
+		        botoes: [
+		            "ventilador_radial_mecanica_btn",
+		            "ventilador_radial_electricidade_btn",
+		        ],
+		    },
+		    4: {
+		        nome: "Sensor",
+		        botoes: ["sensor_mecanica_btn", "sensor_electrica_btn"],
+		    },
+		    5: {
+		        nome: "Ventilador Axial",
+		        botoes: ["ventilador_axial_mecanica_btn", "ventilador_axial_electrica_btn"],
+		    },
+		    6: {
+		        nome: "Transductor",
+		        botoes: ["transductor_mecanica_btn", "transductor_electrica_btn"],
+		    },
+		    7: {
+		        nome: "Pressostato",
+		        botoes: ["pressostato_mecanica_btn", "pressostato_electrica_btn"],
+		    },
+		    8: { nome: "Manometro", botoes: ["pda_mecanica_btn", "pda_electrica_btn"] },
+		    9: {
+		        nome: "Placa",
+		        botoes: [
+		            "placa_electronica_mecanica_btn",
+		            "placa_electronica_electrica_btn",
+		        ],
+		    },
+		};
+		
+		// Configuração dos submenus - Sistema centralizado
+		const SUBMENU_CONFIG = {
+		    vex_electrica: { label: "Vavula de Expansão Eletrica", page: 10 },
+		    vex_mecanica: { label: "Vavula de Expansão Mecanica", page: 11 },
+		    compressor_mecanica: { label: "Mecânica do Compressor", page: 2 },
+		    compressor_electrica: { label: "Electricidade do Compressor", page: 3 },
+		    ventilador_radial_mecanica: { label: "Ventilador Radial Eletrica", page: 4 },
+		    ventilador_radial_electricidade: {
+		        label: "Ventilador Radial Mecanica",
+		        page: 5,
+		    },
+		    sensor_mecanica: { label: "Sensor Eletrica", page: 6 },
+		    sensor_electrica: { label: "Sensor Mecanica", page: 7 },
+		    ventilador_axial_mecanica: { label: "Ventilador Axial Eletrica", page: 8 },
+		    ventilador_axial_electrica: { label: "Ventilador Axial Mecanica", page: 9 },
+		    transductor_mecanica: { label: "Transductor Eletrica", page: 12 },
+		    transductor_electrica: { label: "Transductor Mecanica", page: 13 },
+		    pressostato_mecanica: { label: "Pressostato Eletrica", page: 14 },
+		    pressostato_electrica: { label: "Pressostato Mecanica", page: 15 },
+		    pda_mecanica: { label: "PDA Eletrica", page: 16 },
+		    pda_electrica: { label: "PDA Mecanica", page: 17 },
+		    placa_electronica_mecanica: { label: "Placa Electronica Eletrica", page: 1 },
+		    placa_electronica_electrica: { label: "Placa Electronica Mecanica", page: 1 },
+		};
+		
+		// Configuração dos dropdowns - Sistema centralizado
+		const DROPDOWN_CONFIG = {
+		    multimetro: {
+		        botao: "menu_multimetro_btn",
+		        itens: [
+		            "menu_tensao_ac_btn",
+		            "menu_tensao_dc_btn",
+		            "menu_tensao_ac_milivolts_btn",
+		            "menu_resistencia_btn",
+		            "menu_capacidade_btn",
+		            "menu_corrente_btn",
+		        ],
+		        acoes: {
+		            menu_tensao_ac_btn: () => this.multimetro.selecionarFuncao(1),
+		            menu_tensao_dc_btn: () => this.multimetro.selecionarFuncao(2),
+		            menu_tensao_ac_milivolts_btn: () => this.multimetro.selecionarFuncao(3),
+		            menu_resistencia_btn: () => this.multimetro.selecionarFuncao(4),
+		            menu_capacidade_btn: () => this.multimetro.selecionarFuncao(5),
+		            menu_corrente_btn: () => this.multimetro.selecionarFuncao(6),
+		        },
+		    },
+		    controle_remoto: {
+		        botao: "menu_controle_remoto_btn",
+		        itens: [
+		            "menu_setpoint_btn",
+		            "menu_valores_medidas_btn",
+		            "menu_entradas_saidas_btn",
+		        ],
+		    },
+		    avarias: {
+		        botao: "menu_avarias_btn",
+		        itens: [
+		            "menu_AL05_btn",
+		            "menu_AL06_btn",
+		            "menu_AL05a_btn",
+		            "menu_AL06a_btn",
+		            "menu_AL07_btn",
+		            "menu_AL08_btn",
+		            "menu_AL09_btn",
+		            "menu_AL10_btn",
+		            "menu_AL11_btn",
+		            "menu_AL12_btn",
+		            "menu_AL13_btn",
+		            "menu_AL12a_btn",
+		            "menu_AL13a_btn",
+		            "menu_AL12b_btn",
+		            "menu_AL12c_btn",
+		            "menu_AL13b_btn",
+		        ],
+		    },
+		    circuitos: {
+		        botao: "menu_circuitos_btn",
+		        itens: ["frigorifico_btn", "controle_btn", "potencia_btn"],
+		    },
+		};
+		
+		// Classe genérica para gerenciar dropdowns
+		class DropdownManager {
+		    constructor(app, simulador) {
+		        this.app = app;
+		        this.simulador = simulador;
+		        this.dropdownAberto = null; // Controla qual dropdown está aberto
+		        this.initEventListeners();
+		    }
+		
+		    initEventListeners() {
+		        // Configura todos os dropdowns
+		        Object.keys(DROPDOWN_CONFIG).forEach((dropdown) => {
+		            const config = DROPDOWN_CONFIG[dropdown];
+		
+		            // Botão principal do dropdown
+		            this.app[config.botao].addEventListener("click", () => {
+		                this.toggleDropdown(dropdown);
+		            });
+		
+		            // Itens do dropdown
+		            config.itens.forEach((item) => {
+		                if (this.app[item]) {
+		                    this.app[item].addEventListener("click", () => {
+		                        this.selecionarItem(dropdown, item);
+		                    });
+		                }
+		            });
+		        });
+		    }
+		
+		    toggleDropdown(dropdown) {
+		        this.simulador.audio.tocarSom("SomBotao");
+		
+		        // Se o mesmo dropdown está aberto, fecha
+		        if (this.dropdownAberto === dropdown) {
+		            this.fecharTodosDropdowns();
+		            this.dropdownAberto = null;
+		        } else {
+		            // Fecha todos e abre o selecionado
+		            this.fecharTodosDropdowns();
+		            this.abrirDropdown(dropdown);
+		            this.dropdownAberto = dropdown;
+		        }
+		    }
+		
+		    abrirDropdown(dropdown) {
+		        const config = DROPDOWN_CONFIG[dropdown];
+		        config.itens.forEach((item) => {
+		            if (this.app[item]) {
+		                this.app[item].visible = true;
+		            }
+		        });
+		
+		        // Ações específicas por dropdown
+		        this.executarAcaoEspecifica(dropdown, "abrir");
+		    }
+		
+		    fecharTodosDropdowns() {
+		        Object.keys(DROPDOWN_CONFIG).forEach((dropdown) => {
+		            const config = DROPDOWN_CONFIG[dropdown];
+		            config.itens.forEach((item) => {
+		                if (this.app[item]) {
+		                    this.app[item].visible = false;
+		                }
+		            });
+		        });
+		
+		        // Reset específico do multímetro
+		        if (this.dropdownAberto === "multimetro") {
+		            this.app.capa_display_mc.visible = true;
+		        }
+		    }
+		
+		    selecionarItem(dropdown, item) {
+		        const config = DROPDOWN_CONFIG[dropdown];
+		
+		        // Executa ação específica se existir
+		        if (config.acoes && config.acoes[item]) {
+		            config.acoes[item]();
+		        }
+		
+		        // Fecha o dropdown após seleção
+		        this.fecharTodosDropdowns();
+		        this.dropdownAberto = null;
+		
+		        this.simulador.audio.tocarSom("SomBotao");
+		    }
+		
+		    executarAcaoEspecifica(dropdown, acao) {
+		        switch (dropdown) {
+		            case "multimetro":
+		                if (acao === "abrir") {
+		                    this.app.capa_display_mc.visible = false;
+		                }
+		                break;
+		            case "circuitos":
+		                if (acao === "abrir") {
+		                    this.app.estado_simulador_txt.text = "Circuitos";
+		                }
+		                break;
+		        }
+		    }
+		}
+		
+		
+		// CLASSE PRINCIPAL DO SIMULADOR
+		class Simulador {
+		    constructor(app) {
+		        this.app = app;
+		        this.tensaoAlimentacao = 0;
+		        this.ligado = false;
+		        this.estado = "Simulador Desligado";
+		        this.pontaVermelha = { conectada: false, posicao: null };
+		        this.pontaPreta = { conectada: false, posicao: null };
+		
+		        this.multimetro = new Multimetro(app, this);
+		        this.dropdownManager = new DropdownManager(app, this);
+		        this.audio = new Audio();
+		        this.gerenciadorConexoes = new GerenciadorConexoes();
+		        this.gerenciadorConexoes.inicializarEventos(this.app, this);
+		
+		        this.initEventListeners();
+		    }
+		
+		    initEventListeners() {
+		        // Botões de ligar/desligar
+		        ["botao_off_btn", "botao_on_btn"].forEach((btn) => {
+		            this.app[btn].addEventListener("click", this.togglePower.bind(this));
+		        });
+		
+		        this.app.menu_ligar_btn.addEventListener(
+		            "click",
+		            this.ligarSimulador.bind(this)
+		        );
+		        this.app.menu_desligar_btn.addEventListener(
+		            "click",
+		            this.desligarSimulador.bind(this)
+		        );
+		
+		        // Pontos de conexão
+		
+		        // Menu lateral principal
+		        const menuBotoes = [
+		            "compressor_btn",
+		            "vex_btn",
+		            "ventilador_radial_btn",
+		            "sensor_btn",
+		            "ventilador_axial_btn",
+		            "transductor_btn",
+		            "pressostato_btn",
+		            "pda_btn",
+		            "placa_electronica_btn",
+		        ];
+		
+		        menuBotoes.forEach((btn, index) => {
+		            this.app[btn].addEventListener(
+		                "click",
+		                this.esconderBtnMenuLateral.bind(this, index + 1)
+		            );
+		        });
+		
+		        // Submenu lateral
+		        Object.keys(SUBMENU_CONFIG).forEach((acao) => {
+		            const btnName = acao + "_btn";
+		            if (this.app[btnName]) {
+		                const page = SUBMENU_CONFIG[acao].page;
+		                this.app[btnName].addEventListener(
+		                    "click",
+		                    this.subMenuFuncao.bind(this, acao, page)
+		                );
+		            }
+		        });
+		    }
+		
+		    // Função unificada para esconder todos os botões do submenu
+		    esconderTodosBotoesSubmenu() {
+		        this.audio.tocarSom("SomBotao");
+		        Object.values(COMPONENTES_CONFIG).forEach((config) => {
+		            config.botoes.forEach((btn) => {
+		                this.app[btn].visible = false;
+		            });
+		        });
+		    }
+		
+		    esconderBtnMenuLateral(nClick) {
+		        this.audio.tocarSom("SomBotao");
+		        this.altera_estados = !this.altera_estados;
+		
+		        this.esconderTodosBotoesSubmenu();
+		
+		        if (this.altera_estados && COMPONENTES_CONFIG[nClick]) {
+		            const config = COMPONENTES_CONFIG[nClick];
+		            config.botoes.forEach((btn) => {
+		                this.app[btn].visible = true;
+		            });
+		            this.app.estado_simulador_txt.text = config.nome;
+		        }
+		    }
+		
+		    subMenuFuncao(acao, page) {
+		        this.esconderTodosBotoesSubmenu();
+		        const config = SUBMENU_CONFIG[acao];
+		        this.app.estado_simulador_txt.text = config
+		            ? config.label
+		            : "Estado não definido";
+		        this.altera_estados = false;
+		        if (typeof page === "number") {
+		            this.app.gotoAndStop(page);
+		        }
+		    }
+		
+		    // Funções de controle de energia
+		    setPowerState(ligado) {
+		        this.ligado = ligado;
+		        this.app.botao_off_btn.visible = !ligado;
+		        this.app.botao_on_btn.visible = ligado;
+		        this.estado = ligado ? "Simulador Ligado" : "Simulador Desligado";
+		        this.tensaoAlimentacao = ligado ? 220 : 0;
+		        this.audio.tocarSom("SomBotao");
+		        this.atualizarInterface();
+		    }
+		
+		    ligarSimulador() {
+		        this.setPowerState(true);
+		    }
+		    desligarSimulador() {
+		        this.setPowerState(false);
+		    }
+		    togglePower() {
+		        this.setPowerState(!this.ligado);
+		    }
+		
+		    atualizarInterface() {
+		        this.app.estado_simulador_txt.text = this.estado;
+		    }
+		
+		    validarCondicoes(ponta) {
+		        if (!this.ligado) {
+		            this.estado = "Ligar Tensão de Alimentação";
+		            this.resetarPonta(ponta);
+		            this.atualizarInterface();
+		            return false;
+		        }
+		
+		        if (this.multimetro.posicaoRoda !== 1) {
+		            this.estado = "Colocar multimetro em tensao AC";
+		            this.resetarPonta(ponta);
+		            this.atualizarInterface();
+		            return false;
+		        }
+		
+		        return true;
+		    }
+		
+		    resetarPonta(ponta) {
+		        const isVermelha = ponta === "Ponta vermelha";
+		        this.app[
+		            isVermelha ? "ponta_vermelha_inicial_mc" : "ponta_preta_inicial_mc"
+		        ].visible = true;
+		        this.app[
+		            isVermelha ? "ponta_vermelha_final_mc" : "ponta_preta_final_mc"
+		        ].visible = false;
+		    }
+		
+		    verificarMedicao() {
+		        if (this.pontaVermelha.conectada && this.pontaPreta.conectada) {
+		            if (
+		                this.pontaVermelha.posicao === "J1G" &&
+		                this.pontaPreta.posicao === "J1G0"
+		            ) {
+		                this.app.display_inferior_txt.text = this.tensaoAlimentacao.toString();
+		            }
+		            this.pontaVermelha.conectada = false;
+		            this.pontaPreta.conectada = false;
+		        }
+		    }
+		}
+		
+		// Configuração centralizada de conexões
+		class GerenciadorConexoes {
+		    constructor() {
+		        this.configuracaoConexoes = {
+		            // Grupo J1 - Alimentação AC (220V)
+		            J1G_btn: { grupo: "J1", tipo: "fase", par: "J1G0_btn", tensao: 220 },
+		            J1G0_btn: { grupo: "J1", tipo: "neutro", par: "J1G_btn", tensao: 0 },
+		
+		            // Grupo J2 - Alimentação DC
+		            VdcJ2_btn: {
+		                grupo: "J2",
+		                tipo: "positivo",
+		                par: "gndJ2_btn",
+		                tensao: 24,
+		            },
+		            Vref5J2_btn: {
+		                grupo: "J2",
+		                tipo: "positivo",
+		                par: "gndJ2_btn",
+		                tensao: 5,
+		            },
+		            gndJ2_btn: {
+		                grupo: "J2",
+		                tipo: "negativo",
+		                pares: ["VdcJ2_btn", "Vref5J2_btn"],
+		                tensao: 0,
+		            },
+		
+		// Grupo J8 - Sinais digitais
+		            J8RX0TX0_btn: {
+		                grupo: "J8",
+		                tipo: "positivo",
+		                par: "J8GND_btn",
+		                tensao: 24,
+		            },
+		            J8RX1TX1_btn: {
+		                grupo: "J8",
+		                tipo: "positivo",
+		                par: "J8GND_btn",
+		                tensao: 24,
+		            },
+		            J8GND_btn: {
+		                grupo: "J8",
+		                tipo: "negativo",
+		                pares: ["J8RX0TX0_btn", "J8RX1TX1_btn"],
+		                tensao: 0,
+		            },
+		
+		            // Grupo J14 - Sinais digitais
+		            J14NO7_btn:{
+		                grupo: "J14",
+		                tipo: "sinal",
+		                par: "J14C3_btn",
+		                tensao: 24,
+		            },
+		            J14NC7_btn:{
+		                grupo: "J14",
+		                tipo: "sinal",
+		                par: "J14C3_btn",
+		                tensao: 24,
+		            },
+		            J14C3_btn: {
+		                grupo: "J14",
+		                tipo: "terra",
+		                pares: ["J14NO7_btn"],
+		                tensao: 0,
+		            },
+		
+		            // Grupo J3 - Sinais digitais
+		            ...this.gerarSinaisDigitais(),
+		
+		            // Grupo J4 - Sinais digitais
+		            ...this.GrupoJ4(),
+		
+		            // Grupo J5 - Sinais digitais
+		            ...this.GrupoJ5(),
+		
+		            // Grupo J10 - Sinais digitais
+		            ...this.GrupoJ10(),
+		
+		            // Grupo J12 - Sinais digitais
+		            ...this.GrupoJ12(),
+		
+		            // Grupo J13 - Sinais digitais
+		            ...this.GrupoJ13(),
+		
+		            // Grupo J15 - Sinais digitais
+		            ...this.GrupoJ15(),
+		
+		            // Grupo J16 - Sinais digitais
+		            ...this.GrupoJ16(),
+		
+		            // Grupo J18 - Sinais digitais
+		            ...this.GrupoJ18(),
+		        };
+		    }
+		
+		    // Gera configuração para sinais digitais automaticamente
+		    gerarSinaisDigitais() {
+		        const sinais = {};
+		        for (let i = 1; i <= 7; i++) {
+		            sinais[`B${i}J3_btn`] = {
+		                grupo: "J3",
+		                tipo: "sinal",
+		                par: "GNDJ3_btn",
+		                tensao: 24,
+		            };
+		        }
+		        sinais["GNDJ3_btn"] = {
+		            grupo: "J3",
+		            tipo: "terra",
+		            pares: Object.keys(sinais),
+		            tensao: 0,
+		        };
+		        sinais["VdcJ3_btn"] = {
+		            grupo: "J3",
+		            tipo: "alimentacao",
+		            par: "GNDJ3_btn",
+		            tensao: 24,
+		        };
+		        return sinais;
+		    }
+		    GrupoJ4() {
+		        const j4grupo = {};
+		        for (let i = 1; i <= 7; i++) {
+		            j4grupo[`J4DI${i}_btn`] = {
+		                grupo: "J4",
+		                tipo: "sinal",
+		                par: "J4DIC1_btn",
+		                tensao: 24,
+		            };
+		        }
+		        j4grupo["J4DIC1_btn"] = {
+		            grupo: "J4",
+		            tipo: "terra",
+		            pares: Object.keys(j4grupo),
+		            tensao: 0,
+		        };
+		
+		        return j4grupo;
+		    }
+		
+		    GrupoJ5() {
+		        const j5grupo = {};
+		        for (let i = 1; i <= 4; i++) {
+		            j5grupo[`J5Y${i}_btn`] = {
+		                grupo: "J5",
+		                tipo: "sinal",
+		                par: "J5GND_btn",
+		                tensao: 24,
+		            };
+		        }
+		        j5grupo["J5GND_btn"] = {
+		            grupo: "J5",
+		            tipo: "terra",
+		            pares: Object.keys(j5grupo),
+		            tensao: 0,
+		        };
+		
+		        return j5grupo;
+		    }
+		
+		    GrupoJ10() {
+		        const j10grupo = {};
+		        for (let i = 0; i <= 1; i++) {
+		            j10grupo[`J10RX${i}TX${i}_btn`] = {
+		                grupo: "J10",
+		                tipo: "sinal",
+		                par: "J10GND_btn",
+		                tensao: 24,
+		            };
+		        }
+		        j10grupo["J10GND_btn"] = {
+		            grupo: "J10",
+		            tipo: "terra",
+		            pares: Object.keys(j10grupo),
+		            tensao: 0,
+		        };
+		         j10grupo["J10Vout_btn"] = {
+		            grupo: "J10",
+		            tipo: "alimentacao",
+		            par: "J10GND_btn",
+		            tensao: 24,
+		        };
+		
+		        return j10grupo;
+		    }
+		
+		    GrupoJ12(){
+		        const j12grupo = {};
+		        for (let i = 1; i <= 3; i++) {
+		            j12grupo[`J12NO${i}_btn`] = {
+		                grupo: "J12",
+		                tipo: "sinal",
+		                par: "J12C1_btn",
+		                tensao: 24,
+		            };
+		        }
+		        j12grupo["J12C1_btn"] = {
+		            grupo: "J12",
+		            tipo: "terra",
+		            pares: Object.keys(j12grupo),
+		            tensao: 0,
+		        };
+		        return j12grupo;
+		    }
+		
+		    GrupoJ13(){
+		        const j13grupo = {};
+		        for (let i = 4; i <= 6; i++) {
+		            j13grupo[`J13NO${i}_btn`] = {
+		                grupo: "J13",
+		                tipo: "sinal",
+		                par: "J13C2_btn",
+		                tensao: 24,
+		            };
+		        }
+		        j13grupo["J13C2_btn"] = {
+		            grupo: "J13",
+		            tipo: "terra",
+		            pares: Object.keys(j13grupo),
+		            tensao: 0,
+		        };
+		        return j13grupo;
+		    }
+		
+		    GrupoJ15(){
+		        const j15grupo = {};
+		        for (let i = 8; i <= 12; i++) {
+		            j15grupo[`J15NO${i}_btn`] = {
+		                grupo: "J15",
+		                tipo: "sinal",
+		                par: "J15C4_btn",
+		                tensao: 24,
+		            };
+		        }
+		        j15grupo["J15C4_btn"] = {
+		            grupo: "J15",
+		            tipo: "terra",
+		            pares: Object.keys(j15grupo),
+		            tensao: 0,
+		        };
+		        return j15grupo;
+		    }
+		
+		    GrupoJ16() {
+		        const j16grupo = {};
+		        for (let i = 8; i <= 10; i++) {
+		            j16grupo[`J16ID${i}_btn`] = {
+		                grupo: "J16",
+		                tipo: "sinal",
+		                par: "J16IDC2_btn",
+		                tensao: 24,
+		            };
+		        }
+		        j16grupo["J16IDC2_btn"] = {
+		            grupo: "J16",
+		            tipo: "terra",
+		            pares: Object.keys(j16grupo),
+		            tensao: 0,
+		        };
+		
+		        return j16grupo;
+		    }
+		
+		
+		    GrupoJ18() {
+		        const j18grupo = {};
+		        for (let i = 8; i <= 12; i++) {
+		            j18grupo[`J18B${i}_btn`] = {
+		                grupo: "J18",
+		                tipo: "sinal",
+		                par: "J18GND_btn",
+		                tensao: 24,
+		            };
+		        }
+		        j18grupo["J18GND_btn"] = {
+		            grupo: "J18",
+		            tipo: "terra",
+		            pares: Object.keys(j18grupo),
+		            tensao: 0,
+		        };
+		
+		        return j18grupo;
+		    }
+		
+		
+		
+		    // Método principal simplificado
+		    conectarPonto(elemento, simulador) {
+		        if (!simulador.validarCondicoes()) return;
+		
+		        const config = this.configuracaoConexoes[elemento];
+		        if (!config) return;
+		
+		        const pontoReferencia = this.obterPontoReferencia(config);
+		
+		        // Atualizar interface
+		        this.atualizarVisualizacao(simulador.app, elemento, pontoReferencia);
+		
+		        // Atualizar estado das pontas
+		        simulador.pontaVermelha.conectada = true;
+		        simulador.pontaPreta.conectada = true;
+		        simulador.pontaVermelha.ponto =
+		            this.definirCor(config) === "vermelha" ? elemento : pontoReferencia;
+		        simulador.pontaPreta.ponto =
+		            this.definirCor(config) === "preta" ? elemento : pontoReferencia;
+		
+		        // Calcular e exibir tensão
+		        const tensao = this.calcularTensao(config, simulador);
+		        simulador.app.display_inferior_txt.text = tensao.toString();
+		
+		        simulador.atualizarInterface();
+		    }
+		    // Desconectar ponta
+		    desconectarPonto(simulador) {
+		        simulador.pontaVermelha.conectada = false;
+		        simulador.pontaPreta.conectada = false;
+		        this.app.ponta_preta_final_mc.visible = false;
+		        this.app.ponta_vermelha_final_mc.visible = false;
+		        this.app.ponta_preta_inicial_mc.visible = true;
+		        this.app.ponta_vermelha_inicial_mc.visible = true;
+		        simulador.atualizarInterface();
+		    }
+		
+		    // Define qual ponta usar baseado no tipo do sinal
+		    definirCor(config) {
+		        const tiposVermelha = ["fase", "positivo", "sinal", "alimentacao"];
+		        return tiposVermelha.includes(config.tipo) ? "vermelha" : "preta";
+		    }
+		
+		    // Obtém o ponto de referência para a medição
+		    obterPontoReferencia(config) {
+		        return config.par || (config.pares && config.pares[0]) || null;
+		    }
+		
+		    // Atualiza a visualização das pontas
+		    atualizarVisualizacao(app, pontoPrimario, pontoReferencia) {
+		        // Esconder pontas iniciais
+		        app.ponta_vermelha_inicial_mc.visible = false;
+		        app.ponta_preta_inicial_mc.visible = false;
+		
+		        // Mostrar pontas finais
+		        app.ponta_vermelha_final_mc.visible = true;
+		        app.ponta_preta_final_mc.visible = true;
+		
+		        // Posicionar pontas
+		        const configPrimario = this.configuracaoConexoes[pontoPrimario];
+		        const corPrimario = this.definirCor(configPrimario);
+		
+		        if (corPrimario === "vermelha") {
+		            app.ponta_vermelha_final_mc.y = app[pontoPrimario].y;
+		            app.ponta_vermelha_final_mc.x = (app[pontoPrimario].x + 140);
+		            app.ponta_preta_final_mc.y = app[pontoReferencia].y;
+		            app.ponta_preta_final_mc.x = (app[pontoReferencia].x - 140);
+		        } else {
+		            app.ponta_preta_final_mc.y = app[pontoPrimario].y;
+		            app.ponta_preta_final_mc.x = (app[pontoPrimario].x - 140);
+		            app.ponta_vermelha_final_mc.y = app[pontoReferencia].y;
+		            app.ponta_vermelha_final_mc.x = (app[pontoReferencia].x + 140);
+		        }
+		    }
+		
+		    // Calcula a tensão baseada na configuração e estado do simulador
+		    calcularTensao(config, simulador) {
+		        if (!simulador.ligado) return 0;
+		
+		        // Verificar se o multímetro está na posição correta
+		        const posicaoMultimetro = simulador.multimetro.posicaoRoda;
+		        if (posicaoMultimetro === 0) return "----";
+		
+		        // Retornar tensão baseada no tipo de medição
+		        switch (config.grupo) {
+		            case "J1":
+		                return simulador.tensaoAlimentacao;
+		            case "J2":
+		            case "J3":
+		            case "J4":
+		            case "J5":
+		            case "J8":
+		            case "J10":
+		            case "J12":
+		            case "J13":
+		            case "J14": 
+		            case "J15":   
+		            case "J16":
+		            case "J18":
+		            
+		                return config.tensao;
+		            default:
+		                return 0;
+		        }
+		    }
+		
+		    // Inicializa todos os eventos de uma só vez
+		    inicializarEventos(app, simulador) {
+		        Object.keys(this.configuracaoConexoes).forEach((elemento) => {
+		            app[elemento]?.addEventListener("click", () => {
+		                this.conectarPonto(elemento, simulador);
+		            });
+		        });
+		
+		
+		    }
+		}
+		
+		// Classe Multimetro simplificada
+		class Multimetro {
+		    constructor(app, simulador) {
+		        this.app = app;
+		        this.simulador = simulador;
+		        this.posicaoRoda = 0;
+		        this.menuAberto = false;
+		
+		        this.posicoes = [
+		            {
+		                nome: "Desligado",
+		                rotacao: 0,
+		                displayText: "--------",
+		                statusText: "",
+		            },
+		            {
+		                nome: "Volts AC",
+		                rotacao: 25,
+		                displayText: "Volts AC",
+		                statusText: "Multímetro ligado para Volts AC",
+		            },
+		            {
+		                nome: "Volts DC",
+		                rotacao: 50,
+		                displayText: "Volts DC",
+		                statusText: "Multímetro ligado para Volts DC",
+		            },
+		            {
+		                nome: "Volts mV",
+		                rotacao: 75,
+		                displayText: "Volts mV",
+		                statusText: "Multímetro ligado para Volts mV",
+		            },
+		            {
+		                nome: "Ohms",
+		                rotacao: 100,
+		                displayText: "Ohms",
+		                statusText: "Multímetro ligado para Ohms",
+		            },
+		            {
+		                nome: "Microfarads",
+		                rotacao: 125,
+		                displayText: "Microfarads",
+		                statusText: "Multímetro ligado para Microfarads",
+		            },
+		            {
+		                nome: "Anpers",
+		                rotacao: 150,
+		                displayText: "Anpers",
+		                statusText: "Multímetro ligado para Anpers",
+		            },
+		        ];
+		
+		        this.initEventListeners();
+		    }
+		
+		    initEventListeners() {
+		        this.app.menu_multimetro_btn.addEventListener(
+		            "click",
+		            this.toggleMenu.bind(this)
+		        );
+		        this.app.roda_multimetro_btn.addEventListener(
+		            "click",
+		            this.girarRoda.bind(this)
+		        );
+		
+		        const menuOpcoes = [
+		            "menu_tensao_ac_btn",
+		            "menu_tensao_dc_btn",
+		            "menu_tensao_ac_milivolts_btn",
+		            "menu_resistencia_btn",
+		            "menu_capacidade_btn",
+		            "menu_corrente_btn",
+		        ];
+		
+		        menuOpcoes.forEach((btn, index) => {
+		            this.app[btn].addEventListener("click", () =>
+		                this.selecionarFuncao(index + 1)
+		            );
+		        });
+		    }
+		
+		    toggleMenu() {
+		        this.menuAberto = !this.menuAberto;
+		        this.setMenuVisibility(this.menuAberto);
+		
+		        if (!this.menuAberto) {
+		            this.resetarMultimetro();
+		        } else {
+		            this.app.capa_display_mc.visible = false;
+		        }
+		    }
+		
+		    setMenuVisibility(visible) {
+		        const menuBotoes = [
+		            "menu_tensao_ac_btn",
+		            "menu_tensao_dc_btn",
+		            "menu_tensao_ac_milivolts_btn",
+		            "menu_resistencia_btn",
+		            "menu_capacidade_btn",
+		            "menu_corrente_btn",
+		        ];
+		
+		        menuBotoes.forEach((btn) => {
+		            this.app[btn].visible = visible;
+		        });
+		
+		        this.app.menu_ligar_btn.visible = false;
+		        this.app.menu_desligar_btn.visible = false;
+		    }
+		
+		    resetarMultimetro() {
+		        this.posicaoRoda = 0;
+		        this.app.roda_multimetro_btn.rotation = 0;
+		        this.app.capa_display_mc.visible = true;
+		        this.app.display_texto_superior_txt.text = "--------";
+		    }
+		
+		    girarRoda() {
+		        this.posicaoRoda = (this.posicaoRoda + 1) % this.posicoes.length;
+		        this.atualizarPosicaoRoda();
+		    }
+		
+		    selecionarFuncao(posicao) {
+		        this.posicaoRoda = posicao;
+		        this.atualizarPosicaoRoda();
+		        this.simulador.audio.tocarSom("SomBotao");
+		    }
+		
+		    atualizarPosicaoRoda() {
+		        const posicao = this.posicoes[this.posicaoRoda];
+		        this.app.roda_multimetro_btn.rotation = posicao.rotacao;
+		        this.app.display_texto_superior_txt.text = posicao.displayText;
+		        this.app.capa_display_mc.visible = this.posicaoRoda === 0;
+		
+		        if (posicao.statusText) {
+		            this.simulador.estado = posicao.statusText;
+		            this.simulador.atualizarInterface();
+		        }
+		
+		        this.simulador.audio.tocarSom("SomBotao");
+		    }
+		}
+		
+		class Audio {
+		    tocarSom(nomeSom, volume = 0.5) {
+		        const som = createjs.Sound.createInstance(nomeSom);
+		        som.volume = volume;
+		        som.play();
+		    }
+		}
+		
+		// Inicialização
+		const iniciarSimulador = function () {
+		    const simulador = new Simulador(this);
+		};
+		
+		iniciarSimulador.call(this);
+		
+		this.ponta_preta_final_mc.addEventListener("click", fl_MouseClickHandler_24.bind(this));
+		
+		function fl_MouseClickHandler_24() {
+		    this.ponta_preta_final_mc.visible = false;
+		
+		    this.ponta_preta_inicial_mc.visible = true;
+		
+		}
+		
+		this.ponta_vermelha_final_mc.addEventListener("click", fl_MouseClickHandler_25.bind(this));
+		
+		function fl_MouseClickHandler_25() {
+		
+		    this.ponta_vermelha_final_mc.visible = false;
+		
+		    this.ponta_vermelha_inicial_mc.visible = true;
+		}
+		this.stop();
+	}
+	this.frame_2 = function() {
+		var soundInstance = playSound("SomBotao",0);
+		this.InsertIntoSoundStreamData(soundInstance,2,3,1);
+		this.estado_simulador_txt = undefined;this.alarme_btn = undefined;this.prog_btn = undefined;this.esc_btn = undefined;this.cima_btn = undefined;this.enter_btn = undefined;this.baixo_btn = undefined;this.display_controlador_mc = undefined;this.roda_multimetro_btn = undefined;this.display_inferior_txt = undefined;this.display_texto_superior_txt = undefined;this.capa_display_mc = undefined;this.menu_ligar_btn = undefined;this.menu_desligar_btn = undefined;this.menu_tensao_ac_btn = undefined;this.menu_tensao_dc_btn = undefined;this.menu_resistencia_btn = undefined;this.menu_capacidade_btn = undefined;this.menu_corrente_btn = undefined;this.menu_tensao_ac_milivolts_btn = undefined;this.J1G_btn = undefined;this.J1G0_btn = undefined;this.VdcJ2_btn = undefined;this.gndJ2_btn = undefined;this.Vref5J2_btn = undefined;this.B1J3_btn = undefined;this.B2J3_btn = undefined;this.B3J3_btn = undefined;this.B4J3_btn = undefined;this.B5J3_btn = undefined;this.B6J3_btn = undefined;this.B7J3_btn = undefined;this.GNDJ3_btn = undefined;this.VdcJ3_btn = undefined;this.J4DI1_btn = undefined;this.J4DI2_btn = undefined;this.J4DI3_btn = undefined;this.J4DI4_btn = undefined;this.J4DI5_btn = undefined;this.J4DI6_btn = undefined;this.J4DI7_btn = undefined;this.J4DIC1_btn = undefined;this.J5GND_btn = undefined;this.J5Y1_btn = undefined;this.J5Y2_btn = undefined;this.J5Y3_btn = undefined;this.J5Y4_btn = undefined;this.J18B8_btn = undefined;this.J18B9_btn = undefined;this.J18B10_btn = undefined;this.J18B11_btn = undefined;this.J18B12_btn = undefined;this.J18GND_btn = undefined;this.J16ID8_btn = undefined;this.J16ID9_btn = undefined;this.J16ID10_btn = undefined;this.J16IDC2_btn = undefined;this.J8RX0TX0_btn = undefined;this.J8RX1TX1_btn = undefined;this.J8GND_btn = undefined;this.J10Vout_btn = undefined;this.J10RX0TX0_btn = undefined;this.J10RX1TX1_btn = undefined;this.J10GND_btn = undefined;this.J12C1_btn = undefined;this.J12NO1_btn = undefined;this.J12NO2_btn = undefined;this.J12NO3_btn = undefined;this.J13C2_btn = undefined;this.J13NO4_btn = undefined;this.J13NO5_btn = undefined;this.J13NO6_btn = undefined;this.J14NO7_btn = undefined;this.J14C3_btn = undefined;this.J14NC7_btn = undefined;this.J15C4_btn = undefined;this.J15NO8_btn = undefined;this.J15NO9_btn = undefined;this.J15NO10_btn = undefined;this.J15NO11_btn = undefined;this.J15NO12_btn = undefined;this.ponta_vermelha_inicial_mc = undefined;this.ponta_vermelha_final_mc = undefined;this.ponta_preta_final_mc = undefined;this.ponta_preta_inicial_mc = undefined;this.menu_avarias_electricas = undefined;this.menu_controle_remoto_btn = undefined;this.menu_multimetro_btn = undefined;this.menu_avarias_electronicas_btn = undefined;this.compressor_btn = undefined;this.compressor_mecanica_btn = undefined;this.compressor_electrica_btn = undefined;this.vex_btn = undefined;this.vex_mecanica_btn = undefined;this.vex_electrica_btn = undefined;this.ventilador_radial_btn = undefined;this.ventilador_radial_mecanica_btn = undefined;this.ventilador_radial_electricidade_btn = undefined;this.sensor_btn = undefined;this.sensor_mecanica_btn = undefined;this.sensor_electrica_btn = undefined;this.ventilador_axial_btn = undefined;this.ventilador_axial_mecanica_btn = undefined;this.ventilador_axial_electrica_btn = undefined;this.transductor_btn = undefined;this.transductor_mecanica_btn = undefined;this.transductor_electrica_btn = undefined;this.pressostato_btn = undefined;this.pressostato_mecanica_btn = undefined;this.pressostato_electrica_btn = undefined;this.pda_btn = undefined;this.pda_mecanica_btn = undefined;this.pda_electrica_btn = undefined;this.placa_electronica_btn = undefined;this.placa_electronica_mecanica_btn = undefined;this.placa_electronica_electrica_btn = undefined;this.menu_circuitos_btn = undefined;this.frigorifico_btn = undefined;this.controle_btn = undefined;this.potencia_btn = undefined;this.menu_avarias_btn = undefined;this.menu_setpoint_btn = undefined;this.menu_valores_medidas_btn = undefined;this.menu_entradas_saidas_btn = undefined;this.menu_ajuda_btn = undefined;this.menu_AL05_btn = undefined;this.menu_AL06_btn = undefined;this.menu_AL05a_btn = undefined;this.menu_AL06a_btn = undefined;this.menu_AL07_btn = undefined;this.menu_AL08_btn = undefined;this.menu_AL09_btn = undefined;this.menu_AL10_btn = undefined;this.menu_AL11_btn = undefined;this.menu_AL12_btn = undefined;this.menu_AL13_btn = undefined;this.menu_AL12a_btn = undefined;this.menu_AL13a_btn = undefined;this.menu_AL12b_btn = undefined;this.menu_AL12c_btn = undefined;this.menu_AL13b_btn = undefined;this.botao_on_btn = undefined;this.botao_off_btn = undefined;this.logo_dois_mc = undefined;this.logo_dois_mc = this.logo.logo_dois_mc;
+		this.botao_off_btn = this.botão_off.botao_off_btn;
+		this.botao_on_btn = this.botao_on.botao_on_btn;
+		this.menu_avarias_electricas = this.botoes.menu_avarias_electricas;
+		this.menu_controle_remoto_btn = this.botoes.menu_controle_remoto_btn;
+		this.menu_multimetro_btn = this.botoes.menu_multimetro_btn;
+		this.menu_avarias_electronicas_btn = this.botoes.menu_avarias_electronicas_btn;
+		this.compressor_btn = this.botoes.compressor_btn;
+		this.compressor_mecanica_btn = this.botoes.compressor_mecanica_btn;
+		this.compressor_electrica_btn = this.botoes.compressor_electrica_btn;
+		this.vex_btn = this.botoes.vex_btn;
+		this.vex_mecanica_btn = this.botoes.vex_mecanica_btn;
+		this.vex_electrica_btn = this.botoes.vex_electrica_btn;
+		this.ventilador_radial_btn = this.botoes.ventilador_radial_btn;
+		this.ventilador_radial_mecanica_btn = this.botoes.ventilador_radial_mecanica_btn;
+		this.ventilador_radial_electricidade_btn = this.botoes.ventilador_radial_electricidade_btn;
+		this.sensor_btn = this.botoes.sensor_btn;
+		this.sensor_mecanica_btn = this.botoes.sensor_mecanica_btn;
+		this.sensor_electrica_btn = this.botoes.sensor_electrica_btn;
+		this.ventilador_axial_btn = this.botoes.ventilador_axial_btn;
+		this.ventilador_axial_mecanica_btn = this.botoes.ventilador_axial_mecanica_btn;
+		this.ventilador_axial_electrica_btn = this.botoes.ventilador_axial_electrica_btn;
+		this.transductor_btn = this.botoes.transductor_btn;
+		this.transductor_mecanica_btn = this.botoes.transductor_mecanica_btn;
+		this.transductor_electrica_btn = this.botoes.transductor_electrica_btn;
+		this.pressostato_btn = this.botoes.pressostato_btn;
+		this.pressostato_mecanica_btn = this.botoes.pressostato_mecanica_btn;
+		this.pressostato_electrica_btn = this.botoes.pressostato_electrica_btn;
+		this.pda_btn = this.botoes.pda_btn;
+		this.pda_mecanica_btn = this.botoes.pda_mecanica_btn;
+		this.pda_electrica_btn = this.botoes.pda_electrica_btn;
+		this.placa_electronica_btn = this.botoes.placa_electronica_btn;
+		this.placa_electronica_mecanica_btn = this.botoes.placa_electronica_mecanica_btn;
+		this.placa_electronica_electrica_btn = this.botoes.placa_electronica_electrica_btn;
+		this.menu_circuitos_btn = this.botoes.menu_circuitos_btn;
+		this.frigorifico_btn = this.botoes.frigorifico_btn;
+		this.controle_btn = this.botoes.controle_btn;
+		this.potencia_btn = this.botoes.potencia_btn;
+		this.menu_avarias_btn = this.botoes.menu_avarias_btn;
+		this.menu_setpoint_btn = this.botoes.menu_setpoint_btn;
+		this.menu_valores_medidas_btn = this.botoes.menu_valores_medidas_btn;
+		this.menu_entradas_saidas_btn = this.botoes.menu_entradas_saidas_btn;
+		this.menu_ajuda_btn = this.botoes.menu_ajuda_btn;
+		this.menu_AL05_btn = this.botoes.menu_AL05_btn;
+		this.menu_AL06_btn = this.botoes.menu_AL06_btn;
+		this.menu_AL05a_btn = this.botoes.menu_AL05a_btn;
+		this.menu_AL06a_btn = this.botoes.menu_AL06a_btn;
+		this.menu_AL07_btn = this.botoes.menu_AL07_btn;
+		this.menu_AL08_btn = this.botoes.menu_AL08_btn;
+		this.menu_AL09_btn = this.botoes.menu_AL09_btn;
+		this.menu_AL10_btn = this.botoes.menu_AL10_btn;
+		this.menu_AL11_btn = this.botoes.menu_AL11_btn;
+		this.menu_AL12_btn = this.botoes.menu_AL12_btn;
+		this.menu_AL13_btn = this.botoes.menu_AL13_btn;
+		this.menu_AL12a_btn = this.botoes.menu_AL12a_btn;
+		this.menu_AL13a_btn = this.botoes.menu_AL13a_btn;
+		this.menu_AL12b_btn = this.botoes.menu_AL12b_btn;
+		this.menu_AL12c_btn = this.botoes.menu_AL12c_btn;
+		this.menu_AL13b_btn = this.botoes.menu_AL13b_btn;
+		this.ponta_preta_inicial_mc = this.ponta_preta.ponta_preta_inicial_mc;
+		this.ponta_vermelha_inicial_mc = this.ponta_vermelha.ponta_vermelha_inicial_mc;
 		this.J1G_btn = this.contactos_placa.J1G_btn;
 		this.J1G0_btn = this.contactos_placa.J1G0_btn;
 		this.VdcJ2 = this.contactos_placa.VdcJ2;
@@ -5589,8 +8149,8 @@ if (reversed == null) { reversed = false; }
 		    pressostato_electrica: { label: "Pressostato Mecanica", page: 15 },
 		    pda_mecanica: { label: "PDA Eletrica", page: 16 },
 		    pda_electrica: { label: "PDA Mecanica", page: 17 },
-		    placa_electronica_mecanica: { label: "Placa Electronica Eletrica", page: 18 },
-		    placa_electronica_electrica: { label: "Placa Electronica Mecanica", page: 19 },
+		    placa_electronica_mecanica: { label: "Placa Electronica Eletrica", page: 1 },
+		    placa_electronica_electrica: { label: "Placa Electronica Mecanica", page: 1 },
 		};
 		
 		// Configuração dos dropdowns - Sistema centralizado
@@ -5746,26 +8306,82 @@ if (reversed == null) { reversed = false; }
 		}
 		
 		// Funções de conexão das pontas (mantidas iguais)
-		function conectPontaVermelha(posY) {
-		    if (!this.validarCondicoes("Ponta vermelha")) return;
-		    this.app.ponta_vermelha_inicial_mc.visible = false;
-		    this.app.ponta_vermelha_final_mc.visible = true;
-		    this.app.ponta_vermelha_final_mc.y = posY;
-		    this.pontaVermelha.conectada = true;
-		    this.pontaVermelha.posicao = "J1G";
-		    this.estado = "Ponta vermelha ligada";
-		    this.atualizarInterface();
-		    this.verificarMedicao();
-		}
 		
-		function conectarPontaPreta(posY) {
-		    if (!this.validarCondicoes("Ponta preta")) return;
+		function conectarPontas(nomeBtn) {
+		    if (!this.validarCondicoes("Ponta vermelha") || !this.validarCondicoes("Ponta preta")) {
+		        return;
+		    }
+		
+		    // Esconde as pontas iniciais e mostra as finais
+		    this.app.ponta_vermelha_inicial_mc.visible = false;
 		    this.app.ponta_preta_inicial_mc.visible = false;
+		    this.app.ponta_vermelha_final_mc.visible = true;
 		    this.app.ponta_preta_final_mc.visible = true;
-		    this.app.ponta_preta_final_mc.y = posY;
+		
+		    // Define as posições das pontas com base no botão clicado
+		    let posicaoVermelha, posicaoPreta;
+		
+		    switch (nomeBtn) {
+		        case "J1G_btn":
+		            posicaoVermelha = this.app.J1G_btn.y;
+		            posicaoPreta = this.app.J1G0_btn.y;
+		            break;
+		        case "VdcJ2_btn":
+		            posicaoVermelha = this.app.VdcJ2_btn.y;
+		            posicaoPreta = this.app.gndJ2_btn.y;
+		            break;
+		        case "Vref5J2_btn":
+		            posicaoVermelha = this.app.Vref5J2_btn.y;
+		            posicaoPreta = this.app.gndJ2_btn.y;
+		            break;
+		        case "B1J3_btn":
+		            posicaoVermelha = this.app.B1J3_btn.y;
+		            posicaoPreta = this.app.GNDJ3_btn.y;
+		            break;
+		        case "B2J3_btn":
+		            posicaoVermelha = this.app.B2J3_btn.y;
+		            posicaoPreta = this.app.GNDJ3_btn.y;
+		            break;
+		        case "B3J3_btn":
+		            posicaoVermelha = this.app.B3J3_btn.y;
+		            posicaoPreta = this.app.GNDJ3_btn.y;
+		            break;
+		        case "B4J3_btn":
+		            posicaoVermelha = this.app.B4J3_btn.y;
+		            posicaoPreta = this.app.GNDJ3_btn.y;
+		            break;
+		        case "B5J3_btn":
+		            posicaoVermelha = this.app.B5J3_btn.y;
+		            posicaoPreta = this.app.GNDJ3_btn.y;
+		            break;
+		        case "B6J3_btn":
+		            posicaoVermelha = this.app.B6J3_btn.y;
+		            posicaoPreta = this.app.GNDJ3_btn.y;
+		            break;
+		        case "B7J3_btn":
+		            posicaoVermelha = this.app.B7J3_btn.y;
+		            posicaoPreta = this.app.GNDJ3_btn.y;
+		            break;
+		        case "GNDJ3_btn":
+		            posicaoVermelha = this.app.GNDJ3_btn.y;
+		            posicaoPreta = this.app.GNDJ3_btn.y;
+		            break;
+		        case "VdcJ3_btn":
+		            posicaoVermelha = this.app.VdcJ3_btn.y;
+		            posicaoPreta = this.app.GNDJ3_btn.y;
+		            break;
+		        default:
+		            // Lida com casos não esperados ou botões desconhecidos
+		            console.warn(`Botão desconhecido: ${nomeBtn}`);
+		            return;
+		    }
+		
+		    this.app.ponta_vermelha_final_mc.y = posicaoVermelha;
+		    this.app.ponta_preta_final_mc.y = posicaoPreta;
+		
+		    this.pontaVermelha.conectada = true;
 		    this.pontaPreta.conectada = true;
-		    this.pontaPreta.posicao = "J1G0";
-		    this.estado = "Ponta preta ligada";
+		
 		    this.atualizarInterface();
 		    this.verificarMedicao();
 		}
@@ -5797,16 +8413,26 @@ if (reversed == null) { reversed = false; }
 		
 		        // Pontos de conexão
 		        const conexoes = [
-		            { elemento: "J1G_btn", funcao: conectPontaVermelha, posY: 288 },
-		            { elemento: "J1G0_btn", funcao: conectarPontaPreta, posY: 440 },
-		            { elemento: "VdcJ2", funcao: conectPontaVermelha, posY: 332 },
-		            { elemento: "gndJ2", funcao: conectarPontaPreta, posY: 485 },
-		            { elemento: "Vref5J2", funcao: conectPontaVermelha, posY: 495 },
-		        ];
+		    { elemento: "J1G_btn", nomeBtn: "J1G_btn" },
+		    { elemento: "J1G0_btn", nomeBtn: "J1G0_btn" },
+		    { elemento: "VdcJ2_btn", nomeBtn: "VdcJ2_btn" },
+		    { elemento: "gndJ2_btn", nomeBtn: "gndJ2_btn" },
+		    { elemento: "Vref5J2_btn", nomeBtn: "Vref5J2_btn" },
+		    { elemento: "B1J3_btn", nomeBtn: "B1J3_btn" },
+		    { elemento: "B2J3_btn", nomeBtn: "B2J3_btn" },
+		    { elemento: "B3J3_btn", nomeBtn: "B3J3_btn" },
+		    { elemento: "B4J3_btn", nomeBtn: "B4J3_btn" },
+		    { elemento: "B5J3_btn", nomeBtn: "B5J3_btn" },
+		    { elemento: "B6J3_btn", nomeBtn: "B6J3_btn" },
+		    { elemento: "B7J3_btn", nomeBtn: "B7J3_btn" },
+		    { elemento: "GNDJ3_btn", nomeBtn: "GNDJ3_btn" },
+		    { elemento: "VdcJ3_btn", nomeBtn: "VdcJ3_btn" },
+		];
 		
-		        conexoes.forEach(({ elemento, funcao, posY }) => {
-		            this.app[elemento].addEventListener("click", funcao.bind(this, posY));
-		        });
+		
+		       conexoes.forEach(({ elemento, nomeBtn }) => {
+		    this.app[elemento].addEventListener("click", () => conectarPontas.call(this, nomeBtn));
+		});
 		
 		        // Menu lateral principal
 		        const menuBotoes = [
@@ -6082,766 +8708,8 @@ if (reversed == null) { reversed = false; }
 		iniciarSimulador.call(this);
 		this.stop();
 	}
-	this.frame_2 = function() {
-		var soundInstance = playSound("SomBotao",0);
-		this.InsertIntoSoundStreamData(soundInstance,2,3,1);
-		this.estado_simulador_txt = undefined;this.alarme_btn = undefined;this.prog_btn = undefined;this.esc_btn = undefined;this.cima_btn = undefined;this.enter_btn = undefined;this.baixo_btn = undefined;this.display_controlador_mc = undefined;this.roda_multimetro_btn = undefined;this.display_inferior_txt = undefined;this.display_texto_superior_txt = undefined;this.capa_display_mc = undefined;this.menu_ligar_btn = undefined;this.menu_desligar_btn = undefined;this.menu_tensao_ac_btn = undefined;this.menu_tensao_dc_btn = undefined;this.menu_resistencia_btn = undefined;this.menu_capacidade_btn = undefined;this.menu_corrente_btn = undefined;this.menu_tensao_ac_milivolts_btn = undefined;this.J1G_btn = undefined;this.J1G0_btn = undefined;this.VdcJ2 = undefined;this.gndJ2 = undefined;this.Vref5J2 = undefined;this.B1J3 = undefined;this.B2J3 = undefined;this.B3J3 = undefined;this.B4J3 = undefined;this.B5J3 = undefined;this.B5J3 = undefined;this.B7J3 = undefined;this.GNDJ3 = undefined;this.VdcJ3 = undefined;this.VdcJ2 = undefined;this.gndJ2 = undefined;this.Vref5J2 = undefined;this.VdcJ2 = undefined;this.gndJ2 = undefined;this.Vref5J2 = undefined;this.VdcJ2 = undefined;this.gndJ2 = undefined;this.Vref5J2 = undefined;this.gndJ2 = undefined;this.Vref5J2 = undefined;this.VdcJ2 = undefined;this.gndJ2 = undefined;this.Vref5J2 = undefined;this.VdcJ2 = undefined;this.gndJ2 = undefined;this.Vref5J2 = undefined;this.VdcJ2 = undefined;this.gndJ2 = undefined;this.gndJ2 = undefined;this.Vref5J2 = undefined;this.VdcJ2 = undefined;this.gndJ2 = undefined;this.VdcJ2 = undefined;this.gndJ2 = undefined;this.Vref5J2 = undefined;this.VdcJ2 = undefined;this.gndJ2 = undefined;this.Vref5J2 = undefined;this.Vref5J2 = undefined;this.VdcJ2 = undefined;this.gndJ2 = undefined;this.Vref5J2 = undefined;this.Vref5J2 = undefined;this.VdcJ2 = undefined;this.gndJ2 = undefined;this.Vref5J2 = undefined;this.Vref5J2 = undefined;this.VdcJ2 = undefined;this.gndJ2 = undefined;this.Vref5J2 = undefined;this.Vref5J2 = undefined;this.VdcJ2 = undefined;this.gndJ2 = undefined;this.Vref5J2 = undefined;this.Vref5J2 = undefined;this.Vref5J2 = undefined;this.ponta_vermelha_inicial_mc = undefined;this.ponta_vermelha_final_mc = undefined;this.ponta_preta_final_mc = undefined;this.ponta_preta_inicial_mc = undefined;this.menu_avarias_electricas = undefined;this.menu_controle_remoto_btn = undefined;this.menu_multimetro_btn = undefined;this.menu_avarias_electronicas_btn = undefined;this.compressor_btn = undefined;this.compressor_mecanica_btn = undefined;this.compressor_electrica_btn = undefined;this.vex_btn = undefined;this.vex_mecanica_btn = undefined;this.vex_electrica_btn = undefined;this.ventilador_radial_btn = undefined;this.ventilador_radial_mecanica_btn = undefined;this.ventilador_radial_electricidade_btn = undefined;this.sensor_btn = undefined;this.sensor_mecanica_btn = undefined;this.sensor_electrica_btn = undefined;this.ventilador_axial_btn = undefined;this.ventilador_axial_mecanica_btn = undefined;this.ventilador_axial_electrica_btn = undefined;this.transductor_btn = undefined;this.transductor_mecanica_btn = undefined;this.transductor_electrica_btn = undefined;this.pressostato_btn = undefined;this.pressostato_mecanica_btn = undefined;this.pressostato_electrica_btn = undefined;this.pda_btn = undefined;this.pda_mecanica_btn = undefined;this.pda_electrica_btn = undefined;this.placa_electronica_btn = undefined;this.placa_electronica_mecanica_btn = undefined;this.placa_electronica_electrica_btn = undefined;this.menu_circuitos_btn = undefined;this.frigorifico_btn = undefined;this.controle_btn = undefined;this.potencia_btn = undefined;this.menu_avarias_btn = undefined;this.menu_setpoint_btn = undefined;this.menu_valores_medidas_btn = undefined;this.menu_entradas_saidas_btn = undefined;this.menu_ajuda_btn = undefined;this.menu_AL05_btn = undefined;this.menu_AL06_btn = undefined;this.menu_AL05a_btn = undefined;this.menu_AL06a_btn = undefined;this.menu_AL07_btn = undefined;this.menu_AL08_btn = undefined;this.menu_AL09_btn = undefined;this.menu_AL10_btn = undefined;this.menu_AL11_btn = undefined;this.menu_AL12_btn = undefined;this.menu_AL13_btn = undefined;this.menu_AL12a_btn = undefined;this.menu_AL13a_btn = undefined;this.menu_AL12b_btn = undefined;this.menu_AL12c_btn = undefined;this.menu_AL13b_btn = undefined;this.botao_on_btn = undefined;this.botao_off_btn = undefined;this.logo_dois_mc = undefined;this.logo_dois_mc = this.logo.logo_dois_mc;
-		this.botao_off_btn = this.botão_off.botao_off_btn;
-		this.botao_on_btn = this.botao_on.botao_on_btn;
-		this.menu_avarias_electricas = this.botoes.menu_avarias_electricas;
-		this.menu_controle_remoto_btn = this.botoes.menu_controle_remoto_btn;
-		this.menu_multimetro_btn = this.botoes.menu_multimetro_btn;
-		this.menu_avarias_electronicas_btn = this.botoes.menu_avarias_electronicas_btn;
-		this.compressor_btn = this.botoes.compressor_btn;
-		this.compressor_mecanica_btn = this.botoes.compressor_mecanica_btn;
-		this.compressor_electrica_btn = this.botoes.compressor_electrica_btn;
-		this.vex_btn = this.botoes.vex_btn;
-		this.vex_mecanica_btn = this.botoes.vex_mecanica_btn;
-		this.vex_electrica_btn = this.botoes.vex_electrica_btn;
-		this.ventilador_radial_btn = this.botoes.ventilador_radial_btn;
-		this.ventilador_radial_mecanica_btn = this.botoes.ventilador_radial_mecanica_btn;
-		this.ventilador_radial_electricidade_btn = this.botoes.ventilador_radial_electricidade_btn;
-		this.sensor_btn = this.botoes.sensor_btn;
-		this.sensor_mecanica_btn = this.botoes.sensor_mecanica_btn;
-		this.sensor_electrica_btn = this.botoes.sensor_electrica_btn;
-		this.ventilador_axial_btn = this.botoes.ventilador_axial_btn;
-		this.ventilador_axial_mecanica_btn = this.botoes.ventilador_axial_mecanica_btn;
-		this.ventilador_axial_electrica_btn = this.botoes.ventilador_axial_electrica_btn;
-		this.transductor_btn = this.botoes.transductor_btn;
-		this.transductor_mecanica_btn = this.botoes.transductor_mecanica_btn;
-		this.transductor_electrica_btn = this.botoes.transductor_electrica_btn;
-		this.pressostato_btn = this.botoes.pressostato_btn;
-		this.pressostato_mecanica_btn = this.botoes.pressostato_mecanica_btn;
-		this.pressostato_electrica_btn = this.botoes.pressostato_electrica_btn;
-		this.pda_btn = this.botoes.pda_btn;
-		this.pda_mecanica_btn = this.botoes.pda_mecanica_btn;
-		this.pda_electrica_btn = this.botoes.pda_electrica_btn;
-		this.placa_electronica_btn = this.botoes.placa_electronica_btn;
-		this.placa_electronica_mecanica_btn = this.botoes.placa_electronica_mecanica_btn;
-		this.placa_electronica_electrica_btn = this.botoes.placa_electronica_electrica_btn;
-		this.menu_circuitos_btn = this.botoes.menu_circuitos_btn;
-		this.frigorifico_btn = this.botoes.frigorifico_btn;
-		this.controle_btn = this.botoes.controle_btn;
-		this.potencia_btn = this.botoes.potencia_btn;
-		this.menu_avarias_btn = this.botoes.menu_avarias_btn;
-		this.menu_setpoint_btn = this.botoes.menu_setpoint_btn;
-		this.menu_valores_medidas_btn = this.botoes.menu_valores_medidas_btn;
-		this.menu_entradas_saidas_btn = this.botoes.menu_entradas_saidas_btn;
-		this.menu_ajuda_btn = this.botoes.menu_ajuda_btn;
-		this.menu_AL05_btn = this.botoes.menu_AL05_btn;
-		this.menu_AL06_btn = this.botoes.menu_AL06_btn;
-		this.menu_AL05a_btn = this.botoes.menu_AL05a_btn;
-		this.menu_AL06a_btn = this.botoes.menu_AL06a_btn;
-		this.menu_AL07_btn = this.botoes.menu_AL07_btn;
-		this.menu_AL08_btn = this.botoes.menu_AL08_btn;
-		this.menu_AL09_btn = this.botoes.menu_AL09_btn;
-		this.menu_AL10_btn = this.botoes.menu_AL10_btn;
-		this.menu_AL11_btn = this.botoes.menu_AL11_btn;
-		this.menu_AL12_btn = this.botoes.menu_AL12_btn;
-		this.menu_AL13_btn = this.botoes.menu_AL13_btn;
-		this.menu_AL12a_btn = this.botoes.menu_AL12a_btn;
-		this.menu_AL13a_btn = this.botoes.menu_AL13a_btn;
-		this.menu_AL12b_btn = this.botoes.menu_AL12b_btn;
-		this.menu_AL12c_btn = this.botoes.menu_AL12c_btn;
-		this.menu_AL13b_btn = this.botoes.menu_AL13b_btn;
-		this.ponta_preta_final_mc = this.ponta_preta.ponta_preta_final_mc;
-		this.ponta_preta_inicial_mc = this.ponta_preta.ponta_preta_inicial_mc;
-		this.ponta_vermelha_inicial_mc = this.ponta_vermelha.ponta_vermelha_inicial_mc;
-		this.ponta_vermelha_final_mc = this.ponta_vermelha.ponta_vermelha_final_mc;
-		this.J1G_btn = this.contactos_placa.J1G_btn;
-		this.J1G0_btn = this.contactos_placa.J1G0_btn;
-		this.VdcJ2 = this.contactos_placa.VdcJ2;
-		this.gndJ2 = this.contactos_placa.gndJ2;
-		this.Vref5J2 = this.contactos_placa.Vref5J2;
-		this.B1J3 = this.contactos_placa.B1J3;
-		this.B2J3 = this.contactos_placa.B2J3;
-		this.B3J3 = this.contactos_placa.B3J3;
-		this.B4J3 = this.contactos_placa.B4J3;
-		this.B5J3 = this.contactos_placa.B5J3;
-		this.B5J3 = this.contactos_placa.B5J3;
-		this.B7J3 = this.contactos_placa.B7J3;
-		this.GNDJ3 = this.contactos_placa.GNDJ3;
-		this.VdcJ3 = this.contactos_placa.VdcJ3;
-		this.VdcJ2 = this.contactos_placa.VdcJ2;
-		this.gndJ2 = this.contactos_placa.gndJ2;
-		this.Vref5J2 = this.contactos_placa.Vref5J2;
-		this.VdcJ2 = this.contactos_placa.VdcJ2;
-		this.gndJ2 = this.contactos_placa.gndJ2;
-		this.Vref5J2 = this.contactos_placa.Vref5J2;
-		this.VdcJ2 = this.contactos_placa.VdcJ2;
-		this.gndJ2 = this.contactos_placa.gndJ2;
-		this.Vref5J2 = this.contactos_placa.Vref5J2;
-		this.gndJ2 = this.contactos_placa.gndJ2;
-		this.Vref5J2 = this.contactos_placa.Vref5J2;
-		this.VdcJ2 = this.contactos_placa.VdcJ2;
-		this.gndJ2 = this.contactos_placa.gndJ2;
-		this.Vref5J2 = this.contactos_placa.Vref5J2;
-		this.VdcJ2 = this.contactos_placa.VdcJ2;
-		this.gndJ2 = this.contactos_placa.gndJ2;
-		this.Vref5J2 = this.contactos_placa.Vref5J2;
-		this.VdcJ2 = this.contactos_placa.VdcJ2;
-		this.gndJ2 = this.contactos_placa.gndJ2;
-		this.gndJ2 = this.contactos_placa.gndJ2;
-		this.Vref5J2 = this.contactos_placa.Vref5J2;
-		this.VdcJ2 = this.contactos_placa.VdcJ2;
-		this.gndJ2 = this.contactos_placa.gndJ2;
-		this.VdcJ2 = this.contactos_placa.VdcJ2;
-		this.gndJ2 = this.contactos_placa.gndJ2;
-		this.Vref5J2 = this.contactos_placa.Vref5J2;
-		this.VdcJ2 = this.contactos_placa.VdcJ2;
-		this.gndJ2 = this.contactos_placa.gndJ2;
-		this.Vref5J2 = this.contactos_placa.Vref5J2;
-		this.Vref5J2 = this.contactos_placa.Vref5J2;
-		this.VdcJ2 = this.contactos_placa.VdcJ2;
-		this.gndJ2 = this.contactos_placa.gndJ2;
-		this.Vref5J2 = this.contactos_placa.Vref5J2;
-		this.Vref5J2 = this.contactos_placa.Vref5J2;
-		this.VdcJ2 = this.contactos_placa.VdcJ2;
-		this.gndJ2 = this.contactos_placa.gndJ2;
-		this.Vref5J2 = this.contactos_placa.Vref5J2;
-		this.Vref5J2 = this.contactos_placa.Vref5J2;
-		this.VdcJ2 = this.contactos_placa.VdcJ2;
-		this.gndJ2 = this.contactos_placa.gndJ2;
-		this.Vref5J2 = this.contactos_placa.Vref5J2;
-		this.Vref5J2 = this.contactos_placa.Vref5J2;
-		this.VdcJ2 = this.contactos_placa.VdcJ2;
-		this.gndJ2 = this.contactos_placa.gndJ2;
-		this.Vref5J2 = this.contactos_placa.Vref5J2;
-		this.Vref5J2 = this.contactos_placa.Vref5J2;
-		this.Vref5J2 = this.contactos_placa.Vref5J2;
-		this.menu_ligar_btn = this.menus.menu_ligar_btn;
-		this.menu_desligar_btn = this.menus.menu_desligar_btn;
-		this.menu_tensao_ac_btn = this.menus.menu_tensao_ac_btn;
-		this.menu_tensao_dc_btn = this.menus.menu_tensao_dc_btn;
-		this.menu_resistencia_btn = this.menus.menu_resistencia_btn;
-		this.menu_capacidade_btn = this.menus.menu_capacidade_btn;
-		this.menu_corrente_btn = this.menus.menu_corrente_btn;
-		this.menu_tensao_ac_milivolts_btn = this.menus.menu_tensao_ac_milivolts_btn;
-		this.capa_display_mc = this.capa_display.capa_display_mc;
-		this.display_texto_superior_txt = this.texto_superior.display_texto_superior_txt;
-		this.display_inferior_txt = this.texto_inferior.display_inferior_txt;
-		this.roda_multimetro_btn = this.roda_multimetro.roda_multimetro_btn;
-		this.alarme_btn = this.controlador.alarme_btn;
-		this.prog_btn = this.controlador.prog_btn;
-		this.esc_btn = this.controlador.esc_btn;
-		this.cima_btn = this.controlador.cima_btn;
-		this.enter_btn = this.controlador.enter_btn;
-		this.baixo_btn = this.controlador.baixo_btn;
-		this.display_controlador_mc = this.controlador.display_controlador_mc;
-		this.estado_simulador_txt = this.tela_inicial.estado_simulador_txt;
-		///variaveis globais
-		var contar_botao_compressor = 0;
-		var contar_botao_circuitos = 0;
-		var altera_estados = false;
-		const este = this;
-		//this.estado_simulador_txt.text = contar_botao_compressor;
-		
-		// Configurações dos componentes
-		const COMPONENTES_CONFIG = {
-		    1: {
-		        nome: "Compressor",
-		        botoes: ["compressor_mecanica_btn", "compressor_electrica_btn"],
-		    },
-		    2: {
-		        nome: "Vavula de Expansão",
-		        botoes: ["vex_electrica_btn", "vex_mecanica_btn"],
-		    },
-		    3: {
-		        nome: "Ventilador Radial",
-		        botoes: [
-		            "ventilador_radial_mecanica_btn",
-		            "ventilador_radial_electricidade_btn",
-		        ],
-		    },
-		    4: {
-		        nome: "Sensor",
-		        botoes: ["sensor_mecanica_btn", "sensor_electrica_btn"],
-		    },
-		    5: {
-		        nome: "Ventilador Axial",
-		        botoes: ["ventilador_axial_mecanica_btn", "ventilador_axial_electrica_btn"],
-		    },
-		    6: {
-		        nome: "Transductor",
-		        botoes: ["transductor_mecanica_btn", "transductor_electrica_btn"],
-		    },
-		    7: {
-		        nome: "Pressostato",
-		        botoes: ["pressostato_mecanica_btn", "pressostato_electrica_btn"],
-		    },
-		    8: { nome: "Manometro", botoes: ["pda_mecanica_btn", "pda_electrica_btn"] },
-		    9: {
-		        nome: "Placa",
-		        botoes: [
-		            "placa_electronica_mecanica_btn",
-		            "placa_electronica_electrica_btn",
-		        ],
-		    },
-		};
-		
-		const SUBMENU_CONFIG = {
-		    vex_electrica: { label: "Vavula de Expansão Eletrica", page: 10 },
-		    vex_mecanica: { label: "Vavula de Expansão Mecanica", page: 11 },
-		    compressor_mecanica: { label: "Mecânica do Compressor", page: 2 },
-		    compressor_electrica: { label: "Electricidade do Compressor", page: 3 },
-		    ventilador_radial_mecanica: { label: "Ventilador Radial Eletrica", page: 4 },
-		    ventilador_radial_electricidade: {
-		        label: "Ventilador Radial Mecanica",
-		        page: 5,
-		    },
-		    sensor_mecanica: { label: "Sensor Eletrica", page: 6 },
-		    sensor_electrica: { label: "Sensor Mecanica", page: 7 },
-		    ventilador_axial_mecanica: { label: "Ventilador Axial Eletrica", page: 8 },
-		    ventilador_axial_electrica: { label: "Ventilador Axial Mecanica", page: 9 },
-		    transductor_mecanica: { label: "Transductor Eletrica", page: 12 },
-		    transductor_electrica: { label: "Transductor Mecanica", page: 13 },
-		    pressostato_mecanica: { label: "Pressostato Eletrica", page: 14 },
-		    pressostato_electrica: { label: "Pressostato Mecanica", page: 15 },
-		    pda_mecanica: { label: "PDA Eletrica", page: 16 },
-		    pda_electrica: { label: "PDA Mecanica", page: 17 },
-		    placa_electronica_mecanica: { label: "Placa Electronica Eletrica", page: 18 },
-		    placa_electronica_electrica: {
-		        label: "Placa Electronica Mecanica",
-		        page: 19,
-		    },
-		};
-		
-		// Funções de conexão das pontas
-		function conectPontaVermelha(posY) {
-		    if (!this.validarCondicoes("Ponta vermelha")) return;
-		    this.app.ponta_vermelha_inicial_mc.visible = false;
-		    this.app.ponta_vermelha_final_mc.visible = true;
-		    this.app.ponta_vermelha_final_mc.y = posY;
-		    this.pontaVermelha.conectada = true;
-		    this.pontaVermelha.posicao = "J1G";
-		    this.estado = "Ponta vermelha ligada";
-		    this.atualizarInterface();
-		    this.verificarMedicao();
-		}
-		
-		function conectarPontaPreta(posY) {
-		    if (!this.validarCondicoes("Ponta preta")) return;
-		    this.app.ponta_preta_inicial_mc.visible = false;
-		    this.app.ponta_preta_final_mc.visible = true;
-		    this.app.ponta_preta_final_mc.y = posY;
-		    this.pontaPreta.conectada = true;
-		    this.pontaPreta.posicao = "J1G0";
-		    this.estado = "Ponta preta ligada";
-		    this.atualizarInterface();
-		    this.verificarMedicao();
-		}
-		
-		class Simulador {
-		    constructor(app) {
-		        this.app = app;
-		        this.tensaoAlimentacao = 0;
-		        this.ligado = false;
-		        this.estado = "Simulador Desligado";
-		        this.pontaVermelha = { conectada: false, posicao: null };
-		        this.pontaPreta = { conectada: false, posicao: null };
-		
-		        this.multimetro = new Multimetro(app, this);
-		        this.controleRemoto = new ControleRemoto(app, this);
-		        this.avarias = new Avarias(app, this);
-		        this.circuitos = new Circuitos(app, this);
-		        this.audio = new Audio();
-		
-		        this.initEventListeners();
-		    }
-		
-		    initEventListeners() {
-		        // Botões de ligar/desligar
-		        ["botao_off_btn", "botao_on_btn"].forEach((btn) => {
-		            this.app[btn].addEventListener("click", this.togglePower.bind(this));
-		        });
-		
-		        this.app.menu_ligar_btn.addEventListener(
-		            "click",
-		            this.ligarSimulador.bind(this)
-		        );
-		        this.app.menu_desligar_btn.addEventListener(
-		            "click",
-		            this.desligarSimulador.bind(this)
-		        );
-		
-		        // Pontos de conexão
-		        const conexoes = [
-		            { elemento: "J1G_btn", funcao: conectPontaVermelha, posY: 288 },
-		            { elemento: "J1G0_btn", funcao: conectarPontaPreta, posY: 440 },
-		            { elemento: "VdcJ2", funcao: conectPontaVermelha, posY: 332 },
-		            { elemento: "gndJ2", funcao: conectarPontaPreta, posY: 485 },
-		            { elemento: "Vref5J2", funcao: conectPontaVermelha, posY: 495 },
-		        ];
-		
-		        conexoes.forEach(({ elemento, funcao, posY }) => {
-		            this.app[elemento].addEventListener("click", funcao.bind(this, posY));
-		        });
-		
-		        // Menu lateral principal
-		        const menuBotoes = [
-		            "compressor_btn",
-		            "vex_btn",
-		            "ventilador_radial_btn",
-		            "sensor_btn",
-		            "ventilador_axial_btn",
-		            "transductor_btn",
-		            "pressostato_btn",
-		            "pda_btn",
-		            "placa_electronica_btn",
-		        ];
-		
-		        menuBotoes.forEach((btn, index) => {
-		            this.app[btn].addEventListener(
-		                "click",
-		                this.esconderBtnMenuLateral.bind(this, index + 1)
-		            );
-		        });
-		
-		        // Submenu lateral
-		        Object.keys(SUBMENU_CONFIG).forEach((acao) => {
-		            const btnName = acao + "_btn";
-		            if (this.app[btnName]) {
-		                const page = SUBMENU_CONFIG[acao].page;
-		                this.app[btnName].addEventListener(
-		                    "click",
-		                    this.subMenuFuncao.bind(this, acao, page)
-		                );
-		            }
-		        });
-		    }
-		
-		    // Função unificada para esconder todos os botões do submenu
-		    esconderTodosBotoesSubmenu() {
-		        this.audio.tocarSom("SomBotao");
-		        Object.values(COMPONENTES_CONFIG).forEach((config) => {
-		            config.botoes.forEach((btn) => {
-		                this.app[btn].visible = false;
-		            });
-		        });
-		    }
-		
-		    esconderBtnMenuLateral(nClick) {
-		        this.audio.tocarSom("SomBotao");
-		        this.altera_estados = !this.altera_estados;
-		
-		        this.esconderTodosBotoesSubmenu();
-		
-		        if (this.altera_estados && COMPONENTES_CONFIG[nClick]) {
-		            const config = COMPONENTES_CONFIG[nClick];
-		            config.botoes.forEach((btn) => {
-		                this.app[btn].visible = true;
-		            });
-		            this.app.estado_simulador_txt.text = config.nome;
-		        }
-		    }
-		
-		    subMenuFuncao(acao, page) {
-		        this.esconderTodosBotoesSubmenu();
-		        const config = SUBMENU_CONFIG[acao];
-		        this.app.estado_simulador_txt.text = config
-		            ? config.label
-		            : "Estado não definido";
-		        this.altera_estados = false;
-		        if (typeof page === "number") {
-		            this.app.gotoAndStop(page); // ou qualquer função que use o número da página
-		        }
-		    }
-		
-		    // Funções de controle de energia simplificadas
-		    setPowerState(ligado) {
-		        this.ligado = ligado;
-		        this.app.botao_off_btn.visible = !ligado;
-		        this.app.botao_on_btn.visible = ligado;
-		        this.estado = ligado ? "Simulador Ligado" : "Simulador Desligado";
-		        this.tensaoAlimentacao = ligado ? 220 : 0;
-		        this.audio.tocarSom("SomBotao");
-		        this.atualizarInterface();
-		    }
-		
-		    ligarSimulador() {
-		        this.setPowerState(true);
-		    }
-		    desligarSimulador() {
-		        this.setPowerState(false);
-		    }
-		    togglePower() {
-		        this.setPowerState(!this.ligado);
-		    }
-		
-		    atualizarInterface() {
-		        this.app.estado_simulador_txt.text = this.estado;
-		    }
-		
-		    validarCondicoes(ponta) {
-		        if (!this.ligado) {
-		            this.estado = "Ligar Tensão de Alimentação";
-		            this.resetarPonta(ponta);
-		            this.atualizarInterface();
-		            return false;
-		        }
-		
-		        if (this.multimetro.posicaoRoda !== 1) {
-		            this.estado = "Colocar multimetro em tensao AC";
-		            this.resetarPonta(ponta);
-		            this.atualizarInterface();
-		            return false;
-		        }
-		
-		        return true;
-		    }
-		
-		    resetarPonta(ponta) {
-		        const isVermelha = ponta === "Ponta vermelha";
-		        this.app[
-		            isVermelha ? "ponta_vermelha_inicial_mc" : "ponta_preta_inicial_mc"
-		        ].visible = true;
-		        this.app[
-		            isVermelha ? "ponta_vermelha_final_mc" : "ponta_preta_final_mc"
-		        ].visible = false;
-		    }
-		
-		    verificarMedicao() {
-		        if (this.pontaVermelha.conectada && this.pontaPreta.conectada) {
-		            if (
-		                this.pontaVermelha.posicao === "J1G" &&
-		                this.pontaPreta.posicao === "J1G0"
-		            ) {
-		                this.app.display_inferior_txt.text = this.tensaoAlimentacao.toString();
-		            }
-		            this.pontaVermelha.conectada = false;
-		            this.pontaPreta.conectada = false;
-		        }
-		    }
-		}
-		
-		class Multimetro {
-		    constructor(app, simulador) {
-		        this.app = app;
-		        this.simulador = simulador;
-		        this.posicaoRoda = 0;
-		        this.menuAberto = false;
-		
-		        this.posicoes = [
-		            {
-		                nome: "Desligado",
-		                rotacao: 0,
-		                displayText: "--------",
-		                statusText: "",
-		            },
-		            {
-		                nome: "Volts AC",
-		                rotacao: 25,
-		                displayText: "Volts AC",
-		                statusText: "Multímetro ligado para Volts AC",
-		            },
-		            {
-		                nome: "Volts DC",
-		                rotacao: 50,
-		                displayText: "Volts DC",
-		                statusText: "Multímetro ligado para Volts DC",
-		            },
-		            {
-		                nome: "Volts mV",
-		                rotacao: 75,
-		                displayText: "Volts mV",
-		                statusText: "Multímetro ligado para Volts mV",
-		            },
-		            {
-		                nome: "Ohms",
-		                rotacao: 100,
-		                displayText: "Ohms",
-		                statusText: "Multímetro ligado para Ohms",
-		            },
-		            {
-		                nome: "Microfarads",
-		                rotacao: 125,
-		                displayText: "Microfarads",
-		                statusText: "Multímetro ligado para Microfarads",
-		            },
-		            {
-		                nome: "Anpers",
-		                rotacao: 150,
-		                displayText: "Anpers",
-		                statusText: "Multímetro ligado para Anpers",
-		            },
-		        ];
-		
-		        this.initEventListeners();
-		    }
-		
-		    initEventListeners() {
-		        this.app.menu_multimetro_btn.addEventListener(
-		            "click",
-		            this.toggleMenu.bind(this)
-		        );
-		        this.app.roda_multimetro_btn.addEventListener(
-		            "click",
-		            this.girarRoda.bind(this)
-		        );
-		
-		        const menuOpcoes = [
-		            "menu_tensao_ac_btn",
-		            "menu_tensao_dc_btn",
-		            "menu_tensao_ac_milivolts_btn",
-		            "menu_resistencia_btn",
-		            "menu_capacidade_btn",
-		            "menu_corrente_btn",
-		        ];
-		
-		        menuOpcoes.forEach((btn, index) => {
-		            this.app[btn].addEventListener("click", () =>
-		                this.selecionarFuncao(index + 1)
-		            );
-		        });
-		    }
-		
-		    toggleMenu() {
-		        this.menuAberto = !this.menuAberto;
-		        this.setMenuVisibility(this.menuAberto);
-		
-		        if (!this.menuAberto) {
-		            this.resetarMultimetro();
-		        } else {
-		            this.app.capa_display_mc.visible = false;
-		        }
-		    }
-		
-		    setMenuVisibility(visible) {
-		        const menuBotoes = [
-		            "menu_tensao_ac_btn",
-		            "menu_tensao_dc_btn",
-		            "menu_tensao_ac_milivolts_btn",
-		            "menu_resistencia_btn",
-		            "menu_capacidade_btn",
-		            "menu_corrente_btn",
-		        ];
-		
-		        menuBotoes.forEach((btn) => {
-		            this.app[btn].visible = visible;
-		        });
-		
-		        this.app.menu_ligar_btn.visible = false;
-		        this.app.menu_desligar_btn.visible = false;
-		    }
-		
-		    resetarMultimetro() {
-		        this.posicaoRoda = 0;
-		        this.app.roda_multimetro_btn.rotation = 0;
-		        this.app.capa_display_mc.visible = true;
-		        this.app.display_texto_superior_txt.text = "--------";
-		    }
-		
-		    girarRoda() {
-		        this.posicaoRoda = (this.posicaoRoda + 1) % this.posicoes.length;
-		        this.atualizarPosicaoRoda();
-		    }
-		
-		    selecionarFuncao(posicao) {
-		        this.posicaoRoda = posicao;
-		        this.atualizarPosicaoRoda();
-		        this.simulador.audio.tocarSom("SomBotao");
-		    }
-		
-		    atualizarPosicaoRoda() {
-		        const posicao = this.posicoes[this.posicaoRoda];
-		        this.app.roda_multimetro_btn.rotation = posicao.rotacao;
-		        this.app.display_texto_superior_txt.text = posicao.displayText;
-		        this.app.capa_display_mc.visible = this.posicaoRoda === 0;
-		
-		        if (posicao.statusText) {
-		            this.simulador.estado = posicao.statusText;
-		            this.simulador.atualizarInterface();
-		        }
-		
-		        this.simulador.audio.tocarSom("SomBotao");
-		    }
-		}
-		
-		class ControleRemoto {
-		    constructor(app, simulador) {
-		        this.app = app;
-		        this.simulador = simulador;
-		        this.menuAberto = false;
-		        this.initEventListeners();
-		    }
-		
-		    initEventListeners() {
-		        this.app.menu_controle_remoto_btn.addEventListener(
-		            "click",
-		            this.toggleMenu.bind(this)
-		        );
-		        [
-		            "menu_setpoint_btn",
-		            "menu_valores_medidas_btn",
-		            "menu_entradas_saidas_btn",
-		        ].forEach((btn) => {
-		            this.app[btn].addEventListener("click", this.fecharMenu.bind(this));
-		        });
-		    }
-		
-		    toggleMenu() {
-		        this.menuAberto = !this.menuAberto;
-		        this.setMenuVisibility(this.menuAberto);
-		    }
-		
-		    setMenuVisibility(visible) {
-		        this.app.menu_setpoint_btn.visible = visible;
-		        this.app.menu_valores_medidas_btn.visible = visible;
-		        this.app.menu_entradas_saidas_btn.visible = visible;
-		
-		        const multimetroMenus = [
-		            "menu_tensao_ac_btn",
-		            "menu_tensao_dc_btn",
-		            "menu_tensao_ac_milivolts_btn",
-		            "menu_resistencia_btn",
-		            "menu_capacidade_btn",
-		            "menu_corrente_btn",
-		        ];
-		
-		        multimetroMenus.forEach((btn) => {
-		            this.app[btn].visible = false;
-		        });
-		    }
-		
-		    fecharMenu() {
-		        this.menuAberto = false;
-		        this.setMenuVisibility(false);
-		    }
-		}
-		
-		class Avarias {
-		    constructor(app, simulador) {
-		        this.app = app;
-		        this.simulador = simulador;
-		        this.menuAberto = false;
-		        this.initEventListeners();
-		    }
-		    initEventListeners() {
-		        this.app.menu_avarias_btn.addEventListener(
-		            "click",
-		            this.toggleMenu.bind(this)
-		        );
-		        [
-		            "menu_AL05_btn",
-		            "menu_AL06_btn",
-		            "menu_AL05a_btn",
-		            "menu_AL06a_btn",
-		            "menu_AL07_btn",
-		            "menu_AL08_btn",
-		            "menu_AL09_btn",
-		            "menu_AL10_btn",
-		            "menu_AL11_btn",
-		            "menu_AL12_btn",
-		            "menu_AL13_btn",
-		            "menu_AL12a_btn",
-		            "menu_AL13a_btn",
-		            "menu_AL12b_btn",
-		            "menu_AL12c_btn",
-		            "menu_AL13b_btn",
-		        ].forEach((btn) => {
-		            this.app[btn].addEventListener("click", this.fecharMenu.bind(this));
-		        });
-		    }
-		
-		    toggleMenu() {
-		        this.menuAberto = !this.menuAberto;
-		        this.setMenuVisibility(this.menuAberto);
-		    }
-		
-		    setMenuVisibility(visible) {
-		        this.app.menu_AL05_btn.visible = visible;
-		        this.app.menu_AL06_btn.visible = visible;
-		        this.app.menu_AL05a_btn.visible = visible;
-		        this.app.menu_AL06a_btn.visible = visible;
-		        this.app.menu_AL07_btn.visible = visible;
-		        this.app.menu_AL08_btn.visible = visible;
-		        this.app.menu_AL09_btn.visible = visible;
-		        this.app.menu_AL10_btn.visible = visible;
-		        this.app.menu_AL11_btn.visible = visible;
-		        this.app.menu_AL12_btn.visible = visible;
-		        this.app.menu_AL13_btn.visible = visible;
-		        this.app.menu_AL12a_btn.visible = visible;
-		        this.app.menu_AL13a_btn.visible = visible;
-		        this.app.menu_AL12b_btn.visible = visible;
-		        this.app.menu_AL12c_btn.visible = visible;
-		        this.app.menu_AL13b_btn.visible = visible;
-		
-		        const multimetroMenus = [
-		            "menu_tensao_ac_btn",
-		            "menu_tensao_dc_btn",
-		            "menu_tensao_ac_milivolts_btn",
-		            "menu_resistencia_btn",
-		            "menu_capacidade_btn",
-		            "menu_corrente_btn",
-		        ];
-		
-		        multimetroMenus.forEach((btn) => {
-		            this.app[btn].visible = false;
-		        });
-		    }
-		    fecharMenu() {
-		        this.menuAberto = false;
-		        this.setMenuVisibility(false);
-		    }
-		}
-		
-		class Circuitos {
-		    constructor(app, simulador) {
-		        this.app = app;
-		        this.simulador = simulador;
-		        this.menuAberto = false;
-		        this.initEventListeners();
-		    }
-		    initEventListeners() {
-		        this.app.menu_circuitos_btn.addEventListener(
-		            "click",
-		            this.toggleMenu.bind(this)
-		        );
-		        [
-		            "frigorifico_btn",
-		            "controle_btn",
-		            "potencia_btn",
-		        ].forEach((btn) => {
-		            this.app[btn].addEventListener("click", this.fecharMenu.bind(this));
-		        });
-		    }
-		
-		    toggleMenu() {
-		        this.menuAberto = !this.menuAberto;
-		        this.setMenuVisibility(this.menuAberto);
-		        this.estado_simulador_txt.text = "Circuitos";
-		    }
-		
-		    setMenuVisibility(visible) {
-		        this.app.frigorifico_btn.visible = visible;
-		        this.app.controle_btn.visible = visible;
-		        this.app.potencia_btn.visible = visible;
-		        this.estado_simulador_txt.text = "Circuitos";
-		    }
-		    fecharMenu() {
-		        this.menuAberto = false;
-		        this.setMenuVisibility(false);
-		    }
-		}
-		
-		class Audio {
-		    tocarSom(nomeSom, volume = 0.5) {
-		        const som = createjs.Sound.createInstance(nomeSom);
-		        som.volume = volume;
-		        som.play();
-		    }
-		}
-		
-		// Inicialização
-		const iniciarSimulador = function () {
-		    const simulador = new Simulador(this);
-		};
-		
-		iniciarSimulador.call(this);
-		this.stop();
-	}
 	this.frame_3 = function() {
-		this.estado_simulador_txt = undefined;this.alarme_btn = undefined;this.prog_btn = undefined;this.esc_btn = undefined;this.cima_btn = undefined;this.enter_btn = undefined;this.baixo_btn = undefined;this.display_controlador_mc = undefined;this.roda_multimetro_btn = undefined;this.display_inferior_txt = undefined;this.display_texto_superior_txt = undefined;this.capa_display_mc = undefined;this.menu_ligar_btn = undefined;this.menu_desligar_btn = undefined;this.menu_tensao_ac_btn = undefined;this.menu_tensao_dc_btn = undefined;this.menu_resistencia_btn = undefined;this.menu_capacidade_btn = undefined;this.menu_corrente_btn = undefined;this.menu_tensao_ac_milivolts_btn = undefined;this.J1G_btn = undefined;this.J1G0_btn = undefined;this.VdcJ2 = undefined;this.gndJ2 = undefined;this.Vref5J2 = undefined;this.B1J3 = undefined;this.B2J3 = undefined;this.B3J3 = undefined;this.B4J3 = undefined;this.B5J3 = undefined;this.B5J3 = undefined;this.B7J3 = undefined;this.GNDJ3 = undefined;this.VdcJ3 = undefined;this.VdcJ2 = undefined;this.gndJ2 = undefined;this.Vref5J2 = undefined;this.VdcJ2 = undefined;this.gndJ2 = undefined;this.Vref5J2 = undefined;this.VdcJ2 = undefined;this.gndJ2 = undefined;this.Vref5J2 = undefined;this.gndJ2 = undefined;this.Vref5J2 = undefined;this.VdcJ2 = undefined;this.gndJ2 = undefined;this.Vref5J2 = undefined;this.VdcJ2 = undefined;this.gndJ2 = undefined;this.Vref5J2 = undefined;this.VdcJ2 = undefined;this.gndJ2 = undefined;this.gndJ2 = undefined;this.Vref5J2 = undefined;this.VdcJ2 = undefined;this.gndJ2 = undefined;this.VdcJ2 = undefined;this.gndJ2 = undefined;this.Vref5J2 = undefined;this.VdcJ2 = undefined;this.gndJ2 = undefined;this.Vref5J2 = undefined;this.Vref5J2 = undefined;this.VdcJ2 = undefined;this.gndJ2 = undefined;this.Vref5J2 = undefined;this.Vref5J2 = undefined;this.VdcJ2 = undefined;this.gndJ2 = undefined;this.Vref5J2 = undefined;this.Vref5J2 = undefined;this.VdcJ2 = undefined;this.gndJ2 = undefined;this.Vref5J2 = undefined;this.Vref5J2 = undefined;this.VdcJ2 = undefined;this.gndJ2 = undefined;this.Vref5J2 = undefined;this.Vref5J2 = undefined;this.Vref5J2 = undefined;this.ponta_vermelha_inicial_mc = undefined;this.ponta_vermelha_final_mc = undefined;this.ponta_preta_final_mc = undefined;this.ponta_preta_inicial_mc = undefined;this.menu_avarias_electricas = undefined;this.menu_controle_remoto_btn = undefined;this.menu_multimetro_btn = undefined;this.menu_avarias_electronicas_btn = undefined;this.compressor_btn = undefined;this.compressor_mecanica_btn = undefined;this.compressor_electrica_btn = undefined;this.vex_btn = undefined;this.vex_mecanica_btn = undefined;this.vex_electrica_btn = undefined;this.ventilador_radial_btn = undefined;this.ventilador_radial_mecanica_btn = undefined;this.ventilador_radial_electricidade_btn = undefined;this.sensor_btn = undefined;this.sensor_mecanica_btn = undefined;this.sensor_electrica_btn = undefined;this.ventilador_axial_btn = undefined;this.ventilador_axial_mecanica_btn = undefined;this.ventilador_axial_electrica_btn = undefined;this.transductor_btn = undefined;this.transductor_mecanica_btn = undefined;this.transductor_electrica_btn = undefined;this.pressostato_btn = undefined;this.pressostato_mecanica_btn = undefined;this.pressostato_electrica_btn = undefined;this.pda_btn = undefined;this.pda_mecanica_btn = undefined;this.pda_electrica_btn = undefined;this.placa_electronica_btn = undefined;this.placa_electronica_mecanica_btn = undefined;this.placa_electronica_electrica_btn = undefined;this.menu_circuitos_btn = undefined;this.frigorifico_btn = undefined;this.controle_btn = undefined;this.potencia_btn = undefined;this.menu_avarias_btn = undefined;this.menu_setpoint_btn = undefined;this.menu_valores_medidas_btn = undefined;this.menu_entradas_saidas_btn = undefined;this.menu_ajuda_btn = undefined;this.menu_AL05_btn = undefined;this.menu_AL06_btn = undefined;this.menu_AL05a_btn = undefined;this.menu_AL06a_btn = undefined;this.menu_AL07_btn = undefined;this.menu_AL08_btn = undefined;this.menu_AL09_btn = undefined;this.menu_AL10_btn = undefined;this.menu_AL11_btn = undefined;this.menu_AL12_btn = undefined;this.menu_AL13_btn = undefined;this.menu_AL12a_btn = undefined;this.menu_AL13a_btn = undefined;this.menu_AL12b_btn = undefined;this.menu_AL12c_btn = undefined;this.menu_AL13b_btn = undefined;this.botao_on_btn = undefined;this.botao_off_btn = undefined;this.logo_dois_mc = undefined;this.logo_dois_mc = this.logo.logo_dois_mc;
+		this.estado_simulador_txt = undefined;this.alarme_btn = undefined;this.prog_btn = undefined;this.esc_btn = undefined;this.cima_btn = undefined;this.enter_btn = undefined;this.baixo_btn = undefined;this.display_controlador_mc = undefined;this.roda_multimetro_btn = undefined;this.display_inferior_txt = undefined;this.display_texto_superior_txt = undefined;this.capa_display_mc = undefined;this.menu_ligar_btn = undefined;this.menu_desligar_btn = undefined;this.menu_tensao_ac_btn = undefined;this.menu_tensao_dc_btn = undefined;this.menu_resistencia_btn = undefined;this.menu_capacidade_btn = undefined;this.menu_corrente_btn = undefined;this.menu_tensao_ac_milivolts_btn = undefined;this.J1G_btn = undefined;this.J1G0_btn = undefined;this.VdcJ2 = undefined;this.gndJ2 = undefined;this.Vref5J2 = undefined;this.B1J3 = undefined;this.B2J3 = undefined;this.B3J3 = undefined;this.B4J3 = undefined;this.B5J3 = undefined;this.B5J3 = undefined;this.B7J3 = undefined;this.GNDJ3 = undefined;this.VdcJ3 = undefined;this.VdcJ2 = undefined;this.gndJ2 = undefined;this.Vref5J2 = undefined;this.VdcJ2 = undefined;this.gndJ2 = undefined;this.Vref5J2 = undefined;this.VdcJ2 = undefined;this.gndJ2 = undefined;this.Vref5J2 = undefined;this.gndJ2 = undefined;this.Vref5J2 = undefined;this.VdcJ2 = undefined;this.gndJ2 = undefined;this.Vref5J2 = undefined;this.VdcJ2 = undefined;this.gndJ2 = undefined;this.Vref5J2 = undefined;this.VdcJ2 = undefined;this.gndJ2 = undefined;this.gndJ2 = undefined;this.Vref5J2 = undefined;this.VdcJ2 = undefined;this.gndJ2 = undefined;this.VdcJ2 = undefined;this.gndJ2 = undefined;this.Vref5J2 = undefined;this.VdcJ2 = undefined;this.gndJ2 = undefined;this.Vref5J2 = undefined;this.Vref5J2 = undefined;this.VdcJ2 = undefined;this.gndJ2 = undefined;this.Vref5J2 = undefined;this.Vref5J2 = undefined;this.VdcJ2 = undefined;this.gndJ2 = undefined;this.Vref5J2 = undefined;this.Vref5J2 = undefined;this.VdcJ2 = undefined;this.gndJ2 = undefined;this.Vref5J2 = undefined;this.Vref5J2 = undefined;this.VdcJ2 = undefined;this.gndJ2 = undefined;this.Vref5J2 = undefined;this.Vref5J2 = undefined;this.Vref5J2 = undefined;this.ponta_vermelha_inicial_mc = undefined;this.ponta_preta_inicial_mc = undefined;this.menu_avarias_electricas = undefined;this.menu_controle_remoto_btn = undefined;this.menu_multimetro_btn = undefined;this.menu_avarias_electronicas_btn = undefined;this.compressor_btn = undefined;this.compressor_mecanica_btn = undefined;this.compressor_electrica_btn = undefined;this.vex_btn = undefined;this.vex_mecanica_btn = undefined;this.vex_electrica_btn = undefined;this.ventilador_radial_btn = undefined;this.ventilador_radial_mecanica_btn = undefined;this.ventilador_radial_electricidade_btn = undefined;this.sensor_btn = undefined;this.sensor_mecanica_btn = undefined;this.sensor_electrica_btn = undefined;this.ventilador_axial_btn = undefined;this.ventilador_axial_mecanica_btn = undefined;this.ventilador_axial_electrica_btn = undefined;this.transductor_btn = undefined;this.transductor_mecanica_btn = undefined;this.transductor_electrica_btn = undefined;this.pressostato_btn = undefined;this.pressostato_mecanica_btn = undefined;this.pressostato_electrica_btn = undefined;this.pda_btn = undefined;this.pda_mecanica_btn = undefined;this.pda_electrica_btn = undefined;this.placa_electronica_btn = undefined;this.placa_electronica_mecanica_btn = undefined;this.placa_electronica_electrica_btn = undefined;this.menu_circuitos_btn = undefined;this.frigorifico_btn = undefined;this.controle_btn = undefined;this.potencia_btn = undefined;this.menu_avarias_btn = undefined;this.menu_setpoint_btn = undefined;this.menu_valores_medidas_btn = undefined;this.menu_entradas_saidas_btn = undefined;this.menu_ajuda_btn = undefined;this.menu_AL05_btn = undefined;this.menu_AL06_btn = undefined;this.menu_AL05a_btn = undefined;this.menu_AL06a_btn = undefined;this.menu_AL07_btn = undefined;this.menu_AL08_btn = undefined;this.menu_AL09_btn = undefined;this.menu_AL10_btn = undefined;this.menu_AL11_btn = undefined;this.menu_AL12_btn = undefined;this.menu_AL13_btn = undefined;this.menu_AL12a_btn = undefined;this.menu_AL13a_btn = undefined;this.menu_AL12b_btn = undefined;this.menu_AL12c_btn = undefined;this.menu_AL13b_btn = undefined;this.botao_on_btn = undefined;this.botao_off_btn = undefined;this.logo_dois_mc = undefined;this.logo_dois_mc = this.logo.logo_dois_mc;
 		this.botao_off_btn = this.botão_off.botao_off_btn;
 		this.botao_on_btn = this.botao_on.botao_on_btn;
 		this.menu_avarias_electricas = this.botoes.menu_avarias_electricas;
@@ -6900,10 +8768,8 @@ if (reversed == null) { reversed = false; }
 		this.menu_AL12b_btn = this.botoes.menu_AL12b_btn;
 		this.menu_AL12c_btn = this.botoes.menu_AL12c_btn;
 		this.menu_AL13b_btn = this.botoes.menu_AL13b_btn;
-		this.ponta_preta_final_mc = this.ponta_preta.ponta_preta_final_mc;
 		this.ponta_preta_inicial_mc = this.ponta_preta.ponta_preta_inicial_mc;
 		this.ponta_vermelha_inicial_mc = this.ponta_vermelha.ponta_vermelha_inicial_mc;
-		this.ponta_vermelha_final_mc = this.ponta_vermelha.ponta_vermelha_final_mc;
 		this.J1G_btn = this.contactos_placa.J1G_btn;
 		this.J1G0_btn = this.contactos_placa.J1G0_btn;
 		this.VdcJ2 = this.contactos_placa.VdcJ2;
@@ -6987,7 +8853,7 @@ if (reversed == null) { reversed = false; }
 		this.estado_simulador_txt = this.tela_inicial.estado_simulador_txt;
 	}
 	this.frame_4 = function() {
-		this.estado_simulador_txt = undefined;this.alarme_btn = undefined;this.prog_btn = undefined;this.esc_btn = undefined;this.cima_btn = undefined;this.enter_btn = undefined;this.baixo_btn = undefined;this.display_controlador_mc = undefined;this.roda_multimetro_btn = undefined;this.display_inferior_txt = undefined;this.display_texto_superior_txt = undefined;this.capa_display_mc = undefined;this.menu_ligar_btn = undefined;this.menu_desligar_btn = undefined;this.menu_tensao_ac_btn = undefined;this.menu_tensao_dc_btn = undefined;this.menu_resistencia_btn = undefined;this.menu_capacidade_btn = undefined;this.menu_corrente_btn = undefined;this.menu_tensao_ac_milivolts_btn = undefined;this.J1G_btn = undefined;this.J1G0_btn = undefined;this.VdcJ2 = undefined;this.gndJ2 = undefined;this.Vref5J2 = undefined;this.B1J3 = undefined;this.B2J3 = undefined;this.B3J3 = undefined;this.B4J3 = undefined;this.B5J3 = undefined;this.B5J3 = undefined;this.B7J3 = undefined;this.GNDJ3 = undefined;this.VdcJ3 = undefined;this.VdcJ2 = undefined;this.gndJ2 = undefined;this.Vref5J2 = undefined;this.VdcJ2 = undefined;this.gndJ2 = undefined;this.Vref5J2 = undefined;this.VdcJ2 = undefined;this.gndJ2 = undefined;this.Vref5J2 = undefined;this.gndJ2 = undefined;this.Vref5J2 = undefined;this.VdcJ2 = undefined;this.gndJ2 = undefined;this.Vref5J2 = undefined;this.VdcJ2 = undefined;this.gndJ2 = undefined;this.Vref5J2 = undefined;this.VdcJ2 = undefined;this.gndJ2 = undefined;this.gndJ2 = undefined;this.Vref5J2 = undefined;this.VdcJ2 = undefined;this.gndJ2 = undefined;this.VdcJ2 = undefined;this.gndJ2 = undefined;this.Vref5J2 = undefined;this.VdcJ2 = undefined;this.gndJ2 = undefined;this.Vref5J2 = undefined;this.Vref5J2 = undefined;this.VdcJ2 = undefined;this.gndJ2 = undefined;this.Vref5J2 = undefined;this.Vref5J2 = undefined;this.VdcJ2 = undefined;this.gndJ2 = undefined;this.Vref5J2 = undefined;this.Vref5J2 = undefined;this.VdcJ2 = undefined;this.gndJ2 = undefined;this.Vref5J2 = undefined;this.Vref5J2 = undefined;this.VdcJ2 = undefined;this.gndJ2 = undefined;this.Vref5J2 = undefined;this.Vref5J2 = undefined;this.Vref5J2 = undefined;this.ponta_vermelha_inicial_mc = undefined;this.ponta_vermelha_final_mc = undefined;this.ponta_preta_final_mc = undefined;this.ponta_preta_inicial_mc = undefined;this.menu_avarias_electricas = undefined;this.menu_controle_remoto_btn = undefined;this.menu_multimetro_btn = undefined;this.menu_avarias_electronicas_btn = undefined;this.compressor_btn = undefined;this.compressor_mecanica_btn = undefined;this.compressor_electrica_btn = undefined;this.vex_btn = undefined;this.vex_mecanica_btn = undefined;this.vex_electrica_btn = undefined;this.ventilador_radial_btn = undefined;this.ventilador_radial_mecanica_btn = undefined;this.ventilador_radial_electricidade_btn = undefined;this.sensor_btn = undefined;this.sensor_mecanica_btn = undefined;this.sensor_electrica_btn = undefined;this.ventilador_axial_btn = undefined;this.ventilador_axial_mecanica_btn = undefined;this.ventilador_axial_electrica_btn = undefined;this.transductor_btn = undefined;this.transductor_mecanica_btn = undefined;this.transductor_electrica_btn = undefined;this.pressostato_btn = undefined;this.pressostato_mecanica_btn = undefined;this.pressostato_electrica_btn = undefined;this.pda_btn = undefined;this.pda_mecanica_btn = undefined;this.pda_electrica_btn = undefined;this.placa_electronica_btn = undefined;this.placa_electronica_mecanica_btn = undefined;this.placa_electronica_electrica_btn = undefined;this.menu_circuitos_btn = undefined;this.frigorifico_btn = undefined;this.controle_btn = undefined;this.potencia_btn = undefined;this.menu_avarias_btn = undefined;this.menu_setpoint_btn = undefined;this.menu_valores_medidas_btn = undefined;this.menu_entradas_saidas_btn = undefined;this.menu_ajuda_btn = undefined;this.menu_AL05_btn = undefined;this.menu_AL06_btn = undefined;this.menu_AL05a_btn = undefined;this.menu_AL06a_btn = undefined;this.menu_AL07_btn = undefined;this.menu_AL08_btn = undefined;this.menu_AL09_btn = undefined;this.menu_AL10_btn = undefined;this.menu_AL11_btn = undefined;this.menu_AL12_btn = undefined;this.menu_AL13_btn = undefined;this.menu_AL12a_btn = undefined;this.menu_AL13a_btn = undefined;this.menu_AL12b_btn = undefined;this.menu_AL12c_btn = undefined;this.menu_AL13b_btn = undefined;this.botao_on_btn = undefined;this.botao_off_btn = undefined;this.logo_dois_mc = undefined;this.logo_dois_mc = this.logo.logo_dois_mc;
+		this.estado_simulador_txt = undefined;this.alarme_btn = undefined;this.prog_btn = undefined;this.esc_btn = undefined;this.cima_btn = undefined;this.enter_btn = undefined;this.baixo_btn = undefined;this.display_controlador_mc = undefined;this.roda_multimetro_btn = undefined;this.display_inferior_txt = undefined;this.display_texto_superior_txt = undefined;this.capa_display_mc = undefined;this.menu_ligar_btn = undefined;this.menu_desligar_btn = undefined;this.menu_tensao_ac_btn = undefined;this.menu_tensao_dc_btn = undefined;this.menu_resistencia_btn = undefined;this.menu_capacidade_btn = undefined;this.menu_corrente_btn = undefined;this.menu_tensao_ac_milivolts_btn = undefined;this.J1G_btn = undefined;this.J1G0_btn = undefined;this.VdcJ2 = undefined;this.gndJ2 = undefined;this.Vref5J2 = undefined;this.B1J3 = undefined;this.B2J3 = undefined;this.B3J3 = undefined;this.B4J3 = undefined;this.B5J3 = undefined;this.B5J3 = undefined;this.B7J3 = undefined;this.GNDJ3 = undefined;this.VdcJ3 = undefined;this.VdcJ2 = undefined;this.gndJ2 = undefined;this.Vref5J2 = undefined;this.VdcJ2 = undefined;this.gndJ2 = undefined;this.Vref5J2 = undefined;this.VdcJ2 = undefined;this.gndJ2 = undefined;this.Vref5J2 = undefined;this.gndJ2 = undefined;this.Vref5J2 = undefined;this.VdcJ2 = undefined;this.gndJ2 = undefined;this.Vref5J2 = undefined;this.VdcJ2 = undefined;this.gndJ2 = undefined;this.Vref5J2 = undefined;this.VdcJ2 = undefined;this.gndJ2 = undefined;this.gndJ2 = undefined;this.Vref5J2 = undefined;this.VdcJ2 = undefined;this.gndJ2 = undefined;this.VdcJ2 = undefined;this.gndJ2 = undefined;this.Vref5J2 = undefined;this.VdcJ2 = undefined;this.gndJ2 = undefined;this.Vref5J2 = undefined;this.Vref5J2 = undefined;this.VdcJ2 = undefined;this.gndJ2 = undefined;this.Vref5J2 = undefined;this.Vref5J2 = undefined;this.VdcJ2 = undefined;this.gndJ2 = undefined;this.Vref5J2 = undefined;this.Vref5J2 = undefined;this.VdcJ2 = undefined;this.gndJ2 = undefined;this.Vref5J2 = undefined;this.Vref5J2 = undefined;this.VdcJ2 = undefined;this.gndJ2 = undefined;this.Vref5J2 = undefined;this.Vref5J2 = undefined;this.Vref5J2 = undefined;this.ponta_vermelha_inicial_mc = undefined;this.ponta_preta_inicial_mc = undefined;this.menu_avarias_electricas = undefined;this.menu_controle_remoto_btn = undefined;this.menu_multimetro_btn = undefined;this.menu_avarias_electronicas_btn = undefined;this.compressor_btn = undefined;this.compressor_mecanica_btn = undefined;this.compressor_electrica_btn = undefined;this.vex_btn = undefined;this.vex_mecanica_btn = undefined;this.vex_electrica_btn = undefined;this.ventilador_radial_btn = undefined;this.ventilador_radial_mecanica_btn = undefined;this.ventilador_radial_electricidade_btn = undefined;this.sensor_btn = undefined;this.sensor_mecanica_btn = undefined;this.sensor_electrica_btn = undefined;this.ventilador_axial_btn = undefined;this.ventilador_axial_mecanica_btn = undefined;this.ventilador_axial_electrica_btn = undefined;this.transductor_btn = undefined;this.transductor_mecanica_btn = undefined;this.transductor_electrica_btn = undefined;this.pressostato_btn = undefined;this.pressostato_mecanica_btn = undefined;this.pressostato_electrica_btn = undefined;this.pda_btn = undefined;this.pda_mecanica_btn = undefined;this.pda_electrica_btn = undefined;this.placa_electronica_btn = undefined;this.placa_electronica_mecanica_btn = undefined;this.placa_electronica_electrica_btn = undefined;this.menu_circuitos_btn = undefined;this.frigorifico_btn = undefined;this.controle_btn = undefined;this.potencia_btn = undefined;this.menu_avarias_btn = undefined;this.menu_setpoint_btn = undefined;this.menu_valores_medidas_btn = undefined;this.menu_entradas_saidas_btn = undefined;this.menu_ajuda_btn = undefined;this.menu_AL05_btn = undefined;this.menu_AL06_btn = undefined;this.menu_AL05a_btn = undefined;this.menu_AL06a_btn = undefined;this.menu_AL07_btn = undefined;this.menu_AL08_btn = undefined;this.menu_AL09_btn = undefined;this.menu_AL10_btn = undefined;this.menu_AL11_btn = undefined;this.menu_AL12_btn = undefined;this.menu_AL13_btn = undefined;this.menu_AL12a_btn = undefined;this.menu_AL13a_btn = undefined;this.menu_AL12b_btn = undefined;this.menu_AL12c_btn = undefined;this.menu_AL13b_btn = undefined;this.botao_on_btn = undefined;this.botao_off_btn = undefined;this.logo_dois_mc = undefined;this.logo_dois_mc = this.logo.logo_dois_mc;
 		this.botao_off_btn = this.botão_off.botao_off_btn;
 		this.botao_on_btn = this.botao_on.botao_on_btn;
 		this.menu_avarias_electricas = this.botoes.menu_avarias_electricas;
@@ -7046,10 +8912,8 @@ if (reversed == null) { reversed = false; }
 		this.menu_AL12b_btn = this.botoes.menu_AL12b_btn;
 		this.menu_AL12c_btn = this.botoes.menu_AL12c_btn;
 		this.menu_AL13b_btn = this.botoes.menu_AL13b_btn;
-		this.ponta_preta_final_mc = this.ponta_preta.ponta_preta_final_mc;
 		this.ponta_preta_inicial_mc = this.ponta_preta.ponta_preta_inicial_mc;
 		this.ponta_vermelha_inicial_mc = this.ponta_vermelha.ponta_vermelha_inicial_mc;
-		this.ponta_vermelha_final_mc = this.ponta_vermelha.ponta_vermelha_final_mc;
 		this.J1G_btn = this.contactos_placa.J1G_btn;
 		this.J1G0_btn = this.contactos_placa.J1G0_btn;
 		this.VdcJ2 = this.contactos_placa.VdcJ2;
@@ -7134,7 +8998,7 @@ if (reversed == null) { reversed = false; }
 		this.stop();
 	}
 	this.frame_5 = function() {
-		this.estado_simulador_txt = undefined;this.alarme_btn = undefined;this.prog_btn = undefined;this.esc_btn = undefined;this.cima_btn = undefined;this.enter_btn = undefined;this.baixo_btn = undefined;this.display_controlador_mc = undefined;this.roda_multimetro_btn = undefined;this.display_inferior_txt = undefined;this.display_texto_superior_txt = undefined;this.capa_display_mc = undefined;this.menu_ligar_btn = undefined;this.menu_desligar_btn = undefined;this.menu_tensao_ac_btn = undefined;this.menu_tensao_dc_btn = undefined;this.menu_resistencia_btn = undefined;this.menu_capacidade_btn = undefined;this.menu_corrente_btn = undefined;this.menu_tensao_ac_milivolts_btn = undefined;this.J1G_btn = undefined;this.J1G0_btn = undefined;this.VdcJ2 = undefined;this.gndJ2 = undefined;this.Vref5J2 = undefined;this.B1J3 = undefined;this.B2J3 = undefined;this.B3J3 = undefined;this.B4J3 = undefined;this.B5J3 = undefined;this.B5J3 = undefined;this.B7J3 = undefined;this.GNDJ3 = undefined;this.VdcJ3 = undefined;this.VdcJ2 = undefined;this.gndJ2 = undefined;this.Vref5J2 = undefined;this.VdcJ2 = undefined;this.gndJ2 = undefined;this.Vref5J2 = undefined;this.VdcJ2 = undefined;this.gndJ2 = undefined;this.Vref5J2 = undefined;this.gndJ2 = undefined;this.Vref5J2 = undefined;this.VdcJ2 = undefined;this.gndJ2 = undefined;this.Vref5J2 = undefined;this.VdcJ2 = undefined;this.gndJ2 = undefined;this.Vref5J2 = undefined;this.VdcJ2 = undefined;this.gndJ2 = undefined;this.gndJ2 = undefined;this.Vref5J2 = undefined;this.VdcJ2 = undefined;this.gndJ2 = undefined;this.VdcJ2 = undefined;this.gndJ2 = undefined;this.Vref5J2 = undefined;this.VdcJ2 = undefined;this.gndJ2 = undefined;this.Vref5J2 = undefined;this.Vref5J2 = undefined;this.VdcJ2 = undefined;this.gndJ2 = undefined;this.Vref5J2 = undefined;this.Vref5J2 = undefined;this.VdcJ2 = undefined;this.gndJ2 = undefined;this.Vref5J2 = undefined;this.Vref5J2 = undefined;this.VdcJ2 = undefined;this.gndJ2 = undefined;this.Vref5J2 = undefined;this.Vref5J2 = undefined;this.VdcJ2 = undefined;this.gndJ2 = undefined;this.Vref5J2 = undefined;this.Vref5J2 = undefined;this.Vref5J2 = undefined;this.ponta_vermelha_inicial_mc = undefined;this.ponta_vermelha_final_mc = undefined;this.ponta_preta_final_mc = undefined;this.ponta_preta_inicial_mc = undefined;this.menu_avarias_electricas = undefined;this.menu_controle_remoto_btn = undefined;this.menu_multimetro_btn = undefined;this.menu_avarias_electronicas_btn = undefined;this.compressor_btn = undefined;this.compressor_mecanica_btn = undefined;this.compressor_electrica_btn = undefined;this.vex_btn = undefined;this.vex_mecanica_btn = undefined;this.vex_electrica_btn = undefined;this.ventilador_radial_btn = undefined;this.ventilador_radial_mecanica_btn = undefined;this.ventilador_radial_electricidade_btn = undefined;this.sensor_btn = undefined;this.sensor_mecanica_btn = undefined;this.sensor_electrica_btn = undefined;this.ventilador_axial_btn = undefined;this.ventilador_axial_mecanica_btn = undefined;this.ventilador_axial_electrica_btn = undefined;this.transductor_btn = undefined;this.transductor_mecanica_btn = undefined;this.transductor_electrica_btn = undefined;this.pressostato_btn = undefined;this.pressostato_mecanica_btn = undefined;this.pressostato_electrica_btn = undefined;this.pda_btn = undefined;this.pda_mecanica_btn = undefined;this.pda_electrica_btn = undefined;this.placa_electronica_btn = undefined;this.placa_electronica_mecanica_btn = undefined;this.placa_electronica_electrica_btn = undefined;this.menu_circuitos_btn = undefined;this.frigorifico_btn = undefined;this.controle_btn = undefined;this.potencia_btn = undefined;this.menu_avarias_btn = undefined;this.menu_setpoint_btn = undefined;this.menu_valores_medidas_btn = undefined;this.menu_entradas_saidas_btn = undefined;this.menu_ajuda_btn = undefined;this.menu_AL05_btn = undefined;this.menu_AL06_btn = undefined;this.menu_AL05a_btn = undefined;this.menu_AL06a_btn = undefined;this.menu_AL07_btn = undefined;this.menu_AL08_btn = undefined;this.menu_AL09_btn = undefined;this.menu_AL10_btn = undefined;this.menu_AL11_btn = undefined;this.menu_AL12_btn = undefined;this.menu_AL13_btn = undefined;this.menu_AL12a_btn = undefined;this.menu_AL13a_btn = undefined;this.menu_AL12b_btn = undefined;this.menu_AL12c_btn = undefined;this.menu_AL13b_btn = undefined;this.botao_on_btn = undefined;this.botao_off_btn = undefined;this.logo_dois_mc = undefined;this.logo_dois_mc = this.logo.logo_dois_mc;
+		this.estado_simulador_txt = undefined;this.alarme_btn = undefined;this.prog_btn = undefined;this.esc_btn = undefined;this.cima_btn = undefined;this.enter_btn = undefined;this.baixo_btn = undefined;this.display_controlador_mc = undefined;this.roda_multimetro_btn = undefined;this.display_inferior_txt = undefined;this.display_texto_superior_txt = undefined;this.capa_display_mc = undefined;this.menu_ligar_btn = undefined;this.menu_desligar_btn = undefined;this.menu_tensao_ac_btn = undefined;this.menu_tensao_dc_btn = undefined;this.menu_resistencia_btn = undefined;this.menu_capacidade_btn = undefined;this.menu_corrente_btn = undefined;this.menu_tensao_ac_milivolts_btn = undefined;this.J1G_btn = undefined;this.J1G0_btn = undefined;this.VdcJ2 = undefined;this.gndJ2 = undefined;this.Vref5J2 = undefined;this.B1J3 = undefined;this.B2J3 = undefined;this.B3J3 = undefined;this.B4J3 = undefined;this.B5J3 = undefined;this.B5J3 = undefined;this.B7J3 = undefined;this.GNDJ3 = undefined;this.VdcJ3 = undefined;this.VdcJ2 = undefined;this.gndJ2 = undefined;this.Vref5J2 = undefined;this.VdcJ2 = undefined;this.gndJ2 = undefined;this.Vref5J2 = undefined;this.VdcJ2 = undefined;this.gndJ2 = undefined;this.Vref5J2 = undefined;this.gndJ2 = undefined;this.Vref5J2 = undefined;this.VdcJ2 = undefined;this.gndJ2 = undefined;this.Vref5J2 = undefined;this.VdcJ2 = undefined;this.gndJ2 = undefined;this.Vref5J2 = undefined;this.VdcJ2 = undefined;this.gndJ2 = undefined;this.gndJ2 = undefined;this.Vref5J2 = undefined;this.VdcJ2 = undefined;this.gndJ2 = undefined;this.VdcJ2 = undefined;this.gndJ2 = undefined;this.Vref5J2 = undefined;this.VdcJ2 = undefined;this.gndJ2 = undefined;this.Vref5J2 = undefined;this.Vref5J2 = undefined;this.VdcJ2 = undefined;this.gndJ2 = undefined;this.Vref5J2 = undefined;this.Vref5J2 = undefined;this.VdcJ2 = undefined;this.gndJ2 = undefined;this.Vref5J2 = undefined;this.Vref5J2 = undefined;this.VdcJ2 = undefined;this.gndJ2 = undefined;this.Vref5J2 = undefined;this.Vref5J2 = undefined;this.VdcJ2 = undefined;this.gndJ2 = undefined;this.Vref5J2 = undefined;this.Vref5J2 = undefined;this.Vref5J2 = undefined;this.ponta_vermelha_inicial_mc = undefined;this.ponta_preta_inicial_mc = undefined;this.menu_avarias_electricas = undefined;this.menu_controle_remoto_btn = undefined;this.menu_multimetro_btn = undefined;this.menu_avarias_electronicas_btn = undefined;this.compressor_btn = undefined;this.compressor_mecanica_btn = undefined;this.compressor_electrica_btn = undefined;this.vex_btn = undefined;this.vex_mecanica_btn = undefined;this.vex_electrica_btn = undefined;this.ventilador_radial_btn = undefined;this.ventilador_radial_mecanica_btn = undefined;this.ventilador_radial_electricidade_btn = undefined;this.sensor_btn = undefined;this.sensor_mecanica_btn = undefined;this.sensor_electrica_btn = undefined;this.ventilador_axial_btn = undefined;this.ventilador_axial_mecanica_btn = undefined;this.ventilador_axial_electrica_btn = undefined;this.transductor_btn = undefined;this.transductor_mecanica_btn = undefined;this.transductor_electrica_btn = undefined;this.pressostato_btn = undefined;this.pressostato_mecanica_btn = undefined;this.pressostato_electrica_btn = undefined;this.pda_btn = undefined;this.pda_mecanica_btn = undefined;this.pda_electrica_btn = undefined;this.placa_electronica_btn = undefined;this.placa_electronica_mecanica_btn = undefined;this.placa_electronica_electrica_btn = undefined;this.menu_circuitos_btn = undefined;this.frigorifico_btn = undefined;this.controle_btn = undefined;this.potencia_btn = undefined;this.menu_avarias_btn = undefined;this.menu_setpoint_btn = undefined;this.menu_valores_medidas_btn = undefined;this.menu_entradas_saidas_btn = undefined;this.menu_ajuda_btn = undefined;this.menu_AL05_btn = undefined;this.menu_AL06_btn = undefined;this.menu_AL05a_btn = undefined;this.menu_AL06a_btn = undefined;this.menu_AL07_btn = undefined;this.menu_AL08_btn = undefined;this.menu_AL09_btn = undefined;this.menu_AL10_btn = undefined;this.menu_AL11_btn = undefined;this.menu_AL12_btn = undefined;this.menu_AL13_btn = undefined;this.menu_AL12a_btn = undefined;this.menu_AL13a_btn = undefined;this.menu_AL12b_btn = undefined;this.menu_AL12c_btn = undefined;this.menu_AL13b_btn = undefined;this.botao_on_btn = undefined;this.botao_off_btn = undefined;this.logo_dois_mc = undefined;this.logo_dois_mc = this.logo.logo_dois_mc;
 		this.botao_off_btn = this.botão_off.botao_off_btn;
 		this.botao_on_btn = this.botao_on.botao_on_btn;
 		this.menu_avarias_electricas = this.botoes.menu_avarias_electricas;
@@ -7193,10 +9057,8 @@ if (reversed == null) { reversed = false; }
 		this.menu_AL12b_btn = this.botoes.menu_AL12b_btn;
 		this.menu_AL12c_btn = this.botoes.menu_AL12c_btn;
 		this.menu_AL13b_btn = this.botoes.menu_AL13b_btn;
-		this.ponta_preta_final_mc = this.ponta_preta.ponta_preta_final_mc;
 		this.ponta_preta_inicial_mc = this.ponta_preta.ponta_preta_inicial_mc;
 		this.ponta_vermelha_inicial_mc = this.ponta_vermelha.ponta_vermelha_inicial_mc;
-		this.ponta_vermelha_final_mc = this.ponta_vermelha.ponta_vermelha_final_mc;
 		this.J1G_btn = this.contactos_placa.J1G_btn;
 		this.J1G0_btn = this.contactos_placa.J1G0_btn;
 		this.VdcJ2 = this.contactos_placa.VdcJ2;
@@ -7362,7 +9224,7 @@ if (reversed == null) { reversed = false; }
 	// ponta_preta_obj_
 	this.ponta_preta = new lib.Scene_1_ponta_preta();
 	this.ponta_preta.name = "ponta_preta";
-	this.ponta_preta.setTransform(1148.4,482,1,1,0,0,0,1148.4,482);
+	this.ponta_preta.setTransform(1573,482,1,1,0,0,0,1573,482);
 	this.ponta_preta.depth = 0;
 	this.ponta_preta.isAttachedToCamera = 0
 	this.ponta_preta.isAttachedToMask = 0
@@ -7375,7 +9237,7 @@ if (reversed == null) { reversed = false; }
 	// ponta_vermelha_obj_
 	this.ponta_vermelha = new lib.Scene_1_ponta_vermelha();
 	this.ponta_vermelha.name = "ponta_vermelha";
-	this.ponta_vermelha.setTransform(1153.5,656.1,1,1,0,0,0,1153.5,656.1);
+	this.ponta_vermelha.setTransform(1573,880,1,1,0,0,0,1573,880);
 	this.ponta_vermelha.depth = 0;
 	this.ponta_vermelha.isAttachedToCamera = 0
 	this.ponta_vermelha.isAttachedToMask = 0
@@ -7629,11 +9491,11 @@ lib.properties = {
 	color: "#FFFFFF",
 	opacity: 1.00,
 	manifest: [
-		{src:"images/DeRcofXkAAaHGZ.jpg?1751961714968", id:"DeRcofXkAAaHGZ"},
-		{src:"images/app_atlas_1.png?1751961713818", id:"app_atlas_1"},
-		{src:"images/app_atlas_2.png?1751961713818", id:"app_atlas_2"},
-		{src:"images/app_atlas_3.png?1751961713820", id:"app_atlas_3"},
-		{src:"sounds/SomBotao.mp3?1751961714968", id:"SomBotao"}
+		{src:"images/DeRcofXkAAaHGZ.jpg?1752754008488", id:"DeRcofXkAAaHGZ"},
+		{src:"images/app_atlas_1.png?1752754008061", id:"app_atlas_1"},
+		{src:"images/app_atlas_2.png?1752754008061", id:"app_atlas_2"},
+		{src:"images/app_atlas_3.png?1752754008062", id:"app_atlas_3"},
+		{src:"sounds/SomBotao.mp3?1752754008488", id:"SomBotao"}
 	],
 	preloads: []
 };
