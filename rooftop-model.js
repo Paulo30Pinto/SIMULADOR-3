@@ -13,10 +13,17 @@
         ventiladorRadial: createComponent("parado"),
         ventiladorAxial: createComponent("parado"),
       },
-      sensores: {},
-      pressostatos: {},
-      conexoes: {},
+      sensores: {
+        temperatura: { estado: "normal", valor: 24 },
+      },
+      pressostatos: {
+        alta: { estado: "fechado" },
+        baixa: { estado: "fechado" },
+      },
+      conexoes: { vermelha: null, preta: null },
+      multimetro: { modo: "off", leitura: null, validade: "sem-medicao" },
       diagnostico: { falhaAtiva: null },
+      score: { pontos: 0, erros: 0 },
     };
   }
 
@@ -43,10 +50,19 @@
         },
         setFault: function (code) {
           state.diagnostico.falhaAtiva = code || null;
+          state.componentes.compressor.falha = code === "compressor-nao-liga" ? code : null;
+          state.sensores.temperatura.estado = code === "sensor-invalido" ? "invalid" : "normal";
+          state.pressostatos.alta.estado = code === "pressostato-aberto" ? "aberto" : "fechado";
+          return recalculate(state);
+        },
+        connectProbes: function (red, black) {
+          state.conexoes.vermelha = red || null;
+          state.conexoes.preta = black || null;
           return state;
         },
         getSignal: function (group, config) {
           if (!state.alimentacao.energizado) return 0;
+          if (state.diagnostico.falhaAtiva === "falta-alimentacao") return 0;
           if (group === "J1") return state.alimentacao.tensaoAc;
           if (group === "J2" || group === "J3" || group === "J4" || group === "J5" || group === "J8" || group === "J10" || group === "J12" || group === "J13" || group === "J14" || group === "J15" || group === "J16" || group === "J18") return config.tensao || 0;
           return 0;

@@ -721,6 +721,10 @@ class GerenciadorConexoes {
             this.definirCor(config) === "preta" ? elemento : pontoReferencia;
         simulador.pontaVermelha.posicao = simulador.pontaVermelha.ponto;
         simulador.pontaPreta.posicao = simulador.pontaPreta.ponto;
+        if (simulador.model) {
+            simulador.model.connectProbes(simulador.pontaVermelha.ponto, simulador.pontaPreta.ponto);
+            simulador.model.state.multimetro.modo = simulador.multimetro.posicoes[simulador.multimetro.posicaoRoda].nome;
+        }
 
         // Calcular e exibir tensão
         const tensao = this.calcularTensao(config, simulador);
@@ -734,8 +738,8 @@ class GerenciadorConexoes {
         simulador.pontaPreta.conectada = false;
         simulador.app.ponta_preta_final_mc.visible = false;
         simulador.app.ponta_vermelha_final_mc.visible = false;
-        this.app.ponta_preta_inicial_mc.visible = true;
-        this.app.ponta_vermelha_inicial_mc.visible = true;
+        simulador.app.ponta_preta_inicial_mc.visible = true;
+        simulador.app.ponta_vermelha_inicial_mc.visible = true;
         simulador.atualizarInterface();
     }
 
