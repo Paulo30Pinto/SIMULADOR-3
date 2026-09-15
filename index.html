@@ -22,6 +22,7 @@
 </style>
 <script src="libs/1.0.0/createjs.min.js"></script>
 <script src="app.js?1752754008622"></script>
+<script src="rooftop-model.js"></script>
 <script>
 var canvas, stage, exportRoot, anim_container, dom_overlay_container, fnStartAnimation;
 function init() {
@@ -68,6 +69,9 @@ function handleComplete(evt,comp) {
 	AdobeAn.makeResponsive(false,'width',false,1,[canvas,preloaderDiv,anim_container,dom_overlay_container]);	
 	AdobeAn.compositionLoaded(lib.properties.id);
 	fnStartAnimation();
+	var controller = document.createElement('script');
+	controller.src = 'index.js';
+	document.head.appendChild(controller);
 }
 function playSound(id, loop, offset) {
 	return createjs.Sound.play(id, {'interrupt':createjs.Sound.INTERRUPT_EARLY, 'loop': loop, 'offset': offset});}

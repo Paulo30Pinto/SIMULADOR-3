@@ -237,6 +237,7 @@ class DropdownManager {
 class Simulador {
     constructor(app) {
         this.app = app;
+        this.model = window.RooftopModel ? window.RooftopModel.create() : null;
         this.tensaoAlimentacao = 0;
         this.ligado = false;
         this.estado = "Simulador Desligado";
@@ -345,7 +346,12 @@ class Simulador {
         this.app.botao_off_btn.visible = !ligado;
         this.app.botao_on_btn.visible = ligado;
         this.estado = ligado ? "Simulador Ligado" : "Simulador Desligado";
-        this.tensaoAlimentacao = ligado ? 220 : 0;
+        if (this.model) {
+            this.model.setPower(ligado);
+            this.tensaoAlimentacao = this.model.state.alimentacao.tensaoAc;
+        } else {
+            this.tensaoAlimentacao = ligado ? 220 : 0;
+        }
         this.audio.tocarSom("SomBotao");
         this.atualizarInterface();
     }
@@ -696,7 +702,7 @@ class GerenciadorConexoes {
 
     // Método principal simplificado
     conectarPonto(elemento, simulador) {
-        if (!simulador.validarCondicoes()) return;
+        if (!simulador.validarCondicoes("Ponta vermelha")) return;
 
         const config = this.configuracaoConexoes[elemento];
         if (!config) return;
@@ -713,6 +719,8 @@ class GerenciadorConexoes {
             this.definirCor(config) === "vermelha" ? elemento : pontoReferencia;
         simulador.pontaPreta.ponto =
             this.definirCor(config) === "preta" ? elemento : pontoReferencia;
+        simulador.pontaVermelha.posicao = simulador.pontaVermelha.ponto;
+        simulador.pontaPreta.posicao = simulador.pontaPreta.ponto;
 
         // Calcular e exibir tensão
         const tensao = this.calcularTensao(config, simulador);
@@ -724,8 +732,8 @@ class GerenciadorConexoes {
     desconectarPonto(simulador) {
         simulador.pontaVermelha.conectada = false;
         simulador.pontaPreta.conectada = false;
-        this.app.ponta_preta_final_mc.visible = false;
-        this.app.ponta_vermelha_final_mc.visible = false;
+        simulador.app.ponta_preta_final_mc.visible = false;
+        simulador.app.ponta_vermelha_final_mc.visible = false;
         this.app.ponta_preta_inicial_mc.visible = true;
         this.app.ponta_vermelha_inicial_mc.visible = true;
         simulador.atualizarInterface();
@@ -777,26 +785,11 @@ class GerenciadorConexoes {
         const posicaoMultimetro = simulador.multimetro.posicaoRoda;
         if (posicaoMultimetro === 0) return "----";
 
-        // Retornar tensão baseada no tipo de medição
+        // Medir o sinal calculado pelo modelo; manter fallback para compatibilidade.
+        if (simulador.model) return simulador.model.getSignal(config.grupo, config);
         switch (config.grupo) {
-            case "J1":
-                return simulador.tensaoAlimentacao;
-            case "J2":
-            case "J3":
-            case "J4":
-            case "J5":
-            case "J8":
-            case "J10":
-            case "J12":
-            case "J13":
-            case "J14": 
-            case "J15":   
-            case "J16":
-            case "J18":
-            
-                return config.tensao;
-            default:
-                return 0;
+            case "J1": return simulador.tensaoAlimentacao;
+            default: return config.tensao || 0;
         }
     }
 
